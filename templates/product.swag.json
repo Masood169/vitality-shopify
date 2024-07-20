@@ -1,0 +1,136 @@
+{
+  "sections": {
+    "main": {
+      "type": "swag-product",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
+          }
+        },
+        "23fab559-4cd4-46dd-8fbf-3677e1ffaec2": {
+          "type": "subscription_recharge",
+          "settings": {}
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_label": false
+          }
+        },
+        "e65e377e-39cd-4d33-a37a-2bfefe521fe9": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "block",
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "size_chart": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "23fab559-4cd4-46dd-8fbf-3677e1ffaec2",
+        "quantity_selector",
+        "e65e377e-39cd-4d33-a37a-2bfefe521fe9",
+        "buy_buttons",
+        "description"
+      ],
+      "settings": {
+        "image_size": "large",
+        "stack_images": false,
+        "show_thumbnails": true,
+        "enable_image_zoom": true,
+        "enable_video_looping": false
+      }
+    },
+    "1636765828e86030df": {
+      "type": "frequently-bought-together",
+      "settings": {
+        "title": "Feature's Title"
+      }
+    },
+    "1636656216df0a1b19": {
+      "type": "products-features-and-benefits",
+      "disabled": true,
+      "blocks": {
+        "1636656216df0a1b19-0": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Aloe Vera",
+            "features_desc": "Soothes, softens, hydrates, prevents Trans-Epidermal Water Loss."
+          }
+        },
+        "1636656216df0a1b19-1": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Antioxidants",
+            "features_desc": "Proprietary blend that helps protect skin from environmental damage."
+          }
+        },
+        "1636656216df0a1b19-2": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Willow Bark Extract",
+            "features_desc": "Buffs away dead skin cells, calms inflammation, and soothes redness for a clearer complexion."
+          }
+        },
+        "c8b6f18e-c4fa-49fe-9105-ec6cd5a297a6": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Tocopheryl Acetate",
+            "features_desc": "Potent antioxidant that has the ability to protect and repair skin."
+          }
+        }
+      },
+      "block_order": [
+        "1636656216df0a1b19-0",
+        "1636656216df0a1b19-1",
+        "1636656216df0a1b19-2",
+        "c8b6f18e-c4fa-49fe-9105-ec6cd5a297a6"
+      ],
+      "settings": {
+        "title": "Features\/Benefits",
+        "ingredients": "Purified Water (Aqua), Disodium Laureth Sulfosuccinate, Cocamidopropyl Betaine, Decyl Glucoside, Sodium Cocoyl Isethionate, Glycerin, PEG-120 Methyl Glucose Dioleate, Aloe Barbadensis (Leaf) Juice, Tocopheryl Acetate, Panthenol, Allantoin, Salix Alba (Willow) Bark Extract, Camellia Sinensis Leaf Extract, Saccharum Officinarium (Sugarcane) Extract, Pyrus Malus (Apple) Fruit Extract, Citrus Limon (Lemon) Fruit Extract, Citrus Aurantium Dulcis (Orange) Peel Extract, \nCitrus Paradisi (Grapefruit) Fruit Extract, Caprylic\/Capric Triglyceride, Polyquaternium-10, Butylene Glycol, Dimethicone PEG-7 Phosphate,\nPhenoxyethanol, Tween 20, Caprylyl Glycol, Sorbic Acid."
+      }
+    },
+    "16366983546db3bfbd": {
+      "type": "product-howto-video",
+      "disabled": true,
+      "settings": {
+        "title": "How To Use",
+        "description": "<p>Apply cleanser to damp face and neck, gently massage into skin and rinse completely. Use daily, morning and night, or anytime your skin needs refreshing.  Follow with VI Derm Beauty Treatment Products.<\/p>",
+        "image": "shopify:\/\/shop_images\/img-bg-video-how-to-use.png",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
+    },
+    "16367689537e72c5c5": {
+      "type": "prod-ryviu",
+      "settings": {
+        "title": "Feature's Title"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1636765828e86030df",
+    "1636656216df0a1b19",
+    "16366983546db3bfbd",
+    "16367689537e72c5c5"
+  ]
+}

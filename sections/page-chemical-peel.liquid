@@ -1,0 +1,166 @@
+<section class="vi-pcp-page-header">
+  <header class="vi-chemical-peel-header">
+    {%- if section.settings.header_image != blank -%}
+    <div class="image_banner"><img src="{{ section.settings.header_image | img_url: '1920x' }}" alt="{{ section.settings.header_image.alt}}"></div>
+    {%- endif -%}
+    {%- if section.settings.header_text1 != blank or section.settings.header_text2 != blank-%}
+    <div class="header_content">
+      <div class="Container">
+        <div class="PageContent">
+          <div class="header_text_top">{{ section.settings.header_text1 }}</div>
+          <div class="header_text_top2">{{ section.settings.header_text2 }}</div>
+        </div>
+      </div>
+    </div>
+    {%- endif -%}
+  </header>
+</section>
+<section>
+<div class="vi-pcp-wrapper">
+  <div class="Container">
+    <div class="PageContent">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+        {%- when 'text_with_title' -%}
+        <div class="pc-block">
+          <h3 class="pc-text-with-title">{{ block.settings.title_text }}</h3>
+          <div class="desc">{{ block.settings.text_description }}</div>
+        </div>
+        {%- when 'column_text_image' -%}
+        <div class="pc-block">
+          <div class="Grid Grid--middle Grid_Colum_Text_Image Grid_Reverse_Mobile">
+            <div class="Grid__Cell 1/2--tablet-and-up">
+              {%- if block.settings.text_align == 'left' -%}
+              <div class="vt-text-image-desc">
+              <h3 class="pc-text-with-title">{{ block.settings.text_heading}}</h3>
+              {{ block.settings.text_description }}  
+              </div>
+              {%- else -%}
+              <div class="vt-text-image-img">
+              <img src="{{ block.settings.column_image | img_url : '530x'}}" alt="{{ block.settings.column_image.alt }}">  
+              </div>
+              {%- endif -%}
+            </div>
+            <div class="Grid__Cell 1/2--tablet-and-up">
+              {%- if block.settings.text_align == 'left' -%}
+              <div class="vt-text-image-img">
+              <img src="{{ block.settings.column_image | img_url : '530x'}}" alt="{{ block.settings.column_image.alt }}">  
+              </div>
+              {%- else -%}
+              <div class="vt-text-image-desc">
+                {% if block.settings.text_heading != blank %}
+              <h3 class="pc-text-with-title">{{ block.settings.text_heading}}</h3>  
+              {% endif %}
+              {{ block.settings.text_description }}  
+              </div>
+              {%- endif -%}  
+            </div>
+          </div>
+        </div>
+        {%- when 'text_heading' -%}
+        <div class="pc-block">
+          <div class="pc-text-custom">
+            <h3 class="pc-text-with-title">
+            {%- if block.settings.text_heading != blank -%}
+            {{ block.settings.text_heading }}
+            {%- endif -%}
+          </h3>
+          </div>
+        </div>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+</section>
+{% schema %}
+{
+  "name": "Chemical Peel",
+  "class": "page-chemical-peel",
+  "max_blocks": 5,
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "header_image",
+      "label": "Header Image"
+    },
+    {
+      "type": "richtext",
+      "id": "header_text1",
+      "label": "Header Text 1",
+      "default": "<p>Say something about...</p>"
+    },
+    {
+      "type": "html",
+      "id": "header_text2",
+      "label": "Header Text 2",
+      "default": "<p>Say something about...</p>"
+    }
+  ],
+  "blocks": [
+     {
+      "name": "Heading",
+      "type": "text_heading",
+      "settings":[
+        {
+          "type": "html",
+          "id": "text_heading",
+          "label": "Heading Text"
+        }
+      ]
+     },
+     {
+       "name": "Text With Title",
+       "type": "text_with_title",
+       "settings": [
+         {
+           "type": "text",
+           "id": "title_text",
+           "label": "Heading"
+         },
+         {
+           "type": "html",
+           "id": "text_description",
+           "label": "Text Description"
+         }
+       ]
+     },
+     {
+        "name": "Column Text and Image",
+        "type": "column_text_image",
+        "settings":[
+          {
+            "type": "image_picker",
+            "id": "column_image",
+            "label": "Column Image"
+          },
+          {
+            "type": "text",
+            "id": "text_heading",
+            "label": "Header Text"
+          },
+          {
+            "type": "html",
+            "id": "text_description",
+            "label": "Description"
+          },
+          {
+            "type": "select",
+            "id": "text_align",
+            "label": "Text Alignment",
+            "options": [
+              {
+                "value":"left",
+                "label":"Left"
+              },
+              {
+                "value":"right",
+                "label":"Right"
+              }
+            ]
+          }
+        ]
+     }
+   ]
+}
+{% endschema %}

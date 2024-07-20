@@ -1,0 +1,151 @@
+<section>
+<div class="vt-wrapper">
+  <div class="Container">
+    <div class="PageContent">
+      <header class="vt-header text--center">
+        {%- if section.settings.header_image != blank -%}<div class="image_banner"><img src="{{ section.settings.header_image | img_url: '1165x' }}" alt="{{ section.settings.header_image.alt }}"></div>{%- endif -%}
+        <div class="sep_text"></div>
+        {%- if section.settings.header_text != blank -%}<div class="vt_header_text">{{ section.settings.header_text }}</div>{%- endif -%}
+      </header>
+    </div>
+  </div>
+</div>
+</section>
+<section>
+<div class="vt-wrapper2">
+  <div class="Container">
+    <div class="PageContent">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+        {%- when 'text_heading' -%}
+        <div class="vt-block">
+          <h2 class="vt-text-image-title">{{ block.settings.heading_text }}</h2>
+          <div class="sep_text"></div>
+        </div>
+        {%- when 'column_text_image' -%}
+        <div class="vt-block">
+          <div class="Grid Grid_Colum_Text_Image Grid_Reverse_Mobile">
+            <div class="Grid__Cell 1/2--tablet-and-up">
+              {%- if block.settings.text_align == 'left' -%}
+              <div class="vt-text-image-desc">
+              {{ block.settings.text_description }}  
+              </div>
+              {%- else -%}
+              <div class="vt-text-image-img">
+              <img src="{{ block.settings.column_image | img_url : '530x'}}" alt="{{ block.settings.column_image.alt }}">  
+              </div>
+              {%- endif -%}
+            </div>
+            <div class="Grid__Cell 1/2--tablet-and-up">
+              {%- if block.settings.text_align == 'left' -%}
+              <div class="vt-text-image-img">
+              <img src="{{ block.settings.column_image | img_url : '530x'}}" alt="{{ block.settings.column_image.alt }}">  
+              </div>
+              {%- else -%}
+              <div class="vt-text-image-desc">
+                <h3>POST TREATMENT PLAN</h3>
+                <div class="qr-block">
+					<p>Your practitioner will provide you with a take-home kit with specific post-treatment instructions and skin care products to ensure the best VI Peel experience. Included in the kit is a QR code for our App which helps you care for your skin and track your progress. A typical post-peel will show some flaking by day 2 and peeling by day 3 – 5. By day 6, the peeling will ease. By day 7, most patients have stopped peeling and that fresh glowing skin is on full display!</p>
+                	<img src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/VI_App_QRCode.jpg?v=1651684295" alt="Scan bar code">
+                </div>
+                {{ block.settings.text_description }}  
+              </div>
+              {%- endif -%}  
+            </div>
+          </div>
+        </div>
+        {%- when 'custom_text' -%}
+        <div class="vt-block">
+          <div class="vt-text-image-custom" style="color: {{ block.settings.custom_text_color }};">
+            {%- if block.settings.custom_text != blank -%}
+            {{ block.settings.custom_text }}
+            {%- endif -%}
+          </div>
+        </div>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+</section>
+{% schema %}
+{
+  "name": "Page Vipeel Treatment",
+  "class": "page-vipeel-treatment",
+  "max_blocks": 5,
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "header_image",
+      "label": "Header Image"
+    },
+    {
+      "type": "richtext",
+      "id": "header_text",
+      "label": "Header Text",
+      "default": "<p>Say something about...</p>"
+    }
+  ],
+  "blocks": [
+     {
+       "name": "Text Heading",
+       "type": "text_heading",
+       "settings": [
+         {
+           "type": "text",
+           "id": "heading_text",
+           "label": "Text Heading"
+         }
+       ]
+     },
+     {
+       "name": "Custom Text",
+       "type": "custom_text",
+       "settings": [
+         {
+           "type": "html",
+           "id": "custom_text",
+           "label": "Custom Text"
+         },
+         {
+           "type": "color",
+           "id": "custom_text_color",
+           "label": "Text Color",
+           "default": "#005A63"
+         }
+       ]
+     },
+     {
+        "name": "Column Text and Image",
+        "type": "column_text_image",
+        "settings":[
+          {
+            "type": "image_picker",
+            "id": "column_image",
+            "label": "Column Image"
+          },
+          {
+            "type": "html",
+            "id": "text_description",
+            "label": "Description"
+          },
+          {
+            "type": "select",
+            "id": "text_align",
+            "label": "Text Alignment",
+            "options": [
+              {
+                "value":"left",
+                "label":"Left"
+              },
+              {
+                "value":"right",
+                "label":"Right"
+              }
+            ]
+          }
+        ]
+     }
+   ]
+}
+{% endschema %}

@@ -1,0 +1,123 @@
+{
+  "sections": {
+    "main": {
+      "type": "product-spf-50-daily-uv-defense",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
+          }
+        },
+        "06657823-c600-4468-b279-0c35a1c07484": {
+          "type": "subscription_recharge",
+          "settings": {}
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_label": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "06657823-c600-4468-b279-0c35a1c07484",
+        "quantity_selector",
+        "buy_buttons",
+        "description"
+      ],
+      "settings": {
+        "image_size": "large",
+        "stack_images": false,
+        "show_thumbnails": true,
+        "enable_image_zoom": true,
+        "enable_video_looping": false
+      }
+    },
+    "frequently-bought-together": {
+      "type": "frequently-bought-together",
+      "settings": {
+        "title": "Feature's Title"
+      }
+    },
+    "products-features-and-benefits": {
+      "type": "products-features-and-benefits",
+      "blocks": {
+        "bc8151d3-89c6-41b7-931d-5acc22759caf": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Zinc Oxide 10.8%",
+            "features_desc": "Mineral (physical) sunblock that\nreflects and scatters skin-aging\nUV rays."
+          }
+        },
+        "9327daca-c633-42bb-9ce9-36d3997ebd5a": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Octinoxate 7.5%",
+            "features_desc": "Sunscreen that creates a powerful UVA\/UVB filter on skin to shield against skin-aging UV rays."
+          }
+        },
+        "2936657b-44c6-4b43-8ee7-c1baa6a9363d": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Green Tea",
+            "features_desc": "Antioxidant that helps protect and\nsoothe, boosts skin's youthful\nappearance, and helps minimize\nthe signs of aging."
+          }
+        },
+        "7d91f288-ae31-4a2f-86cc-be1e560c2864": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Feature's Title",
+            "features_desc": "Say something about the features..."
+          }
+        }
+      },
+      "block_order": [
+        "bc8151d3-89c6-41b7-931d-5acc22759caf",
+        "9327daca-c633-42bb-9ce9-36d3997ebd5a",
+        "2936657b-44c6-4b43-8ee7-c1baa6a9363d",
+        "7d91f288-ae31-4a2f-86cc-be1e560c2864"
+      ],
+      "settings": {
+        "title": "Features\/Benefits",
+        "ingredients": "Water, Polysorbate 60, Coconut Alkanes, C12-15 Alkyl Benzoate, Octyldodecyl Neopentanoate, Glycerin, Cetearyl Alcohol, Cyclopentasiloxane, Glyceryl Stearate, PEG-100 Stearate, Benzyl Alcohol, Dimethicone, Xanthan Gum, Phenoxyethanol, Ethylhexylglycerin, Acrylates\/C10-30 Alkyl Acrylate Crosspolymer, Disodium EDTA, Camellia Sinensis Leaf Extract, Aloe Barbadensis Leaf Extract, Chamomilla Recutita (Matricaria) Flower Extract, Citrus Limon (Lemon) Fruit Extract, Pueraria Lobata Root Extract"
+      }
+    },
+    "product-howto-video": {
+      "type": "product-howto-video",
+      "settings": {
+        "title": "How to Use",
+        "description": "<p>Say something about the video...<\/p>",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
+    },
+    "prod-ryviu": {
+      "type": "prod-ryviu",
+      "settings": {
+        "title": "Feature's Title"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "frequently-bought-together",
+    "products-features-and-benefits",
+    "product-howto-video",
+    "prod-ryviu"
+  ]
+}

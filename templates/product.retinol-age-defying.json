@@ -1,0 +1,123 @@
+{
+  "sections": {
+    "main": {
+      "type": "product-retinol-age-defying",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": true,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
+          }
+        },
+        "3b3c16fe-d36f-4fdc-8c67-2fce3a53fe22": {
+          "type": "subscription_recharge",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_label": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": false
+          }
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "3b3c16fe-d36f-4fdc-8c67-2fce3a53fe22",
+        "description",
+        "quantity_selector",
+        "buy_buttons"
+      ],
+      "settings": {
+        "image_size": "large",
+        "stack_images": false,
+        "show_thumbnails": true,
+        "enable_image_zoom": true,
+        "enable_video_looping": false
+      }
+    },
+    "frequently-bought-together": {
+      "type": "frequently-bought-together",
+      "settings": {
+        "title": "Feature's Title"
+      }
+    },
+    "products-features-and-benefits": {
+      "type": "products-features-and-benefits",
+      "blocks": {
+        "6355c43d-5eb0-4dc1-9142-087f96583e19": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Glycolic Acid 10%",
+            "features_desc": "Resurfaces skin's texture and tone."
+          }
+        },
+        "7d7cc8af-27a4-41b0-b4e3-3385b58993aa": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Retinol",
+            "features_desc": "Stimulates cell turnover to help minimize signs of aging, visibly reduce pore size, and clear away dead skin cells that can lead to breakouts"
+          }
+        },
+        "c88c534e-2949-401e-a00b-a4edc8bc3276": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "THD Ascorbate (Vitamin C)",
+            "features_desc": "A stable and more efficacious form of Vitamin C that enhances collagen production, defends against free radical damage, and brightens for a more radiant complexion."
+          }
+        },
+        "0fe5d700-700c-4cc5-8639-df93ccae031f": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Aloe Vera",
+            "features_desc": "Soothes, softens, hydrates, prevents Trans-Epidermal Water Loss."
+          }
+        }
+      },
+      "block_order": [
+        "6355c43d-5eb0-4dc1-9142-087f96583e19",
+        "7d7cc8af-27a4-41b0-b4e3-3385b58993aa",
+        "c88c534e-2949-401e-a00b-a4edc8bc3276",
+        "0fe5d700-700c-4cc5-8639-df93ccae031f"
+      ],
+      "settings": {
+        "title": "Features\/Benefits",
+        "ingredients": "Water, Glycolic Acid, Glyceryl Stearate, Butylene Glycol, PEG-6, Azelaic Acid, Cetyl Alcohol, Isopropyl Palmitate, Tetrahexyldecyl Ascorbate, Glycerin, Caprylic\/Capric Triglyceride, Cetearyl Olivate, Cetyl Phosphate, Stearic Acid, Sodium Hydroxide, Sorbitan Olivate, Retinol, Tocopheryl Acetate, Polysorbate 60, Aloe Barbadensis Leaf Juice, Ethylhexylglycerin, Dimethicone, Xanthan Gum, Disodium EDTA, Camellia Sinensis Leaf Extract, Coffea Arabica (Coffee) Seed Extract, Phenoxyethanol, Sclerotium Gum"
+      }
+    },
+    "product-howto-video": {
+      "type": "product-howto-video",
+      "settings": {
+        "title": "How To Use",
+        "description": "<p>Say something about the video...<\/p>",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
+    },
+    "prod-ryviu": {
+      "type": "prod-ryviu",
+      "settings": {
+        "title": "Feature's Title"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "frequently-bought-together",
+    "products-features-and-benefits",
+    "product-howto-video",
+    "prod-ryviu"
+  ]
+}

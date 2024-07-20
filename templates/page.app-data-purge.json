@@ -1,0 +1,32 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_large": true
+      }
+    },
+    "1702587984be6df6f6": {
+      "type": "apps",
+      "blocks": {
+        "0b3a4d8d-f44d-4220-a305-1edcab80955b": {
+          "type": "shopify:\/\/apps\/powr-contact-form\/blocks\/app-block\/1412fe37-d89c-4706-a797-6e2b53cb4a69",
+          "settings": {
+            "app_id": "523a5dc9_1702587556"
+          }
+        }
+      },
+      "block_order": [
+        "0b3a4d8d-f44d-4220-a305-1edcab80955b"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1702587984be6df6f6"
+  ]
+}

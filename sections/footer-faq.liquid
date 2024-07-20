@@ -1,0 +1,91 @@
+<section class="Section" data-section-type="faq" data-section-id="{{ section.id }}">
+  <div class="Container gridt-wrapper">
+    {% assign count = 1 %}
+
+    <div class="gridt-container">
+      <div class="Grid Grid_Testimonials">
+        <div class="Grid__Cell 1/2--tablet-and-up">
+          {%- if section.settings.title != blank -%}
+          <header class="SectionHeader SectionHeader--center features--heading-large">
+            <div class="Container">
+              <h3 class="SectionHeader__SubHeading Heading u-h1">{{section.settings.title}}</h3>
+            </div>
+          </header>
+          {%- endif -%}
+        </div>
+        <div class="Grid__Cell 1/2--tablet-and-up">
+          <div class="Faq_Container">
+            {%- for block in section.blocks -%}
+
+            <button class="accordion item{%- if forloop.last == true -%}-last{%- endif -%}">{{ block.settings.question | escape }}</button>
+            <div class="panel">{{ block.settings.answer }}</div>
+
+            {%- endfor -%}
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  #section-{{ section.id }} {
+   
+  }
+
+  #section-{{ section.id }} .flickity-page-dots .dot:not(.is-selected) {
+    
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Footer FAQ",
+  "class": "shopify-section--footer-faq",
+  "max_blocks": 12,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "FAQ's Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "Question Entry"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "faq",
+        "settings": {}
+      },
+      {
+        "type": "faq",
+        "settings": {}
+      },
+      {
+        "type": "faq",
+        "settings": {}
+      }
+    ]
+  }
+}
+{% endschema %}

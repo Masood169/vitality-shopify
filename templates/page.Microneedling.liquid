@@ -1,0 +1,283 @@
+<style>
+
+  #shopify-section-footer-testimonials {display:none !important;}
+  #shopify-section-footer-faq {display:none !important;}
+  
+  .main-wrap {width:100%;}
+  .main-cont {}
+  .main-wrap h2 {font-family:'gotham-bold';}
+  .main-wrap h3 {font-family:'gotham-bold';}
+  .main-wrap h4 {font-family:'gotham-bold';}
+  .main-wrap p {font-family:'gotham-book';}
+  .main-wrap p .bold-para {font-family:'gotham-bold';}
+  
+  .tox-wrap {background-color:#c6b091;}
+  .tox-hero {max-width: 1600px; margin: 0 auto; width: 100%; height: 40vw; max-height: 660px; background-image: url('https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Microneedling-hero.jpg?v=1690032033'); background-size:cover;}
+  .tox-hero .t-box {width: 50%; padding: 8% 0 0% 5%;}
+  .tox-hero .t-box h1 {font-size: 4.5vw !important; line-height:4.5vw; color:#2B5D66; font-family:'lust'; margin-bottom:2vw;}
+  .tox-hero .t-box p {font-size: 1.3vw !important; color: white; margin-bottom: 1vw; width:26vw;}
+  .tox-hero .t-box img {width:75%;}
+  
+  .info-wrap {background-color: #0F5E67;}
+  .info-cont {display:flex; align-items:center; justify-content: space-between; max-width: 1400px; margin: 0 auto; padding-bottom:4rem; padding-top: 2rem; flex-wrap:wrap;}
+
+  .info-top {margin-bottom:1vw;}
+  .info-top h2 {color: #F58D8D; font-size: 4rem !important; margin-bottom:0; font-weight:400; font-family: 'fort-collins-script'; line-height:5rem;}
+  .info-top h3 {font-family: "Lust"; color: white; font-size: 2.5rem !important; line-height:3rem; margin-bottom:1rem; font-weight:400;}
+  .info-top p {font-weight:100; margin-bottom: 1rem; color:white;}
+  
+  .info-left {width:48%; padding-top: 2rem; padding-left: 3rem;}
+  .info-left a:hover {background-color:#F58D8D; color:white;}
+
+  .info-left h4 {font-size: 1.2rem; color: white; font-weight:700; margin: 0 0 1vw 0; text-transform:uppercase;}
+  
+  .info-right {width:48%; padding-top: 2rem; padding-right: 3rem;}
+  .info-right h4 {font-size: 1.2rem; color: white; font-weight:700; margin: 0 0 0 0; text-transform:uppercase;}
+  .info-right ul {font-size: 1rem; color: white; font-weight: 400; margin-bottom: 2rem;}
+  .info-right p {font-weight:400; color:white; margin-bottom:3rem;}
+  .info-right .info-btn {background-color:white; color: #0F5E67; border-radius: 999rem; text-align:center; width:18rem; padding: 1rem 0; font-weight:700; transition:.2s; display:block; margin: 0 auto;}
+  
+  
+  .results-wrap {padding: 0 0 4rem 0;}
+  .results-top {padding: 4rem 0 4rem 0; text-align:center;}
+  .results-top h2 {font-family: "Lust"; color: #0F5E67; font-size: 3.2rem !important; margin-bottom:0rem; font-weight:400;}
+  .results-top h3 {color: #A0A0A0; font-weight:700; text-transform:uppercase; font-size: 1.4rem !important; margin: 0;}
+  .results-top h3 .lighter-text {font-family:'gotham-light';}
+  .results-top p {color: #A0A0A0; font-weight:700;}
+  .results-images {width:100%; max-width:1400px; padding: 0 3rem; margin: 0 auto 2rem auto; display: flex; justify-content: space-between;}
+  .results-images img {width:42%;}
+  .results-wrap a {
+    padding: 0.5rem 0;
+    background-color: white;
+    border: solid 2px #0F5E67;
+    color: #0F5E67;
+    border-radius: 9999rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 18rem;
+    cursor:pointer;
+    transition:.2s;
+  }
+  .results-wrap a:hover {background-color:#0F5E67; color:white;}
+  
+  .salmon {color: #F58D8D !important; font-size:3.5rem !important; font-family:"fort-collins-script", sans-serif !important;}
+  
+  .clinical-wrap {background-color:#EBEBEB; padding: 3rem 3rem 0 3rem; margin-top:5rem;}
+  .clinical-cont {max-width: 1400px; margin: 0 auto 0rem auto; background-image: url('https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Water_GreenOverlay.jpg?v=1655167273'); background-size:cover; position:relative; border-radius: 2rem; overflow:hidden;}
+  .clinical-cont .t-box {padding: 2rem 5rem; text-align:center;}
+  .clinical-cont .t-box h2 {font-family: "Lust"; color: white; font-size: 2.2rem !important; margin-bottom:.5rem; font-weight:400;}
+  .clinical-cont .t-box p {font-weight:700; color:white; margin-bottom:2rem;}
+  .clinical-stats {display:flex; justify-content: space-evenly; flex-wrap: wrap;}
+  .clinical-number {width:26%; text-align:center; margin-bottom:2rem;}
+  .clinical-number h3 {font-family: "Lust"; color: #F58D8D; font-size: 6rem !important; margin-bottom:0rem;}
+  .clinical-number p {font-weight:700; margin:0; color:white; font-size: 1.5rem !important;}
+  .clinical-number .vs-text {font-size:1rem !important;}
+  
+  .last-clinicals {width:65%; display:flex; justify-content:space-around;}
+  .vs {width:15%; font-size:1.4rem !important; color:white; text-align: center; padding-top: 2rem;}
+  .clinical-disclaimer {color:white; font-weight:700; width: 70%; margin: 0 auto 2rem auto;}
+  .clinical-bottom {position:relative; max-width: 1400px; margin: 2rem auto 0 auto; text-align:center; padding-bottom: 4rem;}
+  .clinical-bottom h2 {font-family: "Lust"; color: #0F5E67; font-size: 2.2rem !important; margin-bottom:1rem; font-weight:400; }
+  .clinical-bottom a {
+    padding: 0.5rem 0;
+    background-color: transparent;
+    border: solid 2px #0F5E67;
+    color: #0F5E67;
+    border-radius: 9999rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 18rem;
+    cursor:pointer;
+    transition:.2s;
+    text-transform:uppercase;
+  }
+  
+  .clinical-bottom a:hover {background-color:#0F5E67; color:white;}
+
+  .clinical-girl {position:absolute; bottom:0; left: -10rem; width: 30rem;}
+  
+  
+  .mobile {display:none;}
+  .hideformobile {display:flex;}
+  .onlyformobile {display:none;}
+  
+  .pink {color:#F58D8D;}
+  .teal {color: #105e67}
+
+  @media only screen and (max-width:1230px) {
+    .info-cont {flex-wrap:wrap; justify-content: space-around; padding: 2rem 0 4rem 0;}
+    .info-top {width:100%; margin-bottom:2rem; text-align:left;}
+    .info-left {width:80%; padding:0; margin-bottom:2rem;}
+    .info-left h2 {font-size: 5rem !important;}
+    .info-left h3 {font-size: 2.5rem !important;}
+    .info-left p {margin-bottom:3rem;}
+    .info-right {width:80%; padding:0;}
+    .info-right a {background-color:white; color: #0F5E67; border-radius: 999rem; padding: 1rem 3rem; font-weight:700; transition:.2s; width: 36vw; text-align: center; margin: 3rem auto 0 auto; font-size: 1.4rem !important;}
+    .info-right a:hover {background-color:#F58D8D; color:white;}
+    
+  }
+  
+  @media only screen and (max-width:1024px) {
+    .desk {display:none;}
+  	.mobile {display:block;}
+    
+    .tox-hero {background-image: url('https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Microneedling-hero-Tablet.jpg?v=1690038912'); background-size:cover; height:67vw;}
+    .tox-hero .t-box {padding: 16% 0 0% 6%; width:62%;}
+    .tox-hero .t-box h1 {font-size: 6vw !important; line-height:6.5vw; margin-bottom: 3vw;}
+    .tox-hero .t-box p {font-size: 3vw !important; line-height: 4vw; color: white; margin-bottom: 1vw; width: 50vw;}
+    .tox-hero .t-box img {width:90%;}
+    
+    .info-cont {flex-wrap:wrap; justify-content: space-around; padding: 2rem 0 4rem 0;}
+    .info-left {width:80%; padding:0;}
+    .info-left h2 {font-size: 5rem !important;}
+    .info-left h3 {font-size: 3rem !important;}
+    .info-left p {margin-bottom:3rem;}
+    .info-right {width:80%; padding:0;}
+    .info-right a {background-color:white; color: #0F5E67; border-radius: 999rem; padding: 1rem 3rem; font-weight:700; transition:.2s; width: 36vw; text-align: center; margin: 3rem auto 0 auto; font-size: 1.4rem !important;}
+    .info-right a:hover {background-color:#F58D8D; color:white;}
+    
+    .results-top h2 {font-size: 4rem !important; line-height: 5rem; margin-bottom: 2rem;}
+    .salmon {font-size:5rem !important;}
+    .results-top h3 {font-size: 2rem !important;}
+    .results-top p {font-size: 1.4rem !important;}
+    
+    .results-images {flex-wrap: wrap; padding:0; justify-content: space-around;}
+    .results-images img {width:90%; margin-bottom:2rem;}
+    .results-wrap a {width: 22rem; font-size: 1.4rem !important;}
+    
+    .clinical-cont .t-box h2 {font-size: 4rem !important;}
+    .clinical-cont .t-box {padding:2rem;}
+    .clinical-cont .t-box p {font-size: 2rem !important;}
+    
+    .clinical-number h3 {font-size: 8rem !important; line-height: 10rem;}
+    .clinical-number {width:75%;}
+    .clinical-cont .t-box .clinical-number p {font-size: 2rem !important; line-height: 3rem;}
+    .clinical-number .vs-text {font-size: 1.2rem !important;}
+    
+    
+    .last-clinicals {width:75%;}
+    .vs {font-size: 2rem !important; padding-top: 3rem;}
+    .clinical-cont .t-box .clinical-disclaimer {font-size:1.2rem !important; width: 100%; margin: 0 auto 2rem auto;}
+    .clinical-bottom {padding-bottom:0;}
+    .clinical-bottom h2 { font-family: "Lust"; color: #0F5E67; font-size: 3rem !important; width: 80%; font-weight: 400; margin: 0 auto 2rem auto; line-height: 4rem;}
+    
+    .clinical-bottom a {width: 22rem; font-size: 1.4rem !important; margin-bottom:2rem;}
+    .clinical-girl {position:static;}
+  }
+  
+  
+  
+  @media only screen and (max-width:700px) {
+  
+  	.tox-hero {background-image: url('https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Microneedling-hero-Mobile.jpg?v=1690039527'); background-size:cover; height:130vw;}
+  
+    .tox-hero .t-box {padding: 8% 0 0 0; width: 80%; text-align: left; margin: 0 auto;}
+    .tox-hero .t-box h1 {font-size: 9vw !important; line-height: 10vw;}
+    .tox-hero .t-box p {font-size: 3.5vw !important; line-height: 5vw; color: white; margin-bottom: 1vw; width: 100%;}
+  	
+    .info-left h2 {font-size: 18vw !important;}
+    .info-left h3 {font-size: 8.5vw !important; line-height: 10vw; margin-bottom: 1rem;}
+    .info-left iframe {width:100% !important; height:45vw;}
+    .info-right a {width:100%;}
+    .info-right ul {list-style-position: outside;}
+    
+    .results-top {padding: 2rem 2rem 4rem 2rem;}
+    .results-top h2 {font-size: 12vw !important; line-height: 16vw; margin-bottom: 2rem;}
+    .results-top h3 {font-size: 1.4rem !important; margin-bottom: 1rem;}
+    .results-top p {font-size:1.2rem !important}
+    
+    .clinical-wrap {padding:0;}
+    .clinical-cont {width:90%; margin: 0 auto;}
+    .clinical-cont .t-box h2 {font-size: 12vw !important; line-height: 18vw;}
+    .clinical-cont .t-box p {font-size: 6vw !important;}
+    .clinical-number {width:100%; margin-bottom: 0rem;}
+    .clinical-number h3 {font-size: 7rem !important; line-height: 9rem;}
+    .clinical-cont .t-box .clinical-number p {font-size: 1.8rem !important;}
+
+    .clinical-bottom {padding-top: 4rem; margin-top: 0;}
+    
+    .last-clinicals {width:100%; flex-wrap: wrap;}
+    .vs {padding: 1rem 0;}
+    .clinical-cont .t-box .clinical-disclaimer {font-size: 1rem !important;}
+    
+  
+    .hideformobile {display:none;}
+    .onlyformobile {display:flex;}
+  }
+
+</style>
+
+<div class="main-wrap">
+  <div class="main-cont">
+    
+    <div class="tox-wrap">
+      <div class="tox-hero">
+        <div class="t-box">
+          <h1>next level<br>pigment fighting</h1>
+          <p><span class="bold-para">Take your Microneedling Treatment to the next level!</span> Add VI Peel to your treatment series to <span class="bold-para">LIFT PIGMENT</span> for the ultimate in smooth, even skin.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="info-wrap">
+      <div class="info-cont">
+        
+        <div class="info-left">
+          <div class="info-top">
+            <h2>goodbye,</h2>
+            <h3>sun damage & uneven skin tone!</h3>
+          </div>
+          <h4>MICRONEEDLING + VI PEEL TREATMENT SERIES</h4>
+          <img src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/VI-Microneedling-SkinSliceDiagram-V03.jpg?v=1690032975" alt="Diagram showing the skin before microneedling, after microneedling, and after adding a VI Peel to the treatment.">
+        </div>
+
+        <div class="info-right">
+          <h4>Adding VI Peel to your Microneedling Treatment plan enhances the results of both services</h4>
+          <ul>
+            <li>Microneedling is excellent at breaking up sun damage and dark spots</li>
+            <li>VI Peel is the #1 choice for LIFTING the pigmentation from the skin, revealing a fresh, even glow</li>
+          </ul>
+          <h4>Why add VI Peel?</h4>
+          <p>Microneedling is phenomenal in <span class="bold-para">stimulating collagen, smoothing fine lines, and improving texture.</span> It also breaks up pigmentation well. By <span class="bold-para">adding VI Peel to your treatment plan</span>, the dark spots, rather than simply dissipating, are lifted from the skin, revealing a smooth, bright complexion.</p>
+          <a href="https://vipeel.com/pages/sca-store-locator" aria-label="Book now your Appointment" class="info-btn">BOOK NOW</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="results-wrap">
+      <div class="results-top">
+        <h2>the <span class="salmon">results</span> speak for themselves!</h2>
+        <h3>MICRONEEDLING <br class="onlyformobile"> <span class="lighter-text">+ VI PEEL TREATMENT SERIES</span></h3>
+        <p>Lifts Dark Spots + Smooths Fine Lines + Improves Texture</p>
+      </div>
+      
+      <div class="results-images hideformobile">
+        <img src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/BA_02.png?v=1690038395" alt="Side-by-side comparison showing a woman's face before and after treatment with significant reduction in dark spots and smoother skin.">
+        <img src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/BA_01.png?v=1690038395" alt="Side-by-side comparison showing a woman's face before and after treatment, highlighting reduced dark spots and smoother skin.">
+      </div>
+      
+      <div class="results-images onlyformobile"> 
+        <img src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/BA_Stacked_01.png?v=1690040196" alt="Side-by-side comparison showing a woman's face before and after treatment with significant reduction in dark spots and smoother skin.">
+        <img src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/BA_Stacked_02.png?v=1690040196" alt="Side-by-side comparison showing a woman's face before and after treatment, highlighting reduced dark spots and smoother skin.">
+      </div>
+      
+      <a href="https://vipeel.com/pages/real-reviews">SEE MORE RESULTS</a>
+    </div>
+    
+    <div class="clinical-wrap">
+      
+      <div class="clinical-bottom">
+        <h2><span class="salmon">safe</span> for all skin types & tones</h2>
+        <a href="https://vipeel.com/pages/sca-store-locator">BOOK NOW</a>
+        
+        <img class="clinical-girl" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/VI-Microneedling-Girl.png?v=1690038539" alt="A woman with a radiant smile, gently touching her smooth, glowing skin with both hands.">
+      </div>
+      
+    </div>
+    
+  </div>
+</div>

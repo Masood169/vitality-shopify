@@ -1,0 +1,346 @@
+<style>
+  #shopify-section-footer-testimonials {display:none !important;}
+  #shopify-section-footer-faq {display:none !important;}
+  
+  .main-wrap {width:100%;}
+  .main-cont {}
+  .main-wrap h2 {font-family:'gotham-bold';}
+  .main-wrap h3 {font-family:'gotham-bold';}
+  .main-wrap h4 {font-family:'gotham-bold';}
+  .main-wrap p {font-family:'gotham-book';}
+  .main-wrap p .bold-para {font-family:'gotham-bold';}
+  
+  .tox-wrap {background-color:#c6b091;}
+  .tox-hero {max-width: 1600px; margin: 0 auto; width: 100%; height: 40vw; max-height: 660px; background-image: url('https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Laser-Combo-Treatments.jpg?v=1690306249'); background-size:cover;}
+  .tox-hero .t-box {width: 50%; padding: 10% 0 0% 5%;}
+  .tox-hero .t-box h1 {font-size: 4.5vw !important; line-height:4.5vw; color:#2B5D66; font-family:'lust'; margin-bottom:2vw;}
+  .tox-hero .t-box p {font-size: 1.3vw !important; color: white; margin-bottom: 1vw; width:26vw;}
+  .tox-hero .t-box img {width:75%;}
+  
+  .info-wrap {background-color: #0F5E67;}
+  .info-cont {display:flex; align-items:center; justify-content: space-between; max-width: 1400px; margin: 0 auto; padding-bottom:4rem; padding-top: 2rem; flex-wrap:wrap;}
+
+  .info-top {margin-bottom:1vw;}
+  .info-top h2 {color: #F58D8D; font-size: 4rem !important; margin-bottom:0; font-weight:400; font-family: 'fort-collins-script'; line-height:5rem;}
+  .info-top h3 {font-family: "Lust"; color: white; font-size: 2.5rem !important; line-height:3rem; margin-bottom:1rem; font-weight:400;}
+  .info-top p {font-weight:100; margin-bottom: 1rem; color:white;}
+  
+  .info-left {width:48%; padding-top: 2rem; padding-left: 3rem;}
+  .info-left a:hover {background-color:#F58D8D; color:white;}
+
+  .info-left h4 {font-size: 1.2rem; color: white; font-weight:700; margin: 0 0 1vw 0; text-transform:uppercase;}
+  
+  .info-right {width:48%; padding-top: 2rem; padding-right: 3rem;}
+  .info-right h4 {font-size: 1.2rem; color: white; font-weight:700; margin: 0 0 0 0; text-transform:uppercase;}
+  .info-right ul {font-size: 1rem; color: white; font-weight: 400; margin-bottom: 2rem;}
+  .info-right p {font-weight:400; color:white; margin-bottom:3rem;}
+  .info-right .info-btn {background-color:white; color: #0F5E67; border-radius: 999rem; text-align:center; width:18rem; padding: 1rem 0; font-weight:700; transition:.2s; display:block; margin: 0 auto;}
+  
+  
+  .results-wrap {padding: 0 0 4rem 0;}
+  .results-top {padding: 4rem 0 4rem 0; text-align:center;}
+  .results-top h2 {font-family: "Lust"; color: #0F5E67; font-size: 3.2rem !important; margin-bottom:0rem; font-weight:400;}
+  .results-top h3 {color: #A0A0A0; font-weight:700; text-transform:uppercase; font-size: 1.4rem !important; margin: 0;}
+  .results-top h3 .lighter-text {font-family:'gotham-light';}
+  .results-top p {color: #A0A0A0; font-weight:700;}
+  .results-images {width:100%; max-width:1400px; padding: 0 3rem; margin: 0 auto 2rem auto; display: flex; justify-content: space-between;}
+  .results-images img {width:42%;}
+  .results-wrap a {
+    padding: 0.5rem 0;
+    background-color: white;
+    border: solid 2px #0F5E67;
+    color: #0F5E67;
+    border-radius: 9999rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 18rem;
+    cursor:pointer;
+    transition:.2s;
+  }
+  .results-wrap a:hover {background-color:#0F5E67; color:white;}
+  
+  .salmon {color: #F58D8D !important; font-size:3.5rem !important; font-family:"fort-collins-script", sans-serif !important;}
+
+  .advantage-wrap {background-color: #0F5E67;}
+  .advantage-cont {display:flex; align-items:center; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding-bottom:6rem; padding-top: 6rem; flex-wrap:wrap;}
+  .adv-left {width:34%; padding-top: 2rem; padding-left: 3rem; padding-right:6rem; border-right: solid 2px #F58D8D;}
+  .adv-right {width:58%; padding-top: 2rem; padding-right: 3rem;}
+  .advantage-cont h4 {font-size: 1.2rem; color: white; font-weight:700; margin: 0 0 0 0; text-transform:uppercase;}
+  .advantage-cont p {font-weight:400; color:white; margin-bottom:3rem;}
+
+  .adv-left h4 {margin-bottom:2.5rem; width:80%;}
+  .adv-right h4 {margin-bottom:1rem;}
+
+  
+  .clinical-bottom {position:relative; max-width: 1400px; margin: 8rem auto 0 auto; text-align:center; padding-bottom: 8rem;}
+  .clinical-bottom h2 {font-family: "Lust"; color: #0F5E67; font-size: 2.2rem !important; margin-bottom:1rem; font-weight:400; }
+  .clinical-bottom a {
+    padding: 0.5rem 0;
+    background-color: transparent;
+    border: solid 2px #0F5E67;
+    color: #0F5E67;
+    border-radius: 9999rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 18rem;
+    cursor:pointer;
+    transition:.2s;
+    text-transform:uppercase;
+  }
+  
+  .clinical-bottom a:hover {background-color:#0F5E67; color:white;}
+
+  .clinical-girl {position:absolute; bottom:0; left: -10rem; width: 30rem;}
+  
+  
+  .mobile {display:none;}
+  .hideformobile {display:flex;}
+  .onlyformobile {display:none;}
+  
+  .pink {color:#F58D8D;}
+  .teal {color: #105e67}
+
+  @media only screen and (max-width:1230px) {
+    .info-cont {flex-wrap:wrap; justify-content: space-around; padding: 2rem 0 4rem 0;}
+    .info-top {width:100%; margin-bottom:2rem; text-align:left;}
+    .info-left {width:80%; padding:0; margin-bottom:2rem;}
+    .info-left h2 {font-size: 5rem !important;}
+    .info-left h3 {font-size: 2.5rem !important;}
+    .info-left p {margin-bottom:3rem;}
+    .info-right {width:80%; padding:0;}
+    .info-right a {background-color:white; color: #0F5E67; border-radius: 999rem; padding: 1rem 3rem; font-weight:700; transition:.2s; width: 36vw; text-align: center; margin: 3rem auto 0 auto; font-size: 1.4rem !important;}
+    .info-right a:hover {background-color:#F58D8D; color:white;}
+    
+  }
+  
+  @media only screen and (max-width:1024px) {
+    .desk {display:none;}
+  	.mobile {display:block;}
+    
+    .tox-hero {background-image: url('https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Laser-Combo-hero-Tablet.jpg?v=1690309619'); background-size:cover; height:67vw;}
+    .tox-hero .t-box {padding: 16% 0 0% 6%; width:62%;}
+    .tox-hero .t-box h1 {font-size: 6vw !important; line-height:6.5vw; margin-bottom: 3vw;}
+    .tox-hero .t-box p {font-size: 3vw !important; line-height: 4vw; color: white; margin-bottom: 1vw; width: 50vw;}
+    .tox-hero .t-box img {width:90%;}
+    
+    .info-cont {flex-wrap:wrap; justify-content: space-around; padding: 2rem 0 4rem 0;}
+    .info-left {width:80%; padding:0;}
+    .info-left h2 {font-size: 5rem !important;}
+    .info-left h3 {font-size: 3rem !important;}
+    .info-left h4 {font-size:1.6rem !important; margin-bottom:2rem;}
+    
+    .info-left p {margin-bottom:3rem;}
+    .info-right {width:80%; padding:0;}
+    .info-right h4 {font-size:1.6rem !important; margin-bottom:1rem;}
+    .info-right ul li {font-size:1.4rem !important;}
+    .info-right p {font-size:1.4rem !important;}
+    .info-right a {background-color:white; color: #0F5E67; border-radius: 999rem; padding: 1rem 3rem; font-weight:700; transition:.2s; width: 36vw; text-align: center; margin: 3rem auto 0 auto; font-size: 1.4rem !important;}
+    .info-right a:hover {background-color:#F58D8D; color:white;}
+    
+    .results-top h2 {font-size: 4rem !important; line-height: 5rem; margin-bottom: 2rem;}
+    .salmon {font-size:5rem !important;}
+    .results-top h3 {font-size: 2rem !important;}
+    .results-top p {font-size: 1.4rem !important;}
+    
+    .results-images {flex-wrap: wrap; padding:0; justify-content: space-around;}
+    .results-images img {width:90%; margin-bottom:2rem;}
+    .results-wrap a {width: 32rem; font-size: 1.6rem !important;}
+
+    .adv-left {width: 80%; margin: 0 auto; padding-top: 2rem; padding-left: 0rem; padding-right: 0rem; border-right: 0px; border-bottom: solid 2px #F58D8D;}
+    .adv-left h4 {font-size:2rem; width:60%;}
+    .adv-left p {font-size:1.6rem; width:68%; margin-bottom: 5rem;}
+
+    .adv-right {width: 80%; margin: 0 auto; padding-top: 5rem; padding-left: 0rem; padding-right: 0rem;}
+    .adv-right h4 {font-size:2rem;}
+    .adv-right p {font-size:1.6rem;}
+    
+    .clinical-cont .t-box h2 {font-size: 4rem !important;}
+    .clinical-cont .t-box {padding:2rem;}
+    .clinical-cont .t-box p {font-size: 2rem !important;}
+    
+    .clinical-number h3 {font-size: 8rem !important; line-height: 10rem;}
+    .clinical-number {width:75%;}
+    .clinical-cont .t-box .clinical-number p {font-size: 2rem !important; line-height: 3rem;}
+    .clinical-number .vs-text {font-size: 1.2rem !important;}
+    
+    
+    .last-clinicals {width:75%;}
+    .vs {font-size: 2rem !important; padding-top: 3rem;}
+    .clinical-cont .t-box .clinical-disclaimer {font-size:1.2rem !important; width: 100%; margin: 0 auto 2rem auto;}
+    .clinical-bottom {padding-bottom:0;}
+    .clinical-bottom h2 { font-family: "Lust"; color: #0F5E67; font-size: 3rem !important; width: 60%; font-weight: 400; margin: 0 auto 2rem auto; line-height: 4rem;}
+    
+    .clinical-bottom a {width: 22rem; font-size: 1.4rem !important; margin-bottom:2rem;}
+    .clinical-girl {position:static;}
+  }
+  
+  
+  
+  @media only screen and (max-width:700px) {
+  
+  	.tox-hero {background-image: url('https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Laser-Combo-hero-Mobile.jpg?v=1690311063'); background-size:cover; height:132vw;}
+  
+    .tox-hero .t-box {padding: 6% 0 0 0; width: 80%; text-align: left; margin: 0 auto;}
+    .tox-hero .t-box h1 {font-size: 9vw !important; line-height: 10vw;}
+    .tox-hero .t-box p {font-size: 3.5vw !important; line-height: 5vw; color: white; margin-bottom: 1vw; width: 100%;}
+  	
+    .info-left h2 {font-size: 18vw !important;}
+    .info-left h3 {font-size: 6vw !important; line-height: 10vw; margin-bottom: 1rem;}
+    .info-left h4 {font-size: 1.2rem !important;}
+
+    .info-right h4 {font-size:1.2rem;}
+    .info-right ul li {font-size: 1.2rem !important;}
+    .info-right p {font-size: 1.2rem !important;}
+    .info-right a {width:100%;}
+    .info-right ul {list-style-position: outside;}
+    
+    .results-top {padding: 2rem 2rem 4rem 2rem;}
+    .results-top h2 {font-size: 12vw !important; line-height: 16vw; margin-bottom: 2rem;}
+    .results-top h3 {font-size: 1.4rem !important; margin-bottom: 1rem;}
+    .results-top p {font-size:1.2rem !important}
+
+    .results-wrap a {width: 90%; font-size: 1.2rem !important;}
+
+    .adv-left h4 {font-size: 1.4rem; width: 100%;}
+    .adv-left p {font-size: 1.2rem; width: 100%;}
+    .adv-right h4 {font-size: 1.4rem; width: 100%;}
+    .adv-right p {font-size: 1.2rem; width: 100%;}
+
+    
+    .clinical-wrap {padding:0;}
+    .clinical-cont {width:90%; margin: 0 auto;}
+    .clinical-cont .t-box h2 {font-size: 12vw !important; line-height: 18vw;}
+    .clinical-cont .t-box p {font-size: 6vw !important;}
+    .clinical-number {width:100%; margin-bottom: 0rem;}
+    .clinical-number h3 {font-size: 7rem !important; line-height: 9rem;}
+    .clinical-cont .t-box .clinical-number p {font-size: 1.8rem !important;}
+
+    .clinical-bottom {padding-top: 4rem; margin-top: 0;}
+    .clinical-bottom h2 {width:80%;}
+    
+    .last-clinicals {width:100%; flex-wrap: wrap;}
+    .vs {padding: 1rem 0;}
+    .clinical-cont .t-box .clinical-disclaimer {font-size: 1rem !important;}
+    
+  
+    .hideformobile {display:none;}
+    .onlyformobile {display:flex;}
+  }
+
+</style>
+
+<div class="main-wrap">
+  <div class="main-cont">
+    
+    <div class="tox-wrap">
+      <div class="tox-hero">
+        <div class="t-box">
+          <h1>Good to great</h1>
+          <p>Did you know that you can <span class="bold-para">enhance the results of Laser Treatments</span> with the additon of VI Peel?
+              <br><br>Go from Good to Great with <span class="bold-para">VI Peel + Laser Combination Treatments!</span></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="info-wrap">
+      <div class="info-cont">
+        
+        <div class="info-left">
+          <div class="info-top">
+            <h2>Hello,</h2>
+            <h3>smooth, even, bright skin</h3>
+          </div>
+          <h4>VI PEEL + laser TREATMENTS</h4>
+          <img src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/SkinSlice_Diagram.png?v=1690306577" alt="VI PEEL + laser TREATMENTS">
+        </div>
+
+        <div class="info-right">
+          <h4>COMBINING A VI PEEL + LASER TREATMENT ENHANCES THE RESULTS OF BOTH</h4>
+          <ul>
+            <li>Fight dark spots and sun damage</li>
+            <li>Brighten and even skin tone</li>
+            <li>Encourage collagen production</li>
+          </ul>
+          <h4>WHY COMBINE BOTH TREATMENTS?</h4>
+          <p><span class="bold-para">Laser Treatments</span> are a great way to improve skin health from the inside-out by stimulating collagen and aiding in pigment reduction. <span class="bold-para">Adding VI Peel addresses dark spots and fine lines</span> from the outside-in, creating a visible, more youthful complexion. <span class="bold-para">Why be good when you can be GREAT?</span></p>
+          <a href="https://vipeel.com/pages/sca-store-locator" class="info-btn">BOOK NOW</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="results-wrap">
+      <div class="results-top">
+        <h2>the <span class="salmon">results</span> speak for themselves!</h2>
+        <h3>IPL LASER <span class="lighter-text">+ VI PEEL</span></h3>
+        <p>Lifts Dark Spots + Smooths Wrinkles + Brightens Skin</p>
+      </div>
+      
+      <div class="results-images hideformobile">
+        <img alt="result images" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/BA_01_c6549244-b5c2-4517-bc5f-8004f9c938d0.png?v=1690307124">
+        <img alt="result images" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/BA_02_e2c2752c-690d-49a3-b0a1-4e6acb050c36.png?v=1690307124">
+      </div>
+      
+      <div class="results-images onlyformobile">
+        <img alt="result images" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/BA_Stacked_01_3076288c-2771-48c8-97a0-49a70e96b31f.png?v=1690307124">
+        <img alt="result images" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/BA_Stacked_02_075698f6-b262-48dc-b394-68e2fc599250.png?v=1690307124">
+      </div>
+
+      <div class="results-top">
+        <h3>Nd:YAG LASER <span class="lighter-text">+ VI PEEL</span></h3>
+        <p>Lifts Dark Spots + Smooths Wrinkles + Brightens Skin</p>
+      </div>
+      
+      <div class="results-images hideformobile">
+        <img alt="result images" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/BA_03.png?v=1690307124">
+        <img alt="result images" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/BA_04.png?v=1690307124">
+      </div>
+      
+      <div class="results-images onlyformobile">
+        <img alt="result images" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/BA_Stacked_03.png?v=1690307124">
+        <img alt="result images" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/BA_Stacked_04.png?v=1690307124">
+      </div>
+      
+      <a href="https://vipeel.com/pages/practicefinder">FIND A PRACTITIONER NEAR YOU</a>
+    </div>
+
+
+    <div class="advantage-wrap">
+      <div class="advantage-cont">
+        <div class="adv-left">
+          <h4>WHAT CAN I DO TO TAKE ADVANTAGE OF THIS COMBINATION TREATMENT?</h4>
+          <p>First, reach out to your Practitioner to discuss your unique skincare needs. In a nutshell, there are two ways you can combine VI Peel and Laser Treatments depending on
+            <br>a) the type of laser device your Practitioner prescribes and
+            <br>b) your skin tone.
+          </p>
+        </div>
+
+        <div class="adv-right">
+          <h4>Intense Pulsed Light (IPL) or Ablative Laser:</h4>
+          <p>If your Practitioner recommends this results driven laser, adding VI Peel to your treatment series will <span class="bold-para">improve penetration of the Laser</span>, while VI Peel does its job to increase cell turnover, reduce dark spots, and smooth texture. In this situation, you will start your skin transformation with a VI Peel. Then, at a later date, you will have your Laser treatment.</p>
+
+          <h4>Nd:YAG Device:</h4>
+          <p>While it may have a strange name, the Nd:YAG Laser is an incredibly effective skincare service that works on all skin tones. Best of all, you can supercharge your Nd:YAG Laser by adding VI Peel – <span class="bold-para">all at the same appointment time</span>, enhancing the results of both. Your Practioner will start with the laser treatment and then immediately follow with the painless VI Peel service.</p>
+        </div>
+        
+      </div>
+    </div>
+
+    
+    
+    <div class="clinical-wrap">
+      
+      <div class="clinical-bottom">
+        <h2><span class="salmon">safe</span> for all skin types & tones</h2>
+        <a href="https://vipeel.com/pages/sca-store-locator">BOOK NOW</a>
+        
+        <img class="clinical-girl" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/clinical-girl4.png?v=1655169198" alt="Clinical girl">
+      </div>
+      
+    </div>
+    
+  </div>
+</div>

@@ -1,0 +1,332 @@
+<section class="vi-results-page" id="{{section.id}}">
+  {%- if section.settings.header_text != blank -%}
+  <header class="vi-results-header">
+    <div class="header_content">
+      <div class="Container">
+        <div class="header_text_top">{{ section.settings.header_text }}</div>
+      </div>
+    </div>
+  </header>
+  {%- endif -%}
+  <div class="results-wrapper">
+    <div class="Container">
+      <div class="PageContent">
+        {%- if section.blocks.size > 0 -%}       
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'before_and_after' -%}
+              <div class="Grid Grid_Before_After {% cycle 'odd','even' %}">
+                <div class="Grid__Cell 1/2--lap-and-up">
+                  {%- if block.settings.text_heading != blank -%}<div class="before-after-title">{{ block.settings.text_heading }}</div>{%- endif -%}
+                  {%- if block.settings.btn_link != blank -%}
+                  <a class="book-now" href="{{block.settings.btn_link}}" title="{{block.settings.btn_text1}}">{{block.settings.btn_text1}}</a>
+                  {%- endif -%}
+                  {%- if block.settings.description_text != blank -%}<div class="before-after-desc">{{ block.settings.description_text }}</div>{%- endif -%}
+                  {%- if block.settings.skin_care_concerns -%}
+                  <div class="skincare-concerns">
+                    {{ block.settings.skin_care_concerns }}
+                  </div>
+                  {%- endif -%}
+                </div>
+                <div class="Grid__Cell 1/2--lap-and-up Text--alignCenter">
+                  {%- if block.settings.image1 != blank or block.settings.image2 != blank or block.settings.image3 != blank -%}
+                  <div class="before-after-gallery {% if block.settings.image1 != blank and block.settings.image2 != blank %}carousel{% endif %}" {% if block.settings.image1 != blank and block.settings.image2 != blank %} data-flickity='{"draggable": true, "prevNextButtons": false}'{% endif %}>
+                    {%- if block.settings.image1 != blank -%}
+                    <div class="carousel-cell"><img src="{{ block.settings.image1 | img_url : '553x' }}" alt="{{ block.settings.image1.alt }}"></div>
+                    {%- endif -%}
+                    {%- if block.settings.image2 != blank -%}
+                    <div class="carousel-cell"><img src="{{ block.settings.image2 | img_url : '553x' }}" alt="{{ block.settings.image2.alt }}"></div>
+                    {%- endif -%}
+                    {%- if block.settings.image3 != blank -%}
+                    <div class="carousel-cell"><img src="{{ block.settings.image3 | img_url : '553x' }}" alt="{{ block.settings.image3.alt }}"></div>
+                    {%- endif -%}
+                  </div>
+                  {%- endif -%}
+                  {%- if block.settings.btn_link2 != blank -%}
+                  <a class="view-more-link" href="{{block.settings.btn_link2}}" title="{{block.settings.btn_text2}}">{{block.settings.btn_text2}}</a>
+                  {%- endif -%}
+                </div>
+              </div>
+            {%- endcase -%}
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  
+  .flickity-enabled.is-draggable .flickity-viewport {min-height:611px !important;}
+  
+  section#{{section.id}} header{
+    background-color: {{ section.settings.header_bgcolor }};
+  }
+
+  section#{{section.id}} header .header_text_top{
+    max-width:  1175px;
+    margin: 0px auto;
+    padding: 7% 0;
+    color: #fff;
+    font-family: "Gotham-Light";
+    font-size:  25px;
+  }
+
+  .before-after-gallery{
+    max-width:  553px;
+    margin-bottom: 10px;
+  }
+
+  .before-after-gallery .carousel-cell {
+    width: 100%; /* full width */
+    /* center images in cells with flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Grid_Before_After{
+    margin-bottom: 80px;
+  }
+
+  .Grid_Before_After.even{
+    direction: rtl;
+  }
+
+  .Grid_Before_After.even .Grid__Cell{
+    text-align:  left;
+  }
+
+  .Grid_Before_After .Grid__Cell{
+    margin-bottom: 25px;
+  }
+
+  .Grid_Before_After .Grid__Cell .before-after-title h3{
+    font-family:  "Gotham-Black";
+    font-size: 30px;
+    line-height: 30px;
+    color:  #005A63;
+    margin-bottom:  20px;
+    text-transform: uppercase;
+  }
+
+  .Grid_Before_After .Grid__Cell a.book-now{
+    font-family: "Gotham-Bold";
+    font-size:  20px;
+    line-height: 20px;
+    color:  #005A63;
+    border:  1px solid #005A63;
+    display:  block;
+    padding: 10px 25px;
+    width: 300px;
+    max-width:  100%;
+    text-align: center;
+    margin-bottom:  35px;
+    border-radius: 22px;
+    text-transform:  uppercase;
+  }
+
+  .Grid_Before_After.even .Grid__Cell a.book-now{
+    display:  inline-block;
+  }
+
+  .Grid_Before_After .Grid__Cell a.book-now:hover{
+    background-color: #005A63;
+    color: #fff;
+  }
+
+  .Grid_Before_After .Grid__Cell .before-after-desc{
+    font-size: 18px;
+    margin-bottom:  23px;
+    color:  #2E2E2E;
+    font-family: "Gotham-Book";
+    direction: ltr;
+  }
+
+  .Grid_Before_After .before-after-title h3 span.light{
+    font-size: 20px;
+    font-family: "Gotham-Book";
+  }
+
+  .Grid_Before_After .before-after-title h3 span.bold{
+    font-size: 20px;
+    font-family: "Gotham-Bold";
+  }
+
+  .skincare-concerns h4{
+    font-family: "Gotham-Bold";
+    margin-bottom: 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color:  #115E67;
+  }
+
+  .skincare-concerns{
+    color:  #707070;
+    font-size: 18px;
+    direction: ltr;
+  }
+
+  .Grid_Before_After a.view-more-link{
+    font-family:  "Gotham-Bold";
+    font-size:  20px;
+    color: #005a62;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #B1B1B1;
+  }
+
+  .Grid_Before_After a.view-more-link:hover{
+    color:  #115E67;
+    border-color:  #115E67;
+  }
+
+  @media screen and (min-width: 1008px) and (max-width: 1139px) {
+    section#{{section.id}} header .header_text_top{
+      font-size:  35px !important;
+    }
+  }
+
+  @media screen and (min-width: 1008px) {
+    section#{{section.id}} header .header_text_top{
+      font-size:  45px;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .Grid_Before_After .Grid__Cell .before-after-title h3{
+      font-size:  24px;
+    }
+  }
+</style>
+{% schema %}
+{
+  "name": "VI Peel Chemical Peel",
+  "class": "page-chemical-peel",
+  "max_blocks": 10,
+  "settings": [
+    {
+      "type": "color",
+      "id": "header_bgcolor",
+      "label": "Background Color"
+    },
+    {
+      "type": "html",
+      "id": "header_text",
+      "label": "Header Text",
+      "default": "<p>Say something about...</p>"
+    }
+  ],
+  "blocks": [
+     {
+      "name": "Before and After",
+      "type": "before_and_after",
+      "settings":[
+        {
+          "type": "html",
+          "id": "text_heading",
+          "label": "Heading Text",
+          "default":"<h3>Header Title</h3>"
+        },
+        {
+          "type":"text",
+          "id": "btn_text1",
+          "label": "Button 1 Text"
+        },
+        {
+          "type":"url",
+          "id": "btn_link",
+          "label": "Button Link"
+        },
+        {
+          "type":"text",
+          "id": "btn_text2",
+          "label": "Button Below Image/Slider Text"
+        },
+        {
+          "type":"url",
+          "id": "btn_link2",
+          "label": "Button Below Image/Slider"
+        },
+        {
+          "type":"html",
+          "id":"description_text",
+          "label":"Description",
+          "default":"<p>Say something about this...</p>"
+        },
+        {
+          "type": "html",
+          "id": "skin_care_concerns",
+          "label": "Skin Care Concerns"
+        },
+        {
+          "type": "image_picker",
+          "id": "image1",
+          "label": "Image 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image2",
+          "label": "Image 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "image3",
+          "label": "Image 3"
+        }
+      ]
+     },
+     {
+       "name": "Text With Title",
+       "type": "text_with_title",
+       "settings": [
+         {
+           "type": "text",
+           "id": "title_text",
+           "label": "Heading"
+         },
+         {
+           "type": "html",
+           "id": "text_description",
+           "label": "Text Description"
+         }
+       ]
+     },
+     {
+        "name": "Column Text and Image",
+        "type": "column_text_image",
+        "settings":[
+          {
+            "type": "image_picker",
+            "id": "column_image",
+            "label": "Column Image"
+          },
+          {
+            "type": "text",
+            "id": "text_heading",
+            "label": "Header Text"
+          },
+          {
+            "type": "html",
+            "id": "text_description",
+            "label": "Description"
+          },
+          {
+            "type": "select",
+            "id": "text_align",
+            "label": "Text Alignment",
+            "options": [
+              {
+                "value":"left",
+                "label":"Left"
+              },
+              {
+                "value":"right",
+                "label":"Right"
+              }
+            ]
+          }
+        ]
+     }
+   ]
+}
+{% endschema %}

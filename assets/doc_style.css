@@ -1,0 +1,1343 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tt-breadcrumb {
+    display: none;
+}
+
+h1.tbsa,h2.tbsa,h3.tbsa,h4.tbsa,h5.tbsa,h6.tbsa {
+    font-family: "Gotham A", "Gotham B";
+    font-weight: 600 !important;
+    margin: 10px 0 !important;
+    line-height: 1 !important;
+    padding-bottom: 0px !important;
+}
+
+h1.tbsa {
+	font-size:42px !important;
+	text-align: left !important;
+	color: #025a63 !important;
+	margin: 20px 0 0 0 !important;
+}
+h2.tbsa {
+	font-size:30px !important;
+}
+h3.tbsa {
+	font-size:26px !important;
+	color: #025a63 !important;
+}
+h4.tbsa {
+	font-size:18px !important;
+	text-align: left !important;
+	color: #707070;  
+	text-transform: uppercase !important;
+	font-weight: 700 !important;
+	letter-spacing: 2px !important;
+}
+ 
+
+
+a img {
+	border:0;
+}
+.clear {
+	clear:both;
+}
+.half_page {
+	width:460px;
+	float:left;
+}
+
+.half_page.first {
+	margin-right:20px;
+}
+
+.selectors {
+	text-align:center;
+	margin:20px auto;
+	border-bottom:1px solid #323232;
+	max-width:960px;
+	padding: 0px 10px 10px 10px;
+}
+.selectors a {
+	font-family:'Dosis';
+	font-weight: normal;
+	text-decoration:none;
+	color:#323232;
+	font-size:20px;
+	line-height:30px;
+	margin:10px;
+}
+.selectors a.active,
+.selectors a:hover {
+	color:#1ab99b;
+}
+
+
+/* ------------------------ help --------------------------------- */
+
+
+
+.page_wrapper {
+	margin:0 auto; 
+	position:relative; 
+	padding:0;
+}
+
+.help {
+	width:960px;
+	text-align:left;
+	margin:0 auto;
+}
+
+.help p {
+	margin:10px 0;
+}
+
+.help h2{
+	margin:40px 0 20px 0;
+	font-size:32px;
+}
+
+.help ol {
+	padding-left:20px;
+}
+
+.big_image {
+	margin-left:-120px
+}
+
+pre {
+	border: solid 1px #dddddd;
+	font-size: 11px;
+	color: blue;
+	margin: 10px 0;
+	padding:10px;
+	background: #f2f2f2;
+}
+code {
+	font-size:1.2em;
+	color: #008099;
+}
+
+.red { color:#c30000;}
+.green {color:#1c9600;}
+.orange {color:#c17b00;}
+.purple {color:#b100c1;}
+.blue {color:#1f08c9;}
+
+table {
+	border: solid 1px #dddddd;
+	background:#fff;
+	margin:10px 0;
+}
+th {
+	padding:10px;
+    background: #dddddd;
+}
+
+td {
+	padding:10px;
+    background: #f2f2f2;
+}
+
+/* tbsa Page */
+
+.tbsaNotation {
+    margin: 50px;
+    font-size: 12px;
+}
+
+	.tbsaContainer {
+    	background-color: #fff;
+    	display: flex; 
+    	align-items: center;
+    	flex-direction: column;
+}
+
+	.tbsaSection1 {
+    	display: flex;
+    	margin: 40px 15%;
+    	justify-content: space-between;
+}
+
+	.tbsaS1c2 {
+    	margin: 0 5% 0 6%;
+}
+
+	.tbsaS1c1 {
+   		margin: 10px 0 0 0;
+}
+
+	.tbsaContent {
+    	text-align: left;
+    	font-size: 24px;
+    	font-weight: 400;
+    	margin: 20px 0 0 0;
+    	color: #000;
+    	font-family: "Gotham A", "Gotham B";
+      	max-width: 772px;
+        font-weight: 400;
+        line-height:1.2;
+}
+
+
+	.tbsaSection2 {
+    	background-color: #005A63;
+    	padding: 15px 15%;
+    	display: flex;
+}
+
+	.tbsaS2c2 {
+    	color: #fff;
+    	font-size: 40px;
+    	font-weight: 400;
+    	width: 80%;
+    	text-align: left;
+    	margin: 40px 0;
+    	font-family: "Gotham A", "Gotham B";
+    	line-height: 1.2;
+}
+
+.tbsaMarya {
+    text-align: left;
+    font-size: 24px;
+    padding: 20px 0 0 0;
+}
+
+	.tbsaS2c1 {
+    	margin: 0 5% 0 0;
+}
+
+	.tbsaS2c3 {
+    	margin: 0 0 3% 5%;
+    	align-items: flex-end;
+    	display: flex;
+}
+
+	.tbsaSection3 {
+    	display: flex;
+    	margin: 0px 15%;
+    	background-color: #f0f0f0;
+    	flex-direction: column;
+    	width: 100%;
+    	padding: 20px 0 20px 0;
+    	color: #000;
+    	font-family: "Gotham A", "Gotham B";
+    	text-align: center;
+     	line-height: 1.2;
+    	font-weight: 400;
+}
+
+	.tbsaS31 {
+    	display: flex;
+    	font-size: 30px;
+    	margin: 0 7%;
+    	justify-content: space-around;
+
+}
+
+	.tbsaS3c1 {
+		margin: 0;
+    	display: flex;
+    	align-items: center;
+    	justify-content: flex-end;
+    	width: 40%;
+    	padding: 0 20px 0 0;
+}
+
+	.tbsaS3c2 {
+ 		width: 20%;
+
+}
+
+	.tbsaS3c3 {
+    	width: 40%;
+    	display: flex;
+    	align-items: center;
+}
+
+	.tbsaBrown {
+    	font-size: 34px;
+    	color: #905224;
+    	text-transform: uppercase;
+}
+
+	hr, .hr {
+		border-top: 1px solid #848484;
+        margin: 20px 15% 60px 15%;
+    }
+
+
+	.tbsaContentc {
+    	color: #000;
+    	font-family: "Gotham A", "Gotham B";
+    	text-align: center;
+    	line-height: 1.2;
+    	font-weight: 400;
+    	font-size: 18px;
+    	max-width: 600px;
+    	margin: 0 auto;
+    	min-width: 860px;
+    	padding: 30px 0px;
+    	width: 100%;
+    	line-height: 1.5;
+}
+
+	.tbsaGreen {
+   	 	font-size: 42px;
+    	padding: 50px 0 0 0;
+    	color: #025a63;
+    	text-transform: uppercase;
+    	text-align: center;
+        letter-spacing: -2px !important;
+}
+
+    .tbsaButton {
+		border: 2px solid #905223;
+		color: #905223; 
+    	margin: 0 auto;
+    	min-width: 270px;
+    	max-width: 270px;
+    	padding: 10px 0px;
+    	width: 100%;
+    	font-size: 18px ;
+    	border-radius: 30px;
+}
+
+   .tbsaS32 {
+        margin: 0 0 40px 0;
+}
+
+   .tbsaButton:hover {
+        background-color: #fff;
+        cursor: pointer;
+}
+
+h4.tbsa {
+	font-size:16px !important;
+ 
+}
+
+.tbsaMobile {display: none;}
+
+
+/* Events Page */
+
+.eventsContainer {
+    font-family: "Gotham A", "Gotham B" !important;
+	display: flex;
+  	flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 40px 0 100px 0;
+}
+
+.eventsSectionOne {
+    display: flex;
+    margin: 0 auto 60px auto;
+    max-width: 1293px;
+    justify-content: center;
+ 
+}
+
+.eventsSectionTwo {
+    display: flex;
+    margin: auto;
+    max-width: 1293px;
+    justify-content: center;
+ 
+}
+
+.preHeader {
+    font-size: 21px;
+    color: #005A63;
+  	font-weight: 400;
+    padding: 0 0 5px 0;
+}
+
+.eventsHeader {
+    font-weight: 600;
+    font-size: 42px;
+    color: #005A63;
+    line-height: 1;
+    padding: 0 0 50px;
+}
+
+.eventsDate {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #707070;
+}
+
+hr.eventsBreak {
+    margin: 20px 0;
+    width: 60px;
+}
+
+.eventsContent {
+    color: #707070;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.eventsOpen {
+    color: #BEBEBE;
+    font-size: 14px;
+    padding: 30px 0 40px 0;
+  	font-weight: 600;   	
+ 	line-height: 1.2;
+
+}
+
+.eventsRegister {
+    width: 290px;
+    color: #fff;
+    border: 2px solid #005A63;
+    border-radius: 30px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #005A63;
+    padding: 8px 0;
+    text-transform: uppercase;
+ }
+
+.eventsRegister:hover {
+    color: #fff;
+    background-color: #005A63;
+  	cursor: pointer;
+ 
+}
+
+.eventsSOneColumnOne {
+    width: 18.948%;
+}
+
+.eventsSOneColumnTwo {
+    display: flex;
+    flex-direction: column;
+    width: 55.375%;
+    margin: 0 5.8778%;
+}
+
+.eventsSOneColumnThree {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 25.686%;
+}
+
+.eventsSTwoColumnOne {
+    width: 18.948%;
+}
+
+.eventsSTwoColumnTwo {
+    display: flex;
+    flex-direction: column;
+    width: 43.6194%;
+    margin: 0 5.8778%;
+}
+
+.eventsSTwoColumnThree {
+    display: flex;
+ 	background-color: #357c83;
+    flex-direction: column;
+    width: 25.686%;
+}
+
+.eventsSectionTwoContainer {
+    display: flex;
+    color: #fff;
+    
+}
+
+.eventsUpcoming {
+    font-size: 42px;
+    line-height: 1;
+    padding: 0px 0 16px 0;
+    border-bottom: 2px solid #fff;
+    margin: 60px 0 40px 0;
+    width: 100%;
+}
+ 
+.eventsImage {
+    margin: 0 0 -100px 0;
+}
+
+.eventsMonth {
+    font-size: 24px;
+    padding: 60px 0 0 0;
+    font-family: "Gotham Office A", "Gotham Office B";
+    font-weight: 700;
+}
+
+.eventsDetails {
+    font-size: 16px;
+    padding: 0 0 20px 0;
+}
+
+.eventsRules {
+    font-size: 12px;
+}
+
+.eventsSignupHeader {
+    font-size: 24px;
+    padding: 60px 0 5px 40px;
+    font-weight: 700;
+    font-family: "Gotham Office A", "Gotham Office B";
+}
+
+.eventsSignupDetails {
+    font-size: 16px;
+    width: 1200px;
+    padding: 0 0 0 40px;
+}
+
+.eventsSignupButton {
+    margin: 80px 0 0 40px;
+    font-size: 18px;
+    width: 250px;
+    border: 2px solid #fff;
+    border-radius: 28px;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.eventsSignupButton:hover {
+   color: #357c83;
+   background-color: #fff;
+   cursor: pointer;
+}
+  
+
+/* TBSA Mobile */
+
+@media screen and (max-width: 768px) {
+
+   .tbsaDesktop {display: none;}
+   .tbsaMobile {display: block;}
+   .tbsaS1c1.tbsaMobile {
+    display: flex;
+    justify-content: center;
+}
+  
+  .hr, hr {
+    border-top: 1px solid #848484;
+    margin: 20px 7% 60px 7%;
+}
+  
+  .tbsaSection1 {
+    margin: 0px 0 20px 0;
+}
+  .tbsaS1c2 {
+    margin: 0 5% 0 5%;
+}
+ 
+   h1.tbsa {
+    font-size: 29px!important;
+ 
+}
+   .tbsaS1c1 {
+    	margin: 40px 0 20px 0;
+}
+  
+  .tbsaSubheader {
+    padding: 10px 0 5px 0;
+    
+}
+  
+   .tbsaSection2 {
+    	margin: 0;
+    	flex-direction: column;
+    	padding: 30px 5%;
+}
+  .tbsaSection1 { width: 100%; flex-direction: column;}
+  
+   .tbsaS2c1 {	 
+    	display: flex;
+}	
+   .tbsaS2c2 {   
+    	font-size: 26px;  
+    	width: 100%;
+    	margin: 30px 0 10px 0;
+     	letter-spacing: -1.5px;
+    	line-height: 1.3;
+}
+	.tbsaMarya {
+    
+    font-size: 20px;
+  
+}
+  
+  
+   .tbsaS2c3 {
+    	display: flex;
+    	justify-content: flex-end;
+}	
+
+    .tbsaS3c1 {
+    	margin: 0;
+   		display: flex;
+   		align-items: center;
+   		justify-content: center;
+    	padding: 0;
+   	 	width: 100%;
+}
+
+    .tbsaS31 {
+        font-size: 23px;
+ 
+}
+
+    .tbsaS31 {
+    	 
+    	flex-direction: column;
+}
+    .tbsaS3c2 {
+    	width: 100%;
+
+}
+
+	.tbsaS3c3 {
+    	width: 100%;
+    	display: block;
+    	align-items: center;
+    	 
+}
+    .tbsaBrown {
+    	margin: 0 5%;
+        letter-spacing: -2px;
+}
+	.tbsaGreen {
+    	font-size: 38px;
+    	margin: 0px 5% 0 5%;
+    	text-align: left;
+    	letter-spacing: 1px;
+      	line-height: 1.2;
+}
+
+	.tbsaContentc {
+    	text-align: center;
+    	font-size: 18px;
+    	margin: 20px 5% 30px 5%;
+    	line-height: 1.5;
+    	min-width: auto;
+    	width: auto;
+    	padding: 0px 0;
+}
+
+	.tbsaContentm {
+    	text-align: left;
+   		font-size: 18px;
+    	margin: 20px 5% 60px 5%;
+    	line-height: 1.5;
+      	color: #000;
+}
+
+  
+.tbsaContent {
+
+    font-size: 20px;
+ 
+}
+ 
+      
+
+/* Events Mobile */
+  
+
+.eventsSectionOne {
+ 
+    max-width: 100%;
+    flex-direction: column;
+}  
+  
+.eventsSOneColumnOne {
+    width: 100%;
+}  
+  
+.eventsSOneColumnTwo {
+
+    width: 100%;
+    margin: 0;
+    padding: 0 30px;
+}  
+  
+.preHeader {
+    font-size: 16px;
+
+}  
+  
+.eventsHeader {
+    font-size: 25px;
+}  
+
+.eventsContent {
+
+    font-size: 18px;
+
+}  
+  
+.eventsRegister {
+    margin: 40px 0 0 0;
+}  
+  
+ 
+.eventsSOneColumnThree {
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+    padding: 0 30px;
+}  
+  
+.eventsLogo.tbsaMobile {
+    margin: 40px 0;
+}  
+
+.eventsSectionTwoContainer {
+    display: flex;
+    background: #005a63;
+    color: #fff;
+    flex-direction: column;
+}
+  
+.eventsSectionTwo {
+ 
+    max-width: 100%;
+    flex-direction: column;
+ }  
+  
+.eventsSTwoColumnOne {
+    width: 100%;
+    margin: 0;
+    padding: 0 30px;
+}  
+
+.eventsUpcoming {
+    font-size: 34px;
+    width: 70%;
+    margin: 40px 0 0px 0;
+
+}  
+  
+.eventsSTwoColumnTwo {
+    width: 100%;
+    margin: 0 0 40px 0;
+    padding: 0 30px;
+    
+}  
+  
+  
+.eventsSTwoColumnThree {
+    width: 100%;
+}  
+  
+.eventsSignupButton {
+    margin: 40px 30px;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}  
+  
+.eventsImage {
+    margin: 0 0 0 -2px;
+ 
+}  
+  
+.eventsContainer {
+    font-family: "Gotham A","Gotham B"!important;
+    margin: 40px 0 0 0;
+}  
+  
+  
+.eventsSignupHeader {
+
+    padding: 60px 0 5px 30px;
+
+} 
+  
+.eventsSignupDetails {
+
+    padding: 0 30px;
+    width: 100%;
+}  
+  
+  
+}
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  
+
+.eventsSectionOne {
+ 
+    max-width: 769px;
+     
+}  
+    
+  
+.preHeader {
+    font-size: 16px;
+
+}  
+  
+.eventsHeader {
+    font-size: 25px;
+}  
+
+.eventsContent {
+
+    font-size: 16px;
+
+}  
+  
+.eventsRegister {
+    margin: 40px 0 0 0;
+}  
+  
+ 
+.eventsSOneColumnThree {
+    justify-content: center;
+    
+    align-items: center;
+    margin: 0;
+ 
+}  
+  
+.eventsLogo.tbsaMobile {
+    margin: 40px 0;
+}  
+
+.eventsSectionTwoContainer {
+    display: flex;
+    
+    color: #fff;
+     
+}
+  
+.eventsSectionTwo {
+ 
+    max-width: 769px;
+     
+ }  
+ 
+
+.eventsUpcoming {
+    font-size: 24px;
+   
+ 
+
+}
+  
+.eventsSignupHeader {
+    font-size: 20px;
+}  
+  
+.eventsMonth {
+    font-size: 20px !important;
+    padding: 20px 0 0 0;  
+}  
+    
+  
+.eventsSignupButton {
+    margin: 40px 30px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}  
+  
+.eventsImage {
+    margin: 0 0 0 -2px;
+ 
+}  
+  
+.eventsContainer {
+    font-family: "Gotham A","Gotham B"!important;
+    margin: 40px 0 0 0;
+}  
+  
+  
+.eventsSignupDetails {
+
+     
+    width: 100%;
+}   
+  
+img {
+    width: 100%;
+}  
+  
+.eventsSTwoColumnTwo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 40px 4.8778%;
+
+}  
+
+  
+  
+}
+ 
+@media screen and (max-width: 1292px) and (min-width: 1025px) {
+  
+
+.eventsSectionOne {
+ 
+    max-width: 1025px;
+     
+}  
+    
+  
+.preHeader {
+    font-size: 16px;
+
+}  
+  
+.eventsHeader {
+    font-size: 25px;
+}  
+
+.eventsContent {
+
+    font-size: 16px;
+
+}  
+  
+.eventsRegister {
+    margin: 40px 0 0 0;
+}  
+  
+ 
+.eventsSOneColumnThree {
+    justify-content: center;
+    
+    align-items: center;
+    margin: 0;
+ 
+}  
+  
+.eventsLogo.tbsaMobile {
+    margin: 40px 0;
+}  
+
+.eventsSectionTwoContainer {
+    display: flex;
+    
+    color: #fff;
+     
+}
+  
+.eventsSectionTwo {
+ 
+    max-width: 1025px;
+     
+ }  
+ 
+
+.eventsUpcoming {
+    font-size: 24px;
+   
+ 
+
+}
+  
+.eventsSignupHeader {
+    font-size: 20px;
+}  
+  
+.eventsMonth {
+    font-size: 20px !important;
+    padding: 20px 0 0 0;  
+}  
+    
+  
+.eventsSignupButton {
+    margin: 40px 30px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}  
+  
+.eventsImage {
+    margin: 0 0 0 -2px;
+ 
+}  
+  
+.eventsContainer {
+    font-family: "Gotham A","Gotham B"!important;
+    margin: 40px 0 0 0;
+}  
+  
+  
+.eventsSignupDetails {
+
+     
+    width: 100%;
+}   
+  
+img {
+    width: 100%;
+}  
+  
+.eventsSTwoColumnTwo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 40px 4.8778%;
+
+}  
+
+  
+  
+}
+
+/* FAQ */
+
+
+.subscribe-page .main-heading {
+	background-color: #fff;
+	position: relative
+}
+
+@media only screen and (min-width: 1025px) {
+	.subscribe-page .main-heading h1 {
+		font-size: 62px
+	}
+}
+
+.subscribe-page .main-heading .page-title {
+	position: relative
+}
+
+.subscribe-page .main-heading .page-title:after {
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+	right: 0;
+	content: '';
+ 	width: 100%;
+	height: 13px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat
+}
+
+.subscribe-page .main-heading .subscribe-page-main-heading .btn-red {
+	padding-bottom: 10px
+}
+
+ 
+
+
+.subscribe-page .main-heading .subscribe-page__main-left-img {
+	position: absolute;
+	width: 30vw;
+	left: 0;
+}
+
+@media only screen and (max-width: 767px) {
+	.subscribe-page .main-heading .subscribe-page__main-left-img {
+		position: relative;
+		width: 100%;
+		left: 0px;
+		padding: 0 0px
+	}
+}
+
+.subscribe-page .main-heading .subscribe-page__main-right-img {
+	position: absolute;
+	top: 16%;
+	right: 8vw;
+	width: 22vw;
+    
+}
+
+@media only screen and (max-width: 767px) {
+	.subscribe-page .main-heading .subscribe-page__main-right-img {
+		position: relative;
+		bottom: 30%;
+		margin-top: -20%;
+		width: 100%;
+		top: 0;
+		right: 0;
+		transform: translateY(30%)
+	}
+}
+
+.subscribe-page a.btn.btn--secondary {
+	background: #125b64;
+	max-width: 190px;
+	margin: 0 auto;
+	min-width: 340px;
+	padding: 30px 0px;
+	width: 100%;
+    font-size: 34px !important;
+    border-radius: 0px;  
+}
+
+.subscribe-page .btn-red {
+	padding-top: 20px;
+	padding-bottom: 50px;
+    font-family: "Gotham A", "Gotham B";  
+  
+}
+
+@media only screen and (max-width: 767px) {
+	.subscribe-page .btn-red.mob-btn {
+		padding-top: 50px;
+		padding-bottom: 0
+	}
+}
+
+.thin-bar {
+  border-bottom: 2px solid rgba(255,255,255);
+  padding-top: 54px;
+}
+
+.thin-bar2 {
+  border-bottom: 2px solid rgba(255,255,255);
+  padding-top: 16px;
+}
+
+.subscribe-page .subscribe-page-title-wrapper.third-color {
+	background-color: #125b64;
+    padding: 35px 0 20px 0px;
+}
+
+.subscribe-page .subscribe-page__benefits-item {
+	position: relative
+}
+
+.subscribe-page .subscribe-page__benefits-item:after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: -10px;
+	right: 10px;
+	bottom: -10px;
+
+	border-radius: 10px
+}
+
+@media only screen and (min-width: 1025px) {
+	.subscribe-page .subscribe-page__benefits-item:after {
+		top: 20px;
+		left: -20px;
+		right: 20px;
+		bottom: -20px
+	}
+}
+
+.subscribe-page .how-subscriptions-work {
+	background: #f7f5fb
+}
+
+.subscribe-page .subscribe-page-faq {
+	background: #f7f5fb;
+	clear: both
+}
+
+.subscribe-page .subscribe-page-faq .subscribe-page-accordion {
+	max-width: 1260px;
+	padding: 50px 30px;
+	margin: 0 auto
+}
+
+.subscribe-page .subscribe-page-faq .accordionButton {
+	font-family: "Gotham A", "Gotham B";
+	color: #000;
+	font-size: 18px
+}
+
+.subscribe-page .subscribe-page-faq .accordionButton:after {
+	background-image: url(//cdn.shopify.com/s/files/1/0008/9260/0356/files/Add.png?v=1583326121);
+	width: 20px;
+	height: 20px;
+	background-size: cover
+}
+
+@media only screen and (min-width: 1025px) {
+	.subscribe-page .subscribe-page-faq .accordionButton:after {
+		top: 28px
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.subscribe-page .subscribe-page-faq .accordionButton:after {
+		top: 20px
+	}
+}
+
+.subscribe-page .subscribe-page-faq .accordionButton.is-open:after {
+	background-image: url(//cdn.shopify.com/s/files/1/0008/9260/0356/files/Minus_ac3a611f-a41b-4b28-b0e7-a25dfdad391c.png?v=1583326329);
+	background-repeat: none
+}
+
+.subscribe-page .subscribe-page__bake-with .subscribe-info-wrapper--primary-color {
+	align-items: center
+}
+
+.subscribe-page .subscribe-page__bake-with .subscribe-info-wrapper--primary-color .info-body-wrapper {
+	font-weight: bold;
+	flex: 0.50 !important
+}
+
+@media only screen and (min-width: 1025px) {
+	.subscribe-page .subscribe-page__bake-with .subscribe-info-wrapper--primary-color .info-body-wrapper {
+		padding-right: 70px
+	}
+}
+
+.subscribe-page .subscribe-page__collection {
+	max-width: 1200px;
+	background: #f7f5fb;
+	padding: 30px 30px 0px 30px;
+	margin: 0 auto
+}
+
+.subscribe-page .subscribe-page__collection .collection-list {
+	padding-bottom: 0px
+}
+
+.product-btn input.rc_radio {
+	display: none
+}
+
+.rc-add-to {
+	background: #007672 !important
+}
+
+.rc-add-to:hover {
+	background: #ff5555 !important
+}
+
+.template-product .recommendify-panel-body {
+	display: flex
+}
+
+.template-product .recommendify-panel-body .recommendify_col {
+	margin: 0 5px !important;
+	width: calc(25% - 10px);
+	padding-top: 30px
+}
+
+@media only screen and (min-width: 1025px) {
+	.template-article .large-up--eight-tenths {
+		margin-left: 10%
+	}
+}
+
+.template-article .blog-article__featured-image {
+	width: 100%
+}
+
+.accordionButton {
+	transition: all ease-in-out 0.2s;
+	font-family: "Gotham A", "Gotham B";
+    color: #000000;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    position: relative;
+    cursor: pointer;
+    margin-top: -1px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 29px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.accordionButton {
+		padding: 15px;
+		padding-right: 45px
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	.accordionButton {
+		padding: 22px;
+		padding-right: 55px
+	}
+}
+
+.accordionButton:after {
+	content: '';
+	background-image: url(//cdn.shopify.com/s/files/1/0064/3003/1908/files/icon-arrow-down.svg?v=1629752357);
+	display: block;
+	height: 6px;
+	width: 10px;
+	position: absolute
+}
+
+@media only screen and (max-width: 1024px) {
+	.accordionButton:after {
+		right: 15px;
+		top: 25px
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	.accordionButton:after {
+		right: 25px;
+		top: 35px
+	}
+}
+
+.accordionButton:hover {
+	background-color: #f5f5f5
+}
+
+.accordionButton.is-open {
+	border-bottom: 1px solid transparent
+}
+
+.accordionButton.is-open:after {
+	transform: rotate(180deg)
+}
+
+.accordionContent {
+	display: none
+}
+
+@media only screen and (max-width: 1024px) {
+	.accordionContent {
+		padding: 5px 15px 15px
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	.accordionContent {
+		padding: 5px 25px 25px
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.accordionContent p,
+	.accordionContent ul,
+	.accordionContent ol {
+		margin-top: 5px;
+		margin-bottom: 8px
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	.accordionContent p,
+	.accordionContent ul,
+	.accordionContent ol {
+		margin-top: 12px;
+		margin-bottom: 15px
+	}
+}

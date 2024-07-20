@@ -1,0 +1,108 @@
+{
+  "sections": {
+    "main": {
+      "type": "product-spf-50-daily-uv-defense",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
+          }
+        },
+        "9de53771-cd77-4274-bf37-46f2def00953": {
+          "type": "subscription_recharge",
+          "settings": {}
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_label": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "9de53771-cd77-4274-bf37-46f2def00953",
+        "quantity_selector",
+        "buy_buttons",
+        "description"
+      ],
+      "settings": {
+        "image_size": "large",
+        "stack_images": false,
+        "show_thumbnails": true,
+        "enable_image_zoom": true,
+        "enable_video_looping": false
+      }
+    },
+    "frequently-bought-together": {
+      "type": "frequently-bought-together",
+      "settings": {
+        "title": "Feature's Title"
+      }
+    },
+    "products-features-and-benefits": {
+      "type": "products-features-and-benefits",
+      "blocks": {
+        "ea5a27e9-dc1a-457e-b353-6e7ee21f2bf5": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "10% THD Ascorbate (Vitamin C)",
+            "features_desc": "A stable and more efficacious form of Vitamin C that enhances\ncollagen production, defends against free radical damage,\nand brightens for a more radiant complexion. Also helps\nshield the skin from UVA\/UVB damage.\""
+          }
+        },
+        "5643861e-e876-4293-a275-4a6e479ef791": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Cyclopentasiloxane",
+            "features_desc": "Fills fine lines and wrinkles for a visible plumping effect."
+          }
+        }
+      },
+      "block_order": [
+        "ea5a27e9-dc1a-457e-b353-6e7ee21f2bf5",
+        "5643861e-e876-4293-a275-4a6e479ef791"
+      ],
+      "settings": {
+        "title": "Features\/Benefits",
+        "ingredients": "Cyclopentasiloxane, Tetrahexyldecyl Ascorbate (Vitamin C), Dimethicone\/Vinyl Dimethicone Crosspolymer"
+      }
+    },
+    "product-howto-video": {
+      "type": "product-howto-video",
+      "settings": {
+        "title": "How To Use",
+        "description": "<p>Cleanse the skin thoroughly with VI Derm Beauty Gentle Purifying Cleanser. Massage one to two pumps of Vitamin C Brightening Concentrate onto the face and neck. Use AM and PM.<br\/><br\/>When using with VI Derm Beauty Retinol Age-Defying Treatment Moisturizer, apply Vitamin C Brightening Concentrate BEFORE Moisturizer.<\/p>",
+        "image": "shopify:\/\/shop_images\/img-bg-video-how-to-use.png",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
+    },
+    "prod-ryviu": {
+      "type": "prod-ryviu",
+      "settings": {
+        "title": "Feature's Title"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "frequently-bought-together",
+    "products-features-and-benefits",
+    "product-howto-video",
+    "prod-ryviu"
+  ]
+}

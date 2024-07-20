@@ -1,0 +1,180 @@
+{
+  "sections": {
+    "main": {
+      "type": "dark-spot-section",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_label": true
+          }
+        },
+        "recharge_subscriptions_subscription_widget_CPqMYt": {
+          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "bd06880e-a2b2-4211-ba11-d1a078d030b2": {
+          "type": "shopify:\/\/apps\/afterpay-on-site-messaging\/blocks\/payments-messaging\/f45a5524-d177-4475-bf59-281efd2215a8",
+          "settings": {
+            "text_align": "inherit",
+            "margin_top": 16,
+            "margin_bottom": 16,
+            "color": "",
+            "size": "md",
+            "intro_text": "or",
+            "show_interest_free": true,
+            "payment_amount_is_bold": true,
+            "show_with": true,
+            "logo_type": "badge",
+            "logo_theme": "black-on-mint",
+            "modal_link_style": "circled-info-icon",
+            "modal_theme": "mint",
+            "breakpoint": 749,
+            "text_align_mobile": "inherit",
+            "margin_top_mobile": 16,
+            "margin_bottom_mobile": 16,
+            "show_lower_limit": true,
+            "show_upper_limit": true,
+            "show_if_outside_limits": true,
+            "product": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "quantity_selector",
+        "recharge_subscriptions_subscription_widget_CPqMYt",
+        "bd06880e-a2b2-4211-ba11-d1a078d030b2",
+        "buy_buttons",
+        "description"
+      ],
+      "settings": {
+        "image_size": "large",
+        "stack_images": false,
+        "show_thumbnails": true,
+        "enable_image_zoom": true,
+        "enable_video_looping": false
+      }
+    },
+    "1636765828e86030df": {
+      "type": "frequently-bought-together",
+      "settings": {
+        "title": "Feature's Title"
+      }
+    },
+    "1636656216df0a1b19": {
+      "type": "products-features-and-benefits",
+      "blocks": {
+        "1636656216df0a1b19-0": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Aloe Vera",
+            "features_desc": "Soothes, softens, hydrates, prevents Trans-Epidermal Water Loss."
+          }
+        },
+        "1636656216df0a1b19-1": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Antioxidants",
+            "features_desc": "Proprietary blend that helps protect skin from environmental damage."
+          }
+        },
+        "1636656216df0a1b19-2": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Willow Bark Extract",
+            "features_desc": "Buffs away dead skin cells, calms inflammation, and soothes redness for a clearer complexion."
+          }
+        },
+        "c8b6f18e-c4fa-49fe-9105-ec6cd5a297a6": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Tocopheryl Acetate",
+            "features_desc": "Potent antioxidant that has the ability to protect and repair skin."
+          }
+        }
+      },
+      "block_order": [
+        "1636656216df0a1b19-0",
+        "1636656216df0a1b19-1",
+        "1636656216df0a1b19-2",
+        "c8b6f18e-c4fa-49fe-9105-ec6cd5a297a6"
+      ],
+      "settings": {
+        "title": "Features\/Benefits",
+        "ingredients": "Purified Water (Aqua), Disodium Laureth Sulfosuccinate, Cocamidopropyl Betaine, Decyl Glucoside, Sodium Cocoyl Isethionate, Glycerin, PEG-120 Methyl Glucose Dioleate, Aloe Barbadensis (Leaf) Juice, Tocopheryl Acetate, Panthenol, Allantoin, Salix Alba (Willow) Bark Extract, Camellia Sinensis Leaf Extract, Saccharum Officinarium (Sugarcane) Extract, Pyrus Malus (Apple) Fruit Extract, Citrus Limon (Lemon) Fruit Extract, Citrus Aurantium Dulcis (Orange) Peel Extract, \nCitrus Paradisi (Grapefruit) Fruit Extract, Caprylic\/Capric Triglyceride, Polyquaternium-10, Butylene Glycol, Dimethicone PEG-7 Phosphate,\nPhenoxyethanol, Tween 20, Caprylyl Glycol, Sorbic Acid."
+      }
+    },
+    "16366983546db3bfbd": {
+      "type": "product-howto-video",
+      "settings": {
+        "title": "How To Use",
+        "description": "<p>Apply cleanser to damp face and neck, gently massage into skin and rinse completely. Use daily, morning and night, or anytime your skin needs refreshing.  Follow with VI Derm Beauty Treatment Products.<\/p>",
+        "image": "shopify:\/\/shop_images\/img-bg-video-how-to-use.png",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
+    },
+    "132eb5be-9c7f-4542-9611-d3d093abf3c6": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<style type=\"text\/css\">\n\t.static-sec {width: 100%; padding: 20px 0 40px 0;}\n\t.header-cont {padding: 0; margin:  0 auto 2rem auto; max-width: 1600px;}\n\t.header-cont h1 {font-family: lust; color: #0f5e67; font-size: 2.5rem !important; text-transform: none !important; letter-spacing:  0 !important;}\n\t.static-cont {display: flex; padding: 0; margin:  0 auto; max-width: 1600px; justify-content: space-between; flex-wrap: wrap;}\n\t.ba-stat-cont {width: 30%;}\n\t.ba-stat-cont .ba-slide {margin:  1rem 0 .5rem 0 !important; max-height: 526px; overflow: hidden;}\n\t.ba-stat-cont p {font-weight:  700 !important;}\n\t.statements-cont {margin:  0 auto 2rem auto; width: 100%; margin-top: 2.5rem;}\n\t.statements-cont h3 {font-size: 1.2rem !important; color: #333; margin:  0 0 .5rem 0; text-transform: none !important;}\n\n\t@media only screen and (max-width: 900px){\n\t\t.static-sec {width: 100%; padding: 0px 0 0px 0;}\n\t\t.ba-stat-cont {width: 100%;}\n\t\t.statements-cont h3 {margin:  0 0 1.5rem 0;}\n\t}\n\n<\/style>\n\n<div class=\"static-sec\">\n\t<div class=\"header-cont\">\n\t\t<h1>Clinical Formula For Professional Results<\/h1>\n\t<\/div>\n\t<div class=\"static-cont\">\n\n\t\t<div class=\"ba-stat-cont\">\n\t\t\t<div class=\"elfsight-sapp-06748be5-364a-49f1-a9b7-f20ca2d3bdf1 ba-slide\"><\/div>\n\t\t\t<p>Fades Sun Damage<\/p>\n\t\t<\/div>\n\n\t\t<div class=\"ba-stat-cont\">\n\t\t\t<div class=\"elfsight-sapp-40f72d0f-acb6-4b24-bb38-54557c0aa833 ba-slide\"><\/div>\n\t\t\t<p>Evens Skin Tone<\/p>\n\t\t<\/div>\n\n\t\t<div class=\"ba-stat-cont\">\n\t\t\t<div class=\"elfsight-sapp-a70770c8-ebed-4580-8382-8e4b1db20a5d ba-slide\"><\/div>\n\t\t\t<p>Lifts Dark Spots<\/p>\n\t\t<\/div>\n\n\t\t<div class=\"statements-cont\">\n\t\t\t<h3>86% saw significant results<\/h3>\n\t\t\t<h3>86% saw brighter skin and 83% saw more even skin tone and texture<\/h3>\n\t\t\t<h3>Nearly 80% saw improvement in the appearance of dark spots<\/h3>\n\t\t<\/div>\n\n\t<\/div>\n<\/div>"
+      }
+    },
+    "b7c905fc-c4f2-4efc-91ac-6dc254b7f1d4": {
+      "type": "before-after-tripple",
+      "disabled": true,
+      "settings": {
+        "bg_color": "#f2f8f7",
+        "subheading": "Sub-heading",
+        "title": "Title",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "title_name": "Title",
+        "image_before-one": "shopify:\/\/shop_images\/1Evens-Skin-Tone-BEFORE.jpg",
+        "image_after-one": "shopify:\/\/shop_images\/1Evens-Skin-Tone-AFTER.jpg",
+        "image_before-two": "shopify:\/\/shop_images\/2Evens-Skin-Tone-BEFORE.jpg",
+        "image_after-two": "shopify:\/\/shop_images\/2Evens-Skin-Tone-AFTER.jpg",
+        "image_before-three": "shopify:\/\/shop_images\/3Fades-Sun-Damage-BEFORE.jpg",
+        "image_after-three": "shopify:\/\/shop_images\/3Fades-Sun-Damage-AFTER.jpg",
+        "image_position": "right",
+        "bottom_text": "Say something about the picture"
+      }
+    },
+    "16367689537e72c5c5": {
+      "type": "trust-pilot",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "1636765828e86030df",
+    "1636656216df0a1b19",
+    "16366983546db3bfbd",
+    "132eb5be-9c7f-4542-9611-d3d093abf3c6",
+    "b7c905fc-c4f2-4efc-91ac-6dc254b7f1d4",
+    "16367689537e72c5c5"
+  ]
+}

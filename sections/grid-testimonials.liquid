@@ -1,0 +1,123 @@
+<section class="Section Section--spacingNormal" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="testimonials">
+  {%- if section.settings.title != blank -%}
+  <header class="SectionHeader SectionHeader--center features--heading-large">
+    <div class="Container">
+        <h3 class="SectionHeader__SubHeading Heading u-h1">{{section.settings.title}}</h3>
+    </div>
+  </header>
+  {%- endif -%}
+  <div class="Container gridt-wrapper">
+    {% assign count = 1 %}
+
+    <div class="gridt-container">
+      {%- for block in section.blocks -%}
+        {%- if forloop.first == true or count == 1 -%}
+        <div class="Grid Grid_Testimonials">
+        {%- endif -%}
+          <div class="Grid__Cell 1/4--tablet-and-up">
+            {%- if block.settings.image != blank -%}
+              <div class="testi-profilepic">
+                {%- if block.settings.testimonial_url != blank -%}
+                <a href="{{block.settings.testimonial_url}}" title="View" target="_blank">
+                {%- endif -%}
+                <img src="{{ block.settings.image | img_url : '390x' }}" alt="{{ block.settings.image }}">
+                {%- if block.settings.testimonial_url != blank -%}
+                </a>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+            {%- if block.settings.username != blank -%}
+            <div class="testi-pfofileuser">
+            {%- if block.settings.testimonial_url != blank -%}
+              <a href="{{block.settings.testimonial_url}}" title="View" target="_blank">
+            {%- endif -%}
+              {{block.settings.username}}
+            {%- if block.settings.testimonial_url != blank -%}
+            </a>
+            {%- endif -%}  
+            </div>
+            {%- endif -%}
+          </div>
+        {%- if forloop.last == true or count == 4 -%}
+        {% assign count = 1 %}
+        </div>
+        {%- else -%}
+        {% assign count = count | plus: 1 %}
+        {%- endif -%}
+
+      {%- endfor -%}
+    </div>
+
+  </div>
+</section>
+
+<style>
+  #section-{{ section.id }} {
+   
+  }
+
+  #section-{{ section.id }} .flickity-page-dots .dot:not(.is-selected) {
+    
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Grid Testimonials",
+  "class": "shopify-section--grid-testimonials",
+  "max_blocks": 12,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Testimonials's Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "390 x 390px .jpg recommended"
+        },
+        {
+          "type": "text",
+          "id": "username",
+          "label": "Name"
+        },
+        {
+          "type": "url",
+          "id": "testimonial_url",
+          "label": "Testimonial Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Text",
+      "name": "Grid Testimonials",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "testimonial",
+          "settings": {}
+        },
+        {
+          "type": "testimonial",
+          "settings": {}
+        },
+        {
+          "type": "testimonial",
+          "settings": {}
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,397 @@
+<!doctype html>
+
+<html class="no-js" lang="{{ request.locale.iso_code }}">
+  <head>
+    
+    <!-- Global site tag (gtag.js) - Google Ads: 656714288 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-656714288"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-656714288');
+    </script>
+    
+    
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="{{ settings.accent_color }}">
+    <meta name="facebook-domain-verification" content="bmt9wjgwzcbrt4mj3vfyqiixr6gg28" />
+
+    <!-- Facebook Verification -->
+    <meta name="facebook-domain-verification" content="o33jponfdvw5fgayvfzo2lvslp0omq" />
+
+
+    <title>
+      {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+    </title>
+
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+
+    <link rel="canonical" href="{{ canonical_url }}">
+    
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+    crossorigin="anonymous"></script>
+
+    {%- if settings.favicon -%}
+      <link rel="shortcut icon" href="{{ settings.favicon | img_url: '96x' }}" type="image/png">
+    {%- endif -%}
+
+    {% render 'social-meta-tags' %}
+    {% render 'css-variables' %}
+
+    {{ content_for_header }}
+
+    <link rel="stylesheet" href="{{ 'twentytwenty.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'custom.css' | asset_url }}">
+
+    <script>
+      {%- if request.page_type == 'policy' -%}
+        document.addEventListener('DOMContentLoaded', function() {
+          document.querySelector('.shopify-policy__title').classList.add('PageHeader', 'Heading', 'u-h1');
+          document.querySelector('.shopify-policy__body').classList.add('Rte');
+        });
+      {%- endif -%}
+
+      // This allows to expose several variables to the global scope, to be used in scripts
+      window.theme = {
+        pageType: {{ request.page_type | json }},
+        moneyFormat: {{ shop.money_format | json }},
+        moneyWithCurrencyFormat: {{ shop.money_with_currency_format | json }},
+        currencyCodeEnabled: {{ settings.currency_code_enabled | json }},
+        productImageSize: {{ settings.product_image_size | json }},
+        searchMode: {{ settings.search_mode | json }},
+        showPageTransition: {{ settings.show_page_transition | json }},
+        showElementStaggering: {{ settings.show_element_staggering | json }},
+        showImageZooming: {{ settings.show_image_zooming | json }}
+      };
+
+      window.routes = {
+        rootUrl: {{ routes.root_url | json }},
+        rootUrlWithoutSlash: {% if routes.root_url == '/' %}''{% else %}{{ routes.root_url | json }}{% endif %},
+        cartUrl: {{ routes.cart_url | json }},
+        cartAddUrl: {{ routes.cart_add_url | json }},
+        cartChangeUrl: {{ routes.cart_change_url | json }},
+        searchUrl: {{ routes.search_url | json }},
+        productRecommendationsUrl: {{ routes.product_recommendations_url | json }}
+      };
+
+      window.languages = {
+        cartAddNote: {{ 'cart.general.add_note' | t | json }},
+        cartEditNote: {{ 'cart.general.edit_note' | t | json }},
+        productImageLoadingError: {{ 'product.slideshow.image_loading_error' | t | json }},
+        productFormAddToCart: {% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t | json }}{% else %}{{ 'product.form.add_to_cart' | t | json }}{% endif %},
+        productFormUnavailable: {{ 'product.form.unavailable' | t | json }},
+        productFormSoldOut: {{ 'product.form.sold_out' | t | json }},
+        shippingEstimatorOneResult: {{ 'cart.shipping_estimator.one_result_title' | t | json }},
+        shippingEstimatorMoreResults: {{ 'cart.shipping_estimator.more_results_title' | t | json }},
+        shippingEstimatorNoResults: {{ 'cart.shipping_estimator.no_results_title' | t | json }}
+      };
+
+      window.lazySizesConfig = {
+        loadHidden: false,
+        hFac: 0.5,
+        expFactor: 2,
+        ricTimeout: 150,
+        lazyClass: 'Image--lazyLoad',
+        loadingClass: 'Image--lazyLoading',
+        loadedClass: 'Image--lazyLoaded'
+      };
+
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+      document.documentElement.style.setProperty('--window-height', window.innerHeight + 'px');
+
+      // We do a quick detection of some features (we could use Modernizr but for so little...)
+      (function() {
+        document.documentElement.className += ((window.CSS && window.CSS.supports('(position: sticky) or (position: -webkit-sticky)')) ? ' supports-sticky' : ' no-supports-sticky');
+        document.documentElement.className += (window.matchMedia('(-moz-touch-enabled: 1), (hover: none)')).matches ? ' no-supports-hover' : ' supports-hover';
+      }());
+
+      {% if request.page_type == 'captcha' %}
+        setTimeout(function() {
+          window.scrollTo(0,0);
+        }, 250)
+      {% endif %}
+    </script>
+
+    <script src="{{ 'lazysizes.min.js' | asset_url }}" async></script>
+
+    {%- if template == 'customers/addresses' -%}
+      <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer></script>
+      <script src="{{ 'customer_area.js' | shopify_asset_url }}" defer></script>
+    {%- endif -%}
+
+    <script src="{{ 'libs.min.js' | asset_url }}" defer></script>
+    <script src="{{ 'theme.js' | asset_url }}" defer></script>
+    <script src="{{ 'jquery-3.6.0.min.js' | asset_url }}" defer></script>
+    <script src="{{ 'jquery.event.move.js' | asset_url }}" defer></script>
+    <script src="{{ 'jquery.twentytwenty.js' | asset_url }}" defer></script>
+    <script src="{{ 'jquery.simpleLoadMore.min.js' | asset_url }}" defer></script>
+    <script src="{{ 'custom.js' | asset_url }}" defer></script>
+
+    {{ shop.metafields.okendo.ReviewsWidgetStyleTag }}
+    {{ shop.metafields.okendo.StyleCustomizations }}
+    
+    <!-- Zendesk Script -->
+    <script id="ze-snippet"
+        src="https://static.zdassets.com/ekr/snippet.js?key=0f8b614a-e77a-4b16-a5c2-e5b4409f7197"> 
+	</script>
+    <!-- End Zendesk Script -->
+
+    <!-- RYVIU APP :: Settings global --> 
+    <script> var ryviu_global_settings = {{shop.metafields.ryviu.user_settings }};</script>
+    <!-- RYVIU APP -->
+
+    <script>
+      (function () {
+        window.onpageshow = function() {
+          if (window.theme.showPageTransition) {
+            var pageTransition = document.querySelector('.PageTransition');
+
+            if (pageTransition) {
+              pageTransition.style.visibility = 'visible';
+              pageTransition.style.opacity = '0';
+            }
+          }
+
+          // When the page is loaded from the cache, we have to reload the cart content
+          document.documentElement.dispatchEvent(new CustomEvent('cart:refresh', {
+            bubbles: true
+          }));
+        };
+      })();
+    </script>
+
+    {% render 'microdata-schema' %}
+      {% include 'mw_NCP_helper' %}
+    
+    
+    <!-- Stack Adapt -->
+    <script>!function(s,a,e,v,n,t,z){if(s.saq)return;n=s.saq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!s._saq)s._saq=n;n.push=n;n.loaded=!0;n.version='1.0';n.queue=[];t=a.createElement(e);t.async=!0;t.src=v;z=a.getElementsByTagName(e)[0];z.parentNode.insertBefore(t,z)}(window,document,'script','https://tags.srv.stackadapt.com/events.js');saq('ts', 'mkMBerfdbXj3HRFBSwswsQ');</script>
+ 
+    <!-- Facebook Meta Pixel -->
+    <!-- Meta Pixel Code -->
+      <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '2716762251924950');
+      fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2716762251924950&ev=PageView&noscript=1"
+      /></noscript>
+    <!-- End Meta Pixel Code -->
+  
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KXJFN5Z');</script>
+    <!-- End Google Tag Manager -->
+
+    
+    <!-- Google Analytics tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T5BRX1VMSR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-T5BRX1VMSR');
+    </script>
+  
+  
+  <script id="sg-js-global-vars">
+                        sgGlobalVars = {{ shop.metafields['sg-cc']['sg-metafield'] }};
+                        if(sgGlobalVars) {
+                            sgGlobalVars.cart = {{ cart | json }};
+                            sgGlobalVars.currentProduct = {{ product | json }};
+                            sgGlobalVars.isAdmin = {% if content_for_header contains 'adminBarInjector' or content_for_header contains 'previewBarInjector' %}true{% else %}false{% endif %};
+                        }
+                    </script>
+
+
+    <!-- TrustBox script -->
+<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+<!-- End TrustBox script -->
+
+  
+  {% include 'sca.storelocator' %}
+</head>
+
+  {%- capture classes -%}features--heading-{{ settings.heading_size }}{%- endcapture -%}
+
+  {%- if settings.uppercase_heading -%}
+    {%- assign classes = classes | append: ' features--heading-uppercase' -%}
+  {%- endif -%}
+
+  {%- if settings.product_show_price_on_hover -%}
+    {%- assign classes = classes | append: ' features--show-price-on-hover' -%}
+  {%- endif -%}
+
+  {%- if settings.show_page_transition -%}
+    {%- assign classes = classes | append: ' features--show-page-transition' -%}
+  {%- endif -%}
+
+  {%- if settings.show_button_transition -%}
+    {%- assign classes = classes | append: ' features--show-button-transition' -%}
+  {%- endif -%}
+
+  {%- if settings.show_image_zooming -%}
+    {%- assign classes = classes | append: ' features--show-image-zooming' -%}
+  {%- endif -%}
+
+  {%- if settings.show_element_staggering -%}
+    {%- assign classes = classes | append: ' features--show-element-staggering' -%}
+  {%- endif -%}
+
+  <body class="prestige--v4 {{ classes }} {% if template.directory %}template-{{ template.directory | handle }}{% endif %} template-{{ template.name | handle }}">
+    
+    <!-- GK Tag Manager Test -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KXJFN5Z"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    
+    
+    {%- comment -%}Common SVG definitions that we are re-using in several places{%- endcomment -%}
+    <svg class="u-visually-hidden">
+      <linearGradient id="rating-star-gradient-half">
+        <stop offset="50%" stop-color="var(--product-star-rating)" />
+        <stop offset="50%" stop-color="var(--text-color-light)" />
+      </linearGradient>
+    </svg>
+
+    <a class="PageSkipLink u-visually-hidden" href="#main">{{ 'header.navigation.skip_to_content' | t }}</a>
+    <span class="LoadingBar"></span>
+    <div class="PageOverlay"></div>
+
+    {%- if settings.show_page_transition -%}
+      <div class="PageTransition"></div>
+    {%- endif -%}
+
+    {% section 'popup' %}
+    {% section 'sidebar-menu' %}
+
+    {%- if template != 'cart' -%}
+      {% render 'cart-drawer' %}
+    {%- endif -%}
+
+    <div class="PageContainer">
+      {% section 'announcement' %}
+      {% section 'header' %}
+
+      <main id="main" role="main">
+        {{ content_for_layout }}
+      </main>
+
+      {% unless template contains 'product' %}
+      {% section 'footer-testimonials' %}
+
+      {% section 'footer-faq' %}
+      {% endunless %}
+
+      {% section 'footer' %}
+    </div>
+
+    
+
+    {% include 'subscription-theme-footer' %}
+
+    <style>
+        .prod-box {max-height: 2.5rem; overflow:hidden; cursor:pointer !important; pointer-events: auto;}
+/*         .skincare-box {max-height: 9999px;}
+        .skincare-box h3 {color: #115e67;} */
+        .prod-box:hover h3 {color:#115e67 !important;}
+      </style>
+
+   <script>
+     
+        let prodBox = document.querySelectorAll('.prod-box');
+        let prodTitle = document.querySelectorAll('.prod-box h3');
+     
+        const closeBox = () => {
+          for (i=0; i < prodBox.length; i++){
+            prodBox[i].style.maxHeight = "2.5rem";
+            prodTitle[i].style.color = '#5c5c5c';
+          }
+            };
+     
+        const prodClick = (n) => {
+          if (prodBox[n].style.maxHeight == "9999px") {
+            closeBox();
+          }
+          else {
+            closeBox();
+            prodBox[n].style.maxHeight = "9999px";};
+            prodTitle[n].style.color = '#115e67';
+        };
+
+      </script>
+
+          {% if product %}
+<script>
+window.addEventListener('load', function() {
+var _learnq = window._learnq || [];
+function addedToCart() {
+fetch(`${window.location.origin}/cart.js`)
+.then(res => res.clone().json().then(data => {
+var cart = {
+total_price: data.total_price/100,
+$value: data.total_price/100,
+total_discount: data.total_discount,
+original_total_price: data.original_total_price/100,
+items: data.items
+}
+if (item !== 'undefined') {
+cart = Object.assign(cart, item)
+}
+if (klAjax) {
+_learnq.push(['track', 'Added to Cart', cart]);
+klAjax = false;
+}
+}))
+};
+(function (ns, fetch) {
+ns.fetch = function() {
+const response = fetch.apply(this, arguments);
+response.then(res => {
+if (`${window.location.origin}/cart/add.js`
+.includes(res.url)) {
+addedToCart()
+}
+});
+return response
+}
+}(window, window.fetch));
+var klAjax = true;
+var atcButtons = document.querySelectorAll("form[action*='/cart/add'] button[type='submit']");
+for (var i = 0; i < atcButtons.length; i++) {
+atcButtons[i].addEventListener("click", function() {
+if (klAjax) {
+_learnq.push(['track', 'Added to Cart', item]);
+klAjax = false;
+}
+})
+}
+});
+</script>
+{% endif %}
+
+  </body>
+</html>

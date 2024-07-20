@@ -1,0 +1,20 @@
+{
+  "sections": {
+    "1658941972014499b0": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<style>\n.shopify-section--bordered>.Section--spacingNormal {\n    padding: 60px 0 0 0;\n}\n<\/style>\n<p>This is for consumers, if you are a professional click <a href=\"https:\/\/pro.vipeel.com\/\">here<\/a><\/p>"
+      }
+    },
+    "main": {
+      "type": "main-customers-login",
+      "settings": {}
+    }
+  },
+  "order": [
+    "1658941972014499b0",
+    "main"
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "image_PtbNex": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VI_Pride-Month-Banner_2024-Final2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/VI_Pride-Month-Banner_2024-Final-mobile-new.jpg",
+            "apply_overlay": false,
+            "content_position": "bottomLeft",
+            "content_position_mobile": "top",
+            "content_text_color": "#ffffff",
+            "subheading": "",
+            "title": "",
+            "text_bottom": "Now through June 30th, we're donating 10% of ALL vipeel.com proceeds to the It Gets Better Project!",
+            "button_1_text": "Shop Now",
+            "button_1_link": "shopify:\/\/collections\/vi-derm",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "image_TmWhcR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VIPEEL-ToxBooster-HomePage-Banner-Refresh.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/VIPEEL-ToxBooster-HomePage-Banner-Mobile2.jpg",
+            "apply_overlay": false,
+            "content_position": "bottomLeft",
+            "content_position_mobile": "bottom",
+            "content_text_color": "#ffffff",
+            "subheading": "",
+            "title": "",
+            "text_bottom": "",
+            "button_1_text": "LEARN MORE",
+            "button_1_link": "shopify:\/\/pages\/new-toxbooster-treatment",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "03521135-1ffd-4526-b482-14b9963e3cb3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Skin-Brightening-System-Banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Skin-Brightening-System-Banner-Mobile2.jpg",
+            "apply_overlay": false,
+            "content_position": "bottomCenter",
+            "content_position_mobile": "bottom",
+            "content_text_color": "#ffffff",
+            "subheading": "",
+            "title": "",
+            "text_bottom": "Your complete skincare system for diminishing dark spots.",
+            "button_1_text": "SHOP NOW",
+            "button_1_link": "https:\/\/vipeel.com\/products\/skin-brightening-system",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "slide-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/home-slide-Latest.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/VI-Derm-Hero-mobile-Smaller-text.jpg",
+            "apply_overlay": false,
+            "content_position": "middleLeft",
+            "content_position_mobile": "top",
+            "content_text_color": "#fafafa",
+            "subheading": "Confidence",
+            "title": "That's More Than Just Skin Deep",
+            "text_bottom": "Focused Skin Care | Safe for All Skin Types",
+            "button_1_text": "BUY NOW",
+            "button_1_link": "https:\/\/vipeel.com\/collections\/vi-derm-beauty",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/home-slide-3_2200x-2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/home-slide-3-mob_x800_a525f737-60a2-4610-b989-eb98492f30e2.jpg",
+            "apply_overlay": false,
+            "content_position": "middleRight",
+            "content_position_mobile": "bottom",
+            "content_text_color": "#115e67",
+            "subheading": "Confidence",
+            "title": "that's more than just skin deep",
+            "text_bottom": "Medium Depth Chemical Peel | Painless | Safe For All Skin Types",
+            "button_1_text": "BOOK NOW",
+            "button_1_link": "https:\/\/vipeel.com\/pages\/sca-store-locator",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_PtbNex",
+        "image_TmWhcR",
+        "03521135-1ffd-4526-b482-14b9963e3cb3",
+        "slide-0",
+        "slide-1"
+      ],
+      "settings": {
+        "show_fullscreen": false,
+        "show_arrow": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "text_color": "#ffffff",
+        "button_color": "#ffffff",
+        "button_background": "#f48c8c"
+      }
+    },
+    "1635320466a20ad381": {
+      "type": "collections-carousel",
+      "blocks": {
+        "82b6be8c-5e58-42ea-89ef-30d2902379b9": {
+          "type": "collection",
+          "settings": {
+            "title_text": "VI DERM",
+            "collection": "vi-derm-home"
+          }
+        },
+        "e9492d6f-dcd6-48df-8d13-51f57639c7a4": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "title_text": "NEW",
+            "collection": "new-products"
+          }
+        }
+      },
+      "block_order": [
+        "82b6be8c-5e58-42ea-89ef-30d2902379b9",
+        "e9492d6f-dcd6-48df-8d13-51f57639c7a4"
+      ],
+      "settings": {
+        "text_color": "#ffffff"
+      }
+    },
+    "163549576540a276f6": {
+      "type": "before-and-after",
+      "settings": {
+        "bg_color": "#f2f8f7",
+        "subheading": "Before & After",
+        "title": "Results",
+        "content": "<p>There's no limit to what the VI Peel can do. Many of us have skin issues and let me tell you this peel gives instant results! Thank you VI Peel for being an inclusive brand.<\/p>",
+        "title_name": "Samara, 29 Years Old",
+        "image_before": "shopify:\/\/shop_images\/img-home-before_8dabe050-14ea-47f3-9fc2-93605faa0d36.png",
+        "image_after": "shopify:\/\/shop_images\/img-home-after_6eea369e-3051-4c92-8ece-dd01293ebf54.png",
+        "image_position": "right",
+        "bottom_text": "Samara, 2 VI Peel Treatments"
+      }
+    },
+    "16597392704c0d4686": {
+      "type": "ToxBooster-Banner",
+      "disabled": true,
+      "settings": {}
+    },
+    "1635914685a1049d7c": {
+      "type": "image-logo",
+      "blocks": {
+        "1635914685a1049d7c-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-brides.png"
+          }
+        },
+        "1635914685a1049d7c-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-cosmopolitan.png"
+          }
+        },
+        "88bf74eb-03fc-4cc9-b220-e391014bbaf4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-vogue.png"
+          }
+        },
+        "e31ee9a7-eabb-41da-912b-e52e001384bc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-marie-claire.png"
+          }
+        },
+        "ed76fe33-035c-4c9b-bdc2-1ebc75f95d88": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-the-oprah.png"
+          }
+        },
+        "f8a17c01-3671-4cd6-bed0-05347cbf5efa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-weekly-us.png"
+          }
+        }
+      },
+      "block_order": [
+        "1635914685a1049d7c-0",
+        "1635914685a1049d7c-1",
+        "88bf74eb-03fc-4cc9-b220-e391014bbaf4",
+        "e31ee9a7-eabb-41da-912b-e52e001384bc",
+        "ed76fe33-035c-4c9b-bdc2-1ebc75f95d88",
+        "f8a17c01-3671-4cd6-bed0-05347cbf5efa"
+      ],
+      "settings": {
+        "grid_per_col": "6",
+        "title": "Featured In"
+      }
+    },
+    "163598485369928406": {
+      "type": "image-banners",
+      "blocks": {
+        "163598485369928406-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img-banner-viderm2.jpg",
+            "text_alignment": "left",
+            "text_color": "#ffffff",
+            "title": "VI DERM",
+            "subtitle": "",
+            "text_content": "Scientifically Engineered<br>Skin Care",
+            "button_link": "shopify:\/\/collections\/vi-derm",
+            "button_text": "SHOP VI DERM",
+            "button_bg_color": "#ffffff",
+            "button_text_color": "#002f39"
+          }
+        },
+        "163598485369928406-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img-banner-vipeel.png",
+            "text_alignment": "right",
+            "text_color": "#115e67",
+            "title": "VI PEEL",
+            "subtitle": "",
+            "text_content": "The #1 Chemical Peel<br>For Confident Skin",
+            "button_link": "https:\/\/vipeel.com\/pages\/sca-store-locator",
+            "button_text": "BOOK NOW",
+            "button_bg_color": "#f48c8c",
+            "button_text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "163598485369928406-0",
+        "163598485369928406-1"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "171320851055533c20": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_zww4UF": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "disabled": true,
+          "settings": {
+            "formId": "QQGj7a"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_zww4UF"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "1635320466a20ad381",
+    "163549576540a276f6",
+    "16597392704c0d4686",
+    "1635914685a1049d7c",
+    "163598485369928406",
+    "171320851055533c20"
+  ]
+}

@@ -1,0 +1,166 @@
+<style>
+
+  .baf-title {text-align:center; font-size:2.2rem; font-family:'lust'; margin: 0 0 2rem 0; text-transform:capitalize; color:#115e67;}
+  .baf-bottom-text {text-align:center; font-family:'gotham-bold' !important; font-size: 1.5rem; margin-bottom: 2rem;}
+
+  .Grid_BAF {display:flex; justify-content: space-around; flex-wrap: wrap;}
+
+  .cbb-frequently-bought-container {margin: -680px auto 30px !important;}
+  .cbb-frequently-bought-recommendations-container {width:55%;}
+
+  .trust-pilot-cont {display:none !important;}
+  .trustpilot-widget {display:none !important;}
+
+  .value-text {font-size:1.2rem !important; margin-top:-30px !important; display:block;}
+
+  @media only screen and (max-width:1008px){
+    .cbb-frequently-bought-container {margin: 30px auto 30px !important; padding: 0 5%;}
+    .cbb-frequently-bought-recommendations-container {width:100%;}
+  }
+  
+</style>
+
+<section class="Section Section--spacingNormal" id="baf-{{ section.id }}">
+ <div class="Container">
+
+   <h1 class="baf-title">{{ section.settings.title }}</h1>
+   
+  <div class="Grid Grid_BAF">
+
+    <div class="Grid__Cell 1/3--tablet-and-up baf-col">
+      <div class="baf-container">
+        {%- if section.settings.image_before != blank and section.settings.image_after != blank -%}
+        <div class="twentytwenty-wrapper twentytwenty-horizontal">
+            <div class="twentytwenty-container">
+              <img src="{{ section.settings.image_before | img_url: '520x'}}" class="twentytwenty-before">
+              <img src="{{ section.settings.image_after | img_url: '520x'}}" class="twentytwenty-after">
+            </div>
+        </div>
+        {%- endif -%}
+
+          <div class="baf-bottom-text">Fades Dark Spots & Sun Damage</div>
+
+      </div>
+    </div>
+
+    <div class="Grid__Cell 1/3--tablet-and-up baf-col">
+      <div class="baf-container">
+        {%- if section.settings.image_before_second != blank and section.settings.image_after_second != blank -%}
+        <div class="twentytwenty-wrapper twentytwenty-horizontal">
+            <div class="twentytwenty-container">
+              <img src="{{ section.settings.image_before_second | img_url: '520x'}}" class="twentytwenty-before">
+              <img src="{{ section.settings.image_after_second | img_url: '520x'}}" class="twentytwenty-after">
+            </div>
+        </div>
+        {%- endif -%}
+
+          <div class="baf-bottom-text">Fights Hyperpigmentation</div>
+
+      </div>
+    </div>
+    
+  </div>
+ </div>
+</section>
+<style>
+#baf-{{ section.id }}{
+  background-color:  {{ section.settings.bg_color }};
+}
+</style>
+{% schema %}
+{
+  "name": "Before & After Double",
+  "class": "shopify-section--bordered",
+  "settings": [
+    {
+      "type":"color",
+      "id":"bg_color",
+      "label":"Background Color",
+      "default":"#F2F8F7"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub-heading",
+      "default": "Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Text",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    },
+    {
+      "type": "text",
+      "id": "title_name",
+      "label": "Title Name",
+      "default": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_before",
+      "label": "Image Before",
+      "info": "520 x 500px .png recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_after",
+      "label": "Image After",
+      "info": "520 x 500px .png recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_before_second",
+      "label": "Image Before Second",
+      "info": "520 x 500px .png recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_after_second",
+      "label": "Image After Second",
+      "info": "520 x 500px .png recommended"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "text",
+      "id": "bottom_text",
+      "label": "Bottom Text",
+      "default": "Say something about the picture"
+    },
+    {
+      "type": "text",
+      "id": "bottom_text_second",
+      "label": "Bottom Text Second",
+      "default": "Say something about the picture"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Text",
+      "name": "Before & After Double",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

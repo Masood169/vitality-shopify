@@ -1,0 +1,68 @@
+<style>
+
+  .skin-clinical-wrap {padding:4rem 0; background-color: #f2f8f7;}
+  .skin-clinical-cont {max-width:1200px; margin: 0 auto;}
+  .skin-clinical-cont .sc-title {text-align:center; font-size:2.2rem; font-family:'lust'; margin: 0 0 2rem 0; text-transform:capitalize; color:#115e67;}
+  .sc-results {display:flex; justify-content: space-between; flex-wrap:wrap; padding:2rem 0;}
+  .sc-result {width:24%; padding: 0 1%; text-align:center; margin-bottom:2rem;}
+  .sc-result h1 {font-size:5rem; margin: 0 0 0 0; font-family:'gotham-bold'; color:#115e67;}
+  .sc-result h2 {font-size:1.2rem; margin: 0 0 0 0; font-family:'gotham' !important;}
+  .sc-disc {width:100%; padding: 2rem 0;}
+  .sc-disc p {font-size:1rem; text-align:center; width: 100%;}
+
+  @media only screen and (max-width:1080px){
+    .sc-result {width:100%;}
+  }
+  
+</style>
+
+<div class="skin-clinical-wrap">
+  <div class="skin-clinical-cont">
+    <h1 class="sc-title">Clinical Results*</h1>
+    <div class="sc-results">
+      <div class="sc-result">
+        <h1>86%</h1>
+        <h2>saw significant results*</h2>
+      </div>
+      <div class="sc-result">
+        <h1>86%</h1>
+        <h2>saw brighter skin*</h2>
+      </div>
+      <div class="sc-result">
+        <h1>83%</h1>
+        <h2>saw more even skin tone & texture*</h2>
+      </div>
+      <div class="sc-result">
+        <h1>80%</h1>
+        <h2>Nearly 80% saw a reduction in dark spots*</h2>
+      </div>
+      
+      <div class="sc-disc">
+        <p>*In a clinical study of 30 patients with hyperpigmentation</p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "SBS Clinical",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Your video"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Section",
+      "name": "SBS Clinical",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

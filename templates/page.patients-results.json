@@ -1,0 +1,117 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-patients-results",
+      "blocks": {
+        "ea8699d3-60ab-4791-aa8e-9edc4b3f365b": {
+          "type": "before_and_after",
+          "settings": {
+            "text_heading": "<h3>VI Peel Precision Plus<\/h3>",
+            "btn_text1": "Book Now",
+            "btn_link": "shopify:\/\/pages\/practicefinder",
+            "btn_text2": "View More",
+            "btn_link2": "shopify:\/\/pages\/real-reviews",
+            "description_text": "<p>Our most popular treatment, this medium-depth powerhouse peel works to suppress melanogenesis—the production of melanin—at the source while promoting rapid cell turnover for more even and bright skin tone. Resurfacing action reveals brighter, renewed skin for results in 7 days.<\/p>",
+            "skin_care_concerns": "<div class=\"award-cont\">\n<div class=\"award-text\">\n<h4>For Skin Concerns:<\/h4>\n<p>Sun Damage<br>\nMelasma<br>\nPost-Inflammatory Hyperpigmentation (PIH)<\/p>\n<\/div>\n<\/div>",
+            "image1": "shopify:\/\/shop_images\/before-and-after-1.png"
+          }
+        },
+        "87d2c1a2-52d9-4c94-87c8-c833737383dd": {
+          "type": "before_and_after",
+          "settings": {
+            "text_heading": "<h3>VI Peel Purify<br> \n<span class=\"light\">with<\/span> <span class=\"bold\">Precision Plus<\/span>\n<\/h3>",
+            "btn_text1": "Book Now",
+            "btn_link": "shopify:\/\/pages\/practicefinder",
+            "btn_text2": "View More",
+            "btn_link2": "shopify:\/\/pages\/real-reviews",
+            "description_text": "Pigmentation issues PLUS acne and\/or acne scarring?  Enjoy two treatments in one!  Take on current breakouts and the scars and pigmentation they leave behind. Our superior purifying and smoothing acne treatment clears away dead skin cells and excess oil to speed breakout clearing and purify pores to prevent breakouts. By targeting melanogenesis—the production of melanin—at the source, this treatment helps minimize stubborn post-acne scars and uneven tone for a brighter, smoother surface.",
+            "skin_care_concerns": "<h4>For Skin Concerns:<\/h4>\nExcessive Oil<br>\nAcne with Hyperpigmentation<br>\nAcne Scarring<br>\nAdult Acne",
+            "image1": "shopify:\/\/shop_images\/before-and-after-2.png"
+          }
+        },
+        "83ba5e3c-5a23-460c-b975-4b9ef7dce315": {
+          "type": "before_and_after",
+          "settings": {
+            "text_heading": "<h3>VI Peel Purify<\/h3>",
+            "btn_text1": "Book Now",
+            "btn_link": "shopify:\/\/pages\/practicefinder",
+            "btn_text2": "View More",
+            "btn_link2": "shopify:\/\/pages\/real-reviews",
+            "description_text": "A multi-faceted treatment for the many triggers and symptoms of acne, from dead skin cells and excessive oiliness to clogged pores and all types of blemishes. Our peel sweeps away skin cells known to clog pores, clears out oil and debris trapped deep within the pores, eliminates p. acnes bacteria and balances skin for fewer breakouts and a smoother texture.",
+            "skin_care_concerns": "<h4>For Skin Concerns:<\/h4>\nActive Acne<br>\nBreak-out Prone Skin<br>\nOily and Congested Skin<br>\nTeen Acne",
+            "image1": "shopify:\/\/shop_images\/before-and-after-3.png"
+          }
+        },
+        "ce538f8d-f345-4b29-83c8-5ff10c7b96df": {
+          "type": "before_and_after",
+          "settings": {
+            "text_heading": "<h3>VI Peel Advanced<\/h3>",
+            "btn_text1": "Book now",
+            "btn_link": "shopify:\/\/pages\/practicefinder",
+            "btn_text2": "View More",
+            "btn_link2": "shopify:\/\/pages\/real-reviews",
+            "description_text": "This potent, powerful treatment is ideal for more mature clients that want to intensify results against deep-set wrinkles and loss of elasticity. Our innovative treatment is formulated with a synergistic blend of ingredients that penetrate deeper to combat the signs of aging and soften fine lines and wrinkles. This targeted formula helps enhance collagen stimulation to increase cell turnover and help firm the skin.",
+            "skin_care_concerns": "<h4>For Skin Concerns:<\/h4>\nAging Skin (Ages 40+)<br>\nWrinkles<br>\nFine Lines<br>\nLoss of Elasticity",
+            "image1": "shopify:\/\/shop_images\/before-and-after-4.png"
+          }
+        },
+        "247f6bbe-ce84-4d7c-8c8a-de10a8327d5b": {
+          "type": "before_and_after",
+          "settings": {
+            "text_heading": "<h3>VI Peel Original<\/h3>",
+            "btn_text1": "Book Now",
+            "btn_link": "shopify:\/\/pages\/practicefinder",
+            "btn_text2": "View More",
+            "btn_link2": "shopify:\/\/pages\/real-reviews",
+            "description_text": "A great first-time peel for all age groups and skin types seeking multiple benefits from their peel—including tighter-looking skin, smoother texture, and renewed radiance.  VI Peel Original is specifically formulated to rejuvenate, refresh, and reset for rapid, visible results safely and effectively.",
+            "skin_care_concerns": "<h4>For Skin Concerns:<\/h4>\nSensitive Skin<br>\nEarly Signs of Aging (Ages 20+)<br>\nRough Texture",
+            "image1": "shopify:\/\/shop_images\/before-and-after-5.png"
+          }
+        },
+        "d75f8e65-8a17-4eac-aab2-0fa2060b53b8": {
+          "type": "before_and_after",
+          "settings": {
+            "text_heading": "<h3>VI Peel Body<\/h3>",
+            "btn_text1": "Book Now",
+            "btn_link": "shopify:\/\/pages\/practicefinder",
+            "btn_text2": "View More",
+            "btn_link2": "shopify:\/\/pages\/real-reviews",
+            "description_text": "The makers of the #1 Chemical Peel for the face want you to have your best body ever.  First-of-its-kind, non-invasive, and pain-free. VI Peel Body treatments stimulate anti-aging collagen to increase cellular turnover. Help target troubled areas and reveal smoother, more radiant skin in just one treatment.  Safe for all skin types, tones, and textures - it’s a peel for every body.",
+            "skin_care_concerns": "<h4>For Skin Concerns:<\/h4>\nPigmentation and fine lines on the Décolleté<br>\nBody Acne<br>\nScars from Acne, Surgeries, or Injuries<br>\nStretch Marks<br>\nSagging skin",
+            "image1": "shopify:\/\/shop_images\/before-and-after-7.png"
+          }
+        },
+        "8d212997-66d9-4f97-ad3e-ed32da18e623": {
+          "type": "before_and_after",
+          "disabled": true,
+          "settings": {
+            "text_heading": "<h3 style=\"text-transform:capitalize;\">ToxBooster™ Treatment<\/h3>",
+            "btn_text1": "Book Now",
+            "btn_link": "shopify:\/\/pages\/practicefinder",
+            "btn_text2": "View More",
+            "btn_link2": "shopify:\/\/pages\/real-reviews",
+            "description_text": "A combined, same-day treatment that involves the safe, painless, custom VI Peel as prescribed by your practitioner in conjunction with a Neurotoxin injectable to enhance and extend beneficial results.  Boost the results of your injection service, increase collagen production, reduce sun damage, and improve overall tone and texture - all in one visit!",
+            "skin_care_concerns": "<h4>For Skin Concerns:<\/h4>\nFine Lines &amp; Wrinkles<br>\nSun Damage &amp; Pigmentation<br>\nUneven Tone &amp; Texture<br>\nAcne \/ Acne Scarring",
+            "image1": "shopify:\/\/shop_images\/before-and-after-6.png"
+          }
+        }
+      },
+      "block_order": [
+        "ea8699d3-60ab-4791-aa8e-9edc4b3f365b",
+        "87d2c1a2-52d9-4c94-87c8-c833737383dd",
+        "83ba5e3c-5a23-460c-b975-4b9ef7dce315",
+        "ce538f8d-f345-4b29-83c8-5ff10c7b96df",
+        "247f6bbe-ce84-4d7c-8c8a-de10a8327d5b",
+        "d75f8e65-8a17-4eac-aab2-0fa2060b53b8",
+        "8d212997-66d9-4f97-ad3e-ed32da18e623"
+      ],
+      "settings": {
+        "header_bgcolor": "#005a63",
+        "header_text": "The Vitality Institute offers six uniquely formulated VI Peel treatments designed to lift pigment, remove sun damage, alleviate acne and scarring, and fight fine lines and wrinkles. All our painless medium-depth VI Peels are safe for all skin types and tones with results in as little as 7 days!"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

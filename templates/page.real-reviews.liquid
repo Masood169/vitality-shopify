@@ -1,0 +1,451 @@
+<link rel="stylesheet" href="{{ 'reset.css' | asset_url }}"> <!-- CSS reset -->
+<link rel="stylesheet" href="{{ 'review-style.css' | asset_url }}"> <!-- Resource style -->
+<script src="{{ 'modernizr.js' | asset_url }}"></script> <!-- Modernizr -->
+
+
+<style>
+  #shopify-section-footer-testimonials {display:none;}
+  
+  .ba-main-wrapper {margin: 40px 0 80px 0;}
+  .ba-main-wrapper .t-box {width:70%; max-width:768px; margin: 0 auto 0 auto;}
+  .ba-main-wrapper .t-box h3 {font-family: 'Gotham-Bold'; font-size: 1.1vw; color: #115e67; margin: 0 0 0 0;}
+  .ba-main-wrapper .t-box h1 {font-family: 'lust'; font-size: 3.4vw; color: #115e67; margin: 0.5vw 0 1vw 0;}
+  .ba-main-wrapper .t-box p {font-size: 1.2vw; line-height: 1.6vw; margin: 0 0 1.5vw 0;}
+  
+  .ba-tabs {display:flex; justify-content: center; flex-wrap: wrap; width:70%; margin: 1vw auto 1.5vw auto; max-width:785px;}
+  .ba-tab {display: flex; font-size: 0.9vw; padding: 0 1vw; background-color: #115e67; color: white; text-align:center; width: 24%; margin: .5vw .5% 0 .5%; height: 3vw;
+    text-align: center; font-family:'gotham-bold'; justify-content:space-around; align-items:center; transition:.2s; border-radius:.3vw;}
+  .ba-tab:hover {background-color:#f48c8c !important; cursor:pointer;}
+  .tab-cont {display: flex; justify-content: center; width: 70%; max-width:785px; margin: 0 auto;}
+  .ba-avatar {width:12%; margin: 0 0.5%; transition:.2s; opacity:.7;}
+  .ba-avatar:hover {opacity:1 !important; cursor:pointer;}
+  
+  .creds {font-size:.9rem; font-weight:700;}
+  
+  
+  @media only screen and (min-width:1540px){
+    .ba-tab {font-size:13px}
+  }
+  
+  
+  @media only screen and (max-width:800px){
+  
+  .ba-main-wrapper {margin: 25px 0 80px 0;}
+  .ba-main-wrapper .t-box {width:90%; max-width:768px; margin: 0 auto 0 auto;}
+  .ba-main-wrapper .t-box h3 {font-size: 3vw; margin: 0 0 1vw 0;}
+  .ba-main-wrapper .t-box h1 {font-size: 9vw; margin: 0.5vw 0 1vw 0;}
+  .ba-main-wrapper .t-box p {font-size: 3.5vw; line-height: 5vw; margin: 0 0 4vw 0;}
+    .ba-main-wrapper .t-box p .creds {font-size:3vw;}
+  
+  .ba-tabs {width:90%;}
+  .ba-tab {font-size: 3vw; padding: 0 1vw; background-color: #115e67; color: white; text-align: center; width: 49%; margin: 2vw .5% 0 .5%; height: 10vw; border-radius: 1.5vw;}
+  .tab-cont {width:90%; margin: 4vw auto 0 auto; flex-wrap:wrap;}
+    .ba-avatar {width: 20%; margin: 0 1% 3vw 1%; transition: .2s;}
+    .cd-image-label {font-size:3vw;}
+  }
+
+</style>
+
+<div class="ba-main-wrapper">
+  
+<div class="t-box">
+  <h3>REAL PEOPLE WITH REAL RESULTS</h3>
+  <h1>Real Results</h1>
+  <p>VI Peel professional treatments feature a one-of-a-kind formulation designed to painlessly lift pigment, relieve acne and acne scars, and fight fine lines. See real results with VI Peel:  the #1 Chemical Peel on the market today!
+   <!--  <br> <span class="creds">Image credits to Venus Spa @venus_beautyspa_</span> --></p>
+</div>
+
+<figure class="cd-image-container">
+	<img class="new-img" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Advanced-1.jpg?v=1640106813" alt="After Image">
+		<span class="cd-image-label" data-type="original">AFTER</span>
+
+	<div class="cd-resize-img"> <!-- the resizable image on top -->
+		<img class="og-img" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Advanced-1-before.jpg?v=1640106813" alt="Before Image">
+		<span class="cd-image-label" data-type="modified">BEFORE</span>
+	</div>
+
+	<span class="cd-handle"></span>
+</figure> <!-- cd-image-container -->
+
+
+<div class="ba-tabs">
+  <a class="ba-tab adv-tab" href="#" onclick="tabRun(0)" style="background-color:#f48c8c">VI PEEL ADVANCED</a>
+  <a class="ba-tab body-tab" href="#" onclick="tabRun(1)">VI BODY PEEL</a>
+  <a class="ba-tab og-tab" href="#" onclick="tabRun(2)">VI PEEL ORIGINAL</a>
+  <a class="ba-tab ppt-tab" href="#" onclick="tabRun(3)">VI PEEL PRECISION PLUS</a>
+  <a class="ba-tab pure-tab" href="#" onclick="tabRun(4)">VI PEEL PURIFY</a>
+  <a class="ba-tab ppp-tab" href="#" onclick="tabRun(5)">VI PEEL PURIFY WITH PRECISION PLUS</a>
+  <a class="ba-tab tox-tab" href="#" onclick="tabRun(6)">TOXBOOSTER</a>
+</div>
+
+<div class="ba-adv-images tab-cont" style="display:flex">
+  <img class="ba-avatar adv-avatar" alt="results of VI PEEL ADVANCED 1" onclick="runAdvBA(0);" style="opacity:1;" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Advanced-1-avatar.jpg?v=1640108549">
+  <img class="ba-avatar adv-avatar" alt="results of VI PEEL ADVANCED 2" onclick="runAdvBA(1);" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Advanced-2-avatar.jpg?v=1640116232">
+  <img class="ba-avatar adv-avatar" onclick="runAdvBA(2);" alt="results of VI PEEL ADVANCED 3" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Advanced-3-avatar.jpg?v=1640211980">
+  <img class="ba-avatar adv-avatar" onclick="runAdvBA(3);" alt="results of VI PEEL ADVANCED 4" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Advanced-4-avatar.jpg?v=1640212641">
+</div>
+  
+<div class="ba-body-images tab-cont"  style="display:none">
+  <img class="ba-avatar body-avatar" alt="body avatar 1" onclick="runBodyBA(0);" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Body-1-avatar.jpg?v=1640225294">
+  <img class="ba-avatar body-avatar" alt="body avatar 2" onclick="runBodyBA(1);" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Body-2-avatar.jpg?v=1640273958">
+  <img class="ba-avatar body-avatar" alt="body avatar 3" onclick="runBodyBA(2);" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Body-3-avatar.jpg?v=1640274690">
+  <img class="ba-avatar body-avatar" alt="body avatar 4" onclick="runBodyBA(3);" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Body-4-avatar.jpg?v=1640275625">
+  <img class="ba-avatar body-avatar" alt="body avatar 5" onclick="runBodyBA(4);" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Body-5-avatar.jpg?v=1640278398">
+  <img class="ba-avatar body-avatar" alt="body avatar 6" onclick="runBodyBA(5);" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Body-6-avatar.jpg?v=1640279345">
+  <img class="ba-avatar body-avatar" alt="body avatar 7" onclick="runBodyBA(6);" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Body-7-avatar.jpg?v=1646740062">
+  
+</div>
+
+<div class="ba-og-images tab-cont"  style="display:none">
+  <img class="ba-avatar og-avatar" alt="OG Avatar 1" onclick="runOgBA(0);" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Og-1-avatar.jpg?v=1640280385">
+  <img class="ba-avatar og-avatar" alt="OG Avatar 2" onclick="runOgBA(1);" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Og-2-avatar.jpg?v=1640295965">
+  <img class="ba-avatar og-avatar" alt="OG Avatar 3" onclick="runOgBA(2);" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Og-3-avatar.jpg?v=1640296096">
+  <img class="ba-avatar og-avatar" alt="OG Avatar 4" onclick="runOgBA(3);" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Og-4-avatar.jpg?v=1640296174">
+</div>
+  
+<div class="ba-ppt-images tab-cont"  style="display:none">
+  <img class="ba-avatar ppt-avatar" alt="PPT Avatar 1" onclick="runPptBA(0);" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/PPT-1-avatar.jpg?v=1640295342">
+  <img class="ba-avatar ppt-avatar" alt="PPT Avatar 2" onclick="runPptBA(1);" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/PPT-2-avatar.jpg?v=1640296549">
+  <img class="ba-avatar ppt-avatar" alt="PPT Avatar 3" onclick="runPptBA(2);" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/PPT-3-avatar.jpg?v=1640296830">
+  <img class="ba-avatar ppt-avatar" alt="PPT Avatar 4" onclick="runPptBA(3);" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/PPT-4-avatar.jpg?v=1640305900">
+  <img class="ba-avatar ppt-avatar" alt="PPT Avatar 5" onclick="runPptBA(4);" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/PPT-5-avatar.jpg?v=1640306864">
+  <img class="ba-avatar ppt-avatar" alt="PPT Avatar 6" onclick="runPptBA(5);" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/PPT-6-avatar.jpg?v=1640307632">
+  <img class="ba-avatar ppt-avatar" alt="PPT Avatar 7" onclick="runPptBA(6);" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/PPT-7-avatar.jpg?v=1640308594">
+</div>
+  
+<div class="ba-pure-images tab-cont"  style="display:none">
+  <img class="ba-avatar pure-avatar" alt="Pure Avatar 1" onclick="runPureBA(0);" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Pure-1-avatar.jpg?v=1640309640">
+  <img class="ba-avatar pure-avatar" onclick="runPureBA(1);" alt="Pure Avatar 2" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Pure-2-avatar.jpg?v=1640314405">
+</div>
+  
+<div class="ba-ppp-images tab-cont" style="display:none">
+  <img class="ba-avatar ppp-avatar" alt="PPP Avatar 1" onclick="runPppBA(0);" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/ppp-1-avatar.jpg?v=1640315485">
+  <img class="ba-avatar ppp-avatar" onclick="runPppBA(1);" alt="PPP Avatar 2" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/ppp-2-avatar.jpg?v=1640316063">
+  <img class="ba-avatar ppp-avatar" onclick="runPppBA(2);" alt="PPP Avatar 3" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/ppp-3-avatar.jpg?v=1640317066">
+  <img class="ba-avatar ppp-avatar" onclick="runPppBA(3);" alt="PPP Avatar 4" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/ppp-4-avatar.jpg?v=1640317597">
+  <img class="ba-avatar ppp-avatar" onclick="runPppBA(4);" alt="PPP Avatar 5" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/ppp-5-avatar.jpg?v=1640318515">
+</div>
+  
+<div class="ba-tox-images tab-cont" style="display:none">
+  <img class="ba-avatar tox-avatar" onclick="runToxBA(0);" alt="Tox Avatar 1" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/tox-1-new-avatar.jpg?v=1647316644">
+  <img class="ba-avatar tox-avatar" onclick="runToxBA(1);" alt="Tox Avatar 2" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/tox-2-avatar.jpg?v=1640364905">
+  <img class="ba-avatar tox-avatar" onclick="runToxBA(2);" alt="Tox Avatar 3" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/tox-3-new-avatar.jpg?v=1647316645">
+  <img class="ba-avatar tox-avatar" onclick="runToxBA(3);" alt="Tox Avatar 4" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/tox-4-new-avatar.jpg?v=1647316645">
+</div>
+  
+
+</div>
+
+
+
+
+<script src="{{ 'jquery-2.1.1.js' | asset_url }}"></script> <!-- jQuery -->
+<script src="{{ 'main.js' | asset_url }}"></script> <!-- Resource jQuery -->
+<script src="{{ 'jquery.mobile.custom.min.js' | asset_url }}"></script> <!-- Resource jQuery -->
+
+
+<script>
+
+  let ogImg = document.querySelectorAll('.og-img')[0];
+  let newImg = document.querySelectorAll('.new-img')[0];
+  
+  let baTabs = document.querySelectorAll('.ba-tab');
+  
+  let advCont = document.querySelectorAll('.ba-adv-images')[0];
+  let bodyCont = document.querySelectorAll('.ba-body-images')[0];
+  let ogCont = document.querySelectorAll('.ba-og-images')[0];
+  let pptCont = document.querySelectorAll('.ba-ppt-images')[0];
+  let pureCont = document.querySelectorAll('.ba-pure-images')[0];
+  let pppCont = document.querySelectorAll('.ba-ppp-images')[0];
+  let toxCont = document.querySelectorAll('.ba-tox-images')[0];
+  
+  let tabCont = document.querySelectorAll('.tab-cont');
+  
+  let advAvatars = document.querySelectorAll('.adv-avatar');
+  let bodyAvatars = document.querySelectorAll('.body-avatar');
+  let ogAvatars = document.querySelectorAll('.og-avatar');
+  let pptAvatars = document.querySelectorAll('.ppt-avatar');
+  let pureAvatars = document.querySelectorAll('.pure-avatar');
+  let pppAvatars = document.querySelectorAll('.ppp-avatar');
+  let toxAvatars = document.querySelectorAll('.tox-avatar');
+  
+  
+  const tabRun = (n) => {
+    
+    for (var i=0; i < tabCont.length; i++) {
+      tabCont[i].style.display = "none";
+      baTabs[i].style.backgroundColor = "#115e67";
+    };
+    
+    
+    tabCont[n].style.display = "flex";
+    baTabs[n].style.backgroundColor = "#f48c8c";
+    
+    if (n == 0){
+    	runAdvBA(0)
+    }
+    if (n == 1){
+    	runBodyBA(0)
+    }
+    if (n == 2){
+    	runOgBA(0)
+    }
+    if (n == 3){
+    	runPptBA(0)
+    }
+    if (n == 4){
+    	runPureBA(0)
+    }
+    if (n == 5){
+    	runPppBA(0)
+    }
+    if (n == 6){
+    	runToxBA(0)
+    }
+    
+  };
+  
+  
+  let advImages = ['https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Advanced-1-before.jpg?v=1640106813','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Advanced-1.jpg?v=1640106813','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Advanced-2-before.jpg?v=1640116232','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Advanced-2.jpg?v=1640116232','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Advanced-3-before.jpg?v=1640211980','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Advanced-3.jpg?v=1640211980','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Advanced-4-before.jpg?v=1640224362','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Advanced-4.jpg?v=1640224362'];
+  
+  const runAdvBA = (n) => {
+    for (var i=0; i < advAvatars.length; i++) {
+      advAvatars[i].style.opacity = "0.7";
+    };
+    
+    if (n == 0) {
+      ogImg.src = advImages[0];
+      newImg.src = advImages[1];
+      advAvatars[n].style.opacity = "1";
+    }
+    if (n == 1) {
+      ogImg.src = advImages[2];
+      newImg.src = advImages[3];
+      advAvatars[n].style.opacity = "1";
+    }
+    if (n == 2) {
+      ogImg.src = advImages[4];
+      newImg.src = advImages[5];
+      advAvatars[n].style.opacity = "1";
+    }
+     if (n == 3) {
+      ogImg.src = advImages[6];
+      newImg.src = advImages[7];
+      advAvatars[n].style.opacity = "1";
+    }
+  };
+  
+  
+  
+  let bodyImages = ['https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Body-1-before.jpg?v=1640225294','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Body-1.jpg?v=1640225294','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Body-2-before.jpg?v=1640274154','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Body-2.jpg?v=1640274154','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Body-3-before.jpg?v=1640274690','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Body-3.jpg?v=1640274690','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Body-4-before.jpg?v=1640275625','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Body-4.jpg?v=1640275625','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Body-5-before.jpg?v=1640278398','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Body-5.jpg?v=1640278398','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Body-6-before.jpg?v=1640279345','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Body-6.jpg?v=1640279345','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Body-7-before.jpg?v=1646740062','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Body-7.jpg?v=1646740062'];
+  
+  const runBodyBA = (n) => {
+    for (var i=0; i < bodyAvatars.length; i++) {
+      bodyAvatars[i].style.opacity = "0.7";
+    };
+    
+    if (n == 0) {
+      ogImg.src = bodyImages[0];
+      newImg.src = bodyImages[1];
+      bodyAvatars[n].style.opacity = "1";
+    }
+    if (n == 1) {
+      ogImg.src = bodyImages[2];
+      newImg.src = bodyImages[3];
+      bodyAvatars[n].style.opacity = "1";
+    }
+    if (n == 2) {
+      ogImg.src = bodyImages[4];
+      newImg.src = bodyImages[5];
+      bodyAvatars[n].style.opacity = "1";
+    }
+     if (n == 3) {
+      ogImg.src = bodyImages[6];
+      newImg.src = bodyImages[7];
+      bodyAvatars[n].style.opacity = "1";
+    }
+    if (n == 4) {
+      ogImg.src = bodyImages[8];
+      newImg.src = bodyImages[9];
+      bodyAvatars[n].style.opacity = "1";
+    }
+    if (n == 5) {
+      ogImg.src = bodyImages[10];
+      newImg.src = bodyImages[11];
+      bodyAvatars[n].style.opacity = "1";
+    }
+    if (n == 6) {
+      ogImg.src = bodyImages[12];
+      newImg.src = bodyImages[13];
+      bodyAvatars[n].style.opacity = "1";
+    }
+  };
+  
+  
+  
+  let ogImages = ['https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Og-1-before.jpg?v=1640280385','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Og-1.jpg?v=1640280386','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Og-2-before.jpg?v=1640295965','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Og-2.jpg?v=1640295965','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Og-3-before.jpg?v=1640296096','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Og-3.jpg?v=1640296096','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Og-4-before.jpg?v=1640296174','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Og-4.jpg?v=1640296174'];
+  
+  const runOgBA = (n) => {
+    for (var i=0; i < ogAvatars.length; i++) {
+      ogAvatars[i].style.opacity = "0.7";
+    };
+    
+    if (n == 0) {
+      ogImg.src = ogImages[0];
+      newImg.src = ogImages[1];
+      ogAvatars[n].style.opacity = "1";
+    }
+    if (n == 1) {
+      ogImg.src = ogImages[2];
+      newImg.src = ogImages[3];
+      ogAvatars[n].style.opacity = "1";
+    }
+    if (n == 2) {
+      ogImg.src = ogImages[4];
+      newImg.src = ogImages[5];
+      ogAvatars[n].style.opacity = "1";
+    }
+     if (n == 3) {
+      ogImg.src = ogImages[6];
+      newImg.src = ogImages[7];
+      ogAvatars[n].style.opacity = "1";
+    }
+  };
+  
+  
+  
+  let pptImages = ['https://cdn.shopify.com/s/files/1/0064/3003/1908/files/PPT-1-before.jpg?v=1640295342','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/PPT-1.jpg?v=1640295342','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/PPT-2-before.jpg?v=1640296549','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/PPT-2.jpg?v=1640296549','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/PPT-3-before.jpg?v=1640296830','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/PPT-3.jpg?v=1640296830','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/PPT-4-before.jpg?v=1640305901','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/PPT-4.jpg?v=1640305900','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/PPT-5-before.jpg?v=1640306864','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/PPT-5.jpg?v=1640306904','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/PPT-6-before.jpg?v=1640307632','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/PPT-6.jpg?v=1640307633','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/PPT-7-before.jpg?v=1640308594','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/PPT-7.jpg?v=1640308594'];
+  
+  const runPptBA = (n) => {
+    for (var i=0; i < pptAvatars.length; i++) {
+      pptAvatars[i].style.opacity = "0.7";
+    };
+    
+    if (n == 0) {
+      ogImg.src = pptImages[0];
+      newImg.src = pptImages[1];
+      pptAvatars[n].style.opacity = "1";
+    }
+    if (n == 1) {
+      ogImg.src = pptImages[2];
+      newImg.src = pptImages[3];
+      pptAvatars[n].style.opacity = "1";
+    }
+    if (n == 2) {
+      ogImg.src = pptImages[4];
+      newImg.src = pptImages[5];
+      pptAvatars[n].style.opacity = "1";
+    }
+     if (n == 3) {
+      ogImg.src = pptImages[6];
+      newImg.src = pptImages[7];
+      pptAvatars[n].style.opacity = "1";
+    }
+    if (n == 4) {
+      ogImg.src = pptImages[8];
+      newImg.src = pptImages[9];
+      pptAvatars[n].style.opacity = "1";
+    }
+    if (n == 5) {
+      ogImg.src = pptImages[10];
+      newImg.src = pptImages[11];
+      pptAvatars[n].style.opacity = "1";
+    }
+    if (n == 6) {
+      ogImg.src = pptImages[12];
+      newImg.src = pptImages[13];
+      pptAvatars[n].style.opacity = "1";
+    }
+  };
+  
+  
+  let pureImages = ['https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Pure-1-before.jpg?v=1640309639','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Pure-1.jpg?v=1640309639','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Pure-2-before.jpg?v=1640314405','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Pure-2.jpg?v=1640314405'];
+  
+  const runPureBA = (n) => {
+    for (var i=0; i < pureAvatars.length; i++) {
+      pureAvatars[i].style.opacity = "0.7";
+    };
+    
+    if (n == 0) {
+      ogImg.src = pureImages[0];
+      newImg.src = pureImages[1];
+      pureAvatars[n].style.opacity = "1";
+    }
+    if (n == 1) {
+      ogImg.src = pureImages[2];
+      newImg.src = pureImages[3];
+      pureAvatars[n].style.opacity = "1";
+    }
+
+  };
+  
+  
+  let pppImages = ['https://cdn.shopify.com/s/files/1/0064/3003/1908/files/ppp-1-before.jpg?v=1640315485','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/ppp-1.jpg?v=1640315486','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/ppp-2-before.jpg?v=1640316063','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/ppp-2.jpg?v=1640316063','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/ppp-3-before.jpg?v=1640318187','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/ppp-3.jpg?v=1640317066','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/ppp-4-before.jpg?v=1640317597','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/ppp-4.jpg?v=1640317597','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/ppp-5-before.jpg?v=1640318515','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/ppp-5.jpg?v=1640318515'];
+  
+  const runPppBA = (n) => {
+    for (var i=0; i < pppAvatars.length; i++) {
+      pppAvatars[i].style.opacity = "0.7";
+    };
+    
+    if (n == 0) {
+      ogImg.src = pppImages[0];
+      newImg.src = pppImages[1];
+      pppAvatars[n].style.opacity = "1";
+    }
+    if (n == 1) {
+      ogImg.src = pppImages[2];
+      newImg.src = pppImages[3];
+      pppAvatars[n].style.opacity = "1";
+    }
+    if (n == 2) {
+      ogImg.src = pppImages[4];
+      newImg.src = pppImages[5];
+      pppAvatars[n].style.opacity = "1";
+    }
+    if (n == 3) {
+      ogImg.src = pppImages[6];
+      newImg.src = pppImages[7];
+      pppAvatars[n].style.opacity = "1";
+    }
+    if (n == 4) {
+      ogImg.src = pppImages[8];
+      newImg.src = pppImages[9];
+      pppAvatars[n].style.opacity = "1";
+    }
+
+  };
+  
+  
+  let toxImages = ['https://cdn.shopify.com/s/files/1/0064/3003/1908/files/tox-1-before-new.jpg?v=1647316645','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/tox-1-new.jpg?v=1647316644','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/tox-2-before.jpg?v=1640364905','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/tox-2.jpg?v=1640364905','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/tox-3-before-new.jpg?v=1647316645','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/tox-3-new.jpg?v=1647316644','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/tox-4-before-new.jpg?v=1647316644','https://cdn.shopify.com/s/files/1/0064/3003/1908/files/tox-4-new.jpg?v=1647316645'];
+  
+  const runToxBA = (n) => {
+    for (var i=0; i < toxAvatars.length; i++) {
+      toxAvatars[i].style.opacity = "0.7";
+    };
+    
+    if (n == 0) {
+      ogImg.src = toxImages[0];
+      newImg.src = toxImages[1];
+      toxAvatars[n].style.opacity = "1";
+    }
+    if (n == 1) {
+      ogImg.src = toxImages[2];
+      newImg.src = toxImages[3];
+      toxAvatars[n].style.opacity = "1";
+    }
+    if (n == 2) {
+      ogImg.src = toxImages[4];
+      newImg.src = toxImages[5];
+      toxAvatars[n].style.opacity = "1";
+    }
+    if (n == 3) {
+      ogImg.src = toxImages[6];
+      newImg.src = toxImages[7];
+      toxAvatars[n].style.opacity = "1";
+    }
+
+  };
+  
+
+
+</script>

@@ -1,0 +1,63 @@
+<style>
+  .merch-main-wrap {background-color: white;}
+  .merch-main-cont {display: flex; flex-wrap: wrap; padding-bottom:4vw; padding-top:4vw;}
+  .merch-single {width:23%; margin: 2vw 1%; }
+  .prod img {width:100%; margin-bottom: 1vw;}
+  .merch-title {display: flex; justify-content: space-between; flex-wrap:wrap; margin-bottom:1vw; min-height:3vw;}
+  .merch-title p {font-size: 1.1vw !important; margin: 0; line-height: 1.4vw; font-weight:700; text-transform:uppercase;}
+  .prod-name {width:80%}
+  .prod-price {width:20%; text-align:right;}
+  .prod-link {    
+    border: 1px solid #2b2b2b;
+    color: #2b2b2b;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 1vw 0;
+    font-size: 1.1vw !important;
+    font-family: lust;
+    transition:.2s;
+  }
+  .prod-link:hover {background-color:#115e67; color:white; border: 1px solid #115e67;}
+  
+  
+  @media only screen and (min-width:1800px){
+    .merch-main-cont {max-width:1800px; margin: 0 auto;}
+    .merch-single {margin: 1rem 1%;}
+    .merch-title {min-height:3rem; margin-bottom:1rem;}
+    .merch-title p {font-size: 1.1rem !important; margin: 0; line-height: 1.5rem;}
+    .prod-link {padding: .8rem 0; font-size: 1.1rem !important;}
+  }
+  
+  @media only screen and (max-width:900px){
+    .merch-single {width:48%; margin: 4vw 1%;}
+    .prod img {margin-bottom:4vw;}
+    .merch-title p {font-size: 3.5vw !important; margin: 0; line-height: 4.5vw;}
+    .prod-name {width:100%; min-height:9vw !important;}
+  	.prod-price {width:100%; text-align:left; padding: .5rem 0;}
+    .prod-link {padding: 2vw 0; font-size: 3.5vw !important;}
+  }
+  
+
+</style>
+
+<div class="merch-main-wrap">
+
+  <div class="merch-main-cont">
+    
+    {% for product in collections.branded-swag.products %}
+      <div class="merch-single">
+        <div class="prod">
+          <a href="{{ product.url }}"><img src="{{ product | img_url: "large"  }}" alt="{{ product.featured_image.alt }}"></a>
+          <div class="merch-title">
+            <p class="prod-name">{{ product.title }}</p>
+          	<p class="prod-price">{{ product.price | money }}</p>
+          </div>
+            <a class="prod-link" href="{{ product.url }}">View Product</a>
+        </div>
+      </div>
+    {% endfor %}
+    
+  </div>
+  
+</div>

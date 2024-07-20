@@ -1,0 +1,698 @@
+{
+  "current": {
+    "heading_color": "#5c5c5c",
+    "text_color": "#5c5c5c",
+    "text_light_color": "#939393",
+    "link_color": "#323232",
+    "background": "#ffffff",
+    "light_background": "#ffffff",
+    "product_on_sale_color": "#f94c43",
+    "button_background": "#115e67",
+    "button_text_color": "#ffffff",
+    "header_background": "#ffffff",
+    "header_heading_color": "#5c5c5c",
+    "header_light_color": "#939393",
+    "footer_background": "#ffffff",
+    "footer_heading_color": "#5c5c5c",
+    "footer_text_color": "#939393",
+    "navigation_background": "#ffffff",
+    "navigation_text_color": "#5c5c5c",
+    "newsletter_popup_background": "#ffffff",
+    "newsletter_popup_text_color": "#1c1b1b",
+    "secondary_elements_background": "#5c5c5c",
+    "secondary_elements_text_color": "#ffffff",
+    "heading_font": "futura_n4",
+    "heading_size": "large",
+    "uppercase_heading": true,
+    "text_font": "century_gothic_n4",
+    "base_text_font_size": 15,
+    "show_page_transition": false,
+    "search_mode": "product,article",
+    "product_show_price_on_hover": false,
+    "product_show_secondary_image": false,
+    "show_product_rating": false,
+    "product_info_alignment": "center",
+    "product_image_size": "natural",
+    "product_list_horizontal_spacing": "small",
+    "product_list_vertical_spacing": "small",
+    "cart_type": "page",
+    "cart_enable_notes": true,
+    "cart_show_free_shipping_threshold": false,
+    "cart_free_shipping_threshold": "50",
+    "social_facebook": "https:\/\/www.facebook.com\/VIPEEL\/",
+    "social_twitter": "",
+    "social_instagram": "https:\/\/www.instagram.com\/vipeel\/",
+    "social_youtube": "https:\/\/www.youtube.com\/channel\/UCQSEbITEoll8Mzdbd0t9ldg",
+    "social_tiktok": "https:\/\/www.tiktok.com\/@vipeel",
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Website-logo-green.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "small",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_accent_color": "#323232",
+    "checkout_button_color": "#5c5c5c",
+    "sections": {
+      "sidebar-menu": {
+        "type": "sidebar-menu",
+        "settings": {
+          "primary_menu": "mobile-menu",
+          "secondary_menu": "",
+          "show_social_media": true
+        }
+      },
+      "announcement": {
+        "type": "announcement",
+        "settings": {
+          "enable_bar": true,
+          "home_page_only": false,
+          "background": "#115e67",
+          "text_color": "#ffffff",
+          "content": "",
+          "link": "#",
+          "content2": "Enjoy FREE Shipping on Orders over $150!",
+          "link2": "shopify:\/\/collections\/vi-derm",
+          "content3": "",
+          "link3": "#"
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "use_sticky_header": true,
+          "logo": "shopify:\/\/shop_images\/vitality-institute-logo-horizontal.png",
+          "logo_max_width": 220,
+          "mobile_logo_max_width": 145,
+          "show_currency_selector": false,
+          "show_locale_selector": false,
+          "navigation_menu": "main-menu",
+          "navigation_topleft_menu": "top-left-menu",
+          "navigation_left": "main-menu-left",
+          "navigation_right": "main-menu-right",
+          "navigation_style": "center",
+          "show_icons": false,
+          "enable_transparent_header": false,
+          "enable_transparent_header_collection": false,
+          "show_transparent_header_border": true,
+          "transparent_text_color": "#ffffff",
+          "transparent_logo": "shopify:\/\/shop_images\/vitality-institute-logo-horizontal.png"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "b81ecc96-c383-47ba-866b-3ddad19341d6": {
+            "type": "image",
+            "settings": {
+              "image_logo": "shopify:\/\/shop_images\/Website-badge-green.png"
+            }
+          },
+          "c001c60b-3de0-4cdd-a783-aab38cb434c8": {
+            "type": "links",
+            "settings": {
+              "menu": "customer-service"
+            }
+          },
+          "footer-2": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Sign up for our Newsletter",
+              "content": "<p>Sign up for our e-newletter for the latest offers and skin care advice!<\/p>"
+            }
+          },
+          "094573d2-09c5-4121-8e2b-afd79b3bca3c": {
+            "type": "contact",
+            "settings": {
+              "contact_number": "1-855-847-3357",
+              "text_number": "1-310-587-1910",
+              "show_social_media": true
+            }
+          }
+        },
+        "block_order": [
+          "b81ecc96-c383-47ba-866b-3ddad19341d6",
+          "c001c60b-3de0-4cdd-a783-aab38cb434c8",
+          "footer-2",
+          "094573d2-09c5-4121-8e2b-afd79b3bca3c"
+        ],
+        "settings": {
+          "show_payment_methods": true,
+          "show_currency_selector": true,
+          "show_locale_selector": false
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "show_popup": false,
+          "show_only_on_index": true,
+          "show_only_for_visitors": true,
+          "show_only_once": true,
+          "title": "Popup",
+          "content": "<p>You can use this popup to display some useful information to your customers.<\/p>",
+          "show_newsletter": true,
+          "apparition_delay": 5
+        }
+      },
+      "footer-faq": {
+        "type": "footer-faq",
+        "blocks": {
+          "footer-faq-0": {
+            "type": "faq",
+            "settings": {
+              "question": "Are your products cruelty free?",
+              "answer": "<p>Yes, all VI Derm products are cruelty free. We do not believe in animal testing and choose to partner with suppliers who share our beliefs.<\/p>"
+            }
+          },
+          "footer-faq-1": {
+            "type": "faq",
+            "settings": {
+              "question": "SPF 50 | Will the VI Derm SPF 50+ make me break out?",
+              "answer": "<p>The VI Derm SPF 50+ was formulated to prevent breakouts typically experienced with sunscreens. Although it is possible, most people who are acne-prone find great relief in our product.<br\/><\/p>"
+            }
+          },
+          "footer-faq-2": {
+            "type": "faq",
+            "settings": {
+              "question": "How long will my VI Derm products last?",
+              "answer": "<p>VI Derm products have a shelf-life of 2 years. For those that contain active ingredients you will find a expiration date located on the bottom of the bottle.<\/p>"
+            }
+          },
+          "f547521a-faa9-4b8b-ba74-714d09ed4d3c": {
+            "type": "faq",
+            "settings": {
+              "question": "What order do I apply your products?",
+              "answer": "<p>After proper cleansing, we recommend applying skin care products in the following manner. First serums, then concentrates, moisturizers and finally sunscreen.<\/p>"
+            }
+          },
+          "d119c11d-d0c8-471c-bb87-2f8f82e54db0": {
+            "type": "faq",
+            "settings": {
+              "question": "Do you ship internationally?",
+              "answer": "<p>We only ship to the US.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "footer-faq-0",
+          "footer-faq-1",
+          "footer-faq-2",
+          "f547521a-faa9-4b8b-ba74-714d09ed4d3c",
+          "d119c11d-d0c8-471c-bb87-2f8f82e54db0"
+        ],
+        "settings": {
+          "title": "FAQ'S"
+        }
+      },
+      "footer-testimonials": {
+        "type": "footer-testimonials",
+        "blocks": {
+          "footer-testimonials-0": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/B_A_sforWebsite-V02-01.jpg",
+              "username": "",
+              "testimonial_url": "https:\/\/www.instagram.com\/vipeel\/"
+            }
+          },
+          "footer-testimonials-1": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/B_A_sforWebsite-V02-02.jpg",
+              "username": "",
+              "testimonial_url": "https:\/\/www.instagram.com\/vipeel\/"
+            }
+          },
+          "footer-testimonials-2": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/B_A_sforWebsite-V02-03.jpg",
+              "username": "",
+              "testimonial_url": "https:\/\/www.instagram.com\/vipeel\/"
+            }
+          },
+          "6d539ab1-25a2-42ca-a65e-5b3fe58434ac": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/B_A_sforWebsite-V02-04.jpg",
+              "username": "",
+              "testimonial_url": "https:\/\/www.instagram.com\/vipeel\/"
+            }
+          },
+          "3ffeaa78-e393-48a3-be2c-0c4dfe26e42d": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/B_A_sforWebsite-V02-05.jpg",
+              "username": "",
+              "testimonial_url": "https:\/\/www.instagram.com\/vipeel\/"
+            }
+          },
+          "fb33afc1-84b8-4b80-b340-3066366c7ef8": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/B_A_sforWebsite-V02-06.jpg",
+              "username": "",
+              "testimonial_url": "https:\/\/www.instagram.com\/vipeel\/"
+            }
+          },
+          "89e8bf6f-ebb6-473e-b4c4-a7992df74497": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/B_A_sforWebsite-V02-07.jpg",
+              "username": "",
+              "testimonial_url": "https:\/\/www.instagram.com\/vipeel\/"
+            }
+          },
+          "42daa236-d6bd-4503-bf99-d01f9216a030": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/B_A_sforWebsite-V02-08.jpg",
+              "username": "",
+              "testimonial_url": "https:\/\/www.instagram.com\/vipeel\/"
+            }
+          }
+        },
+        "block_order": [
+          "footer-testimonials-0",
+          "footer-testimonials-1",
+          "footer-testimonials-2",
+          "6d539ab1-25a2-42ca-a65e-5b3fe58434ac",
+          "3ffeaa78-e393-48a3-be2c-0c4dfe26e42d",
+          "fb33afc1-84b8-4b80-b340-3066366c7ef8",
+          "89e8bf6f-ebb6-473e-b4c4-a7992df74497",
+          "42daa236-d6bd-4503-bf99-d01f9216a030"
+        ],
+        "settings": {
+          "title": ""
+        }
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "10384935893930344104": {
+        "type": "shopify:\/\/apps\/seoant-broken-link-redirect\/blocks\/brokenlink-404\/cc7b1996-e567-42d0-8862-356092041863",
+        "disabled": false,
+        "settings": {}
+      },
+      "10261849759452303822": {
+        "type": "shopify:\/\/apps\/shoppinggives\/blocks\/app-embed-block\/7b6c2cd4-8962-4dc6-975b-870e1f567789",
+        "disabled": false,
+        "settings": {}
+      },
+      "11724500921838622758": {
+        "type": "shopify:\/\/apps\/frequently-bought-together\/blocks\/app-embed-block\/b1a8cbea-c844-4842-9529-7c62dbab1b1f",
+        "disabled": false,
+        "settings": {}
+      },
+      "17151115064775110295": {
+        "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/recharge-theme\/371eed76-0b44-4869-9813-730372ea378e",
+        "disabled": false,
+        "settings": {
+          "color_brand": "#467C99",
+          "contrast_color": "#FFFFFF",
+          "color_brand_secondary": "#467C99",
+          "corners": "8px",
+          "app_background": "#f9f8f4",
+          "app_container": 1200,
+          "app_vertical_padding": 32,
+          "images_aspect_ratio": "1",
+          "cards_background": "#FFFFFF",
+          "cards_border_color": "rgba(0,0,0,0)"
+        }
+      },
+      "17288229127477420511": {
+        "type": "shopify:\/\/apps\/promap-store-locator\/blocks\/stockistform-embed-block\/acff8fd9-34cc-4a4d-98ed-d7fdb5d3605f",
+        "disabled": false,
+        "settings": {}
+      },
+      "16934432316630173842": {
+        "type": "shopify:\/\/apps\/promap-store-locator\/blocks\/wheretobuy-embed-block\/acff8fd9-34cc-4a4d-98ed-d7fdb5d3605f",
+        "disabled": false,
+        "settings": {}
+      },
+      "18020446634262408591": {
+        "type": "shopify:\/\/apps\/promap-store-locator\/blocks\/storelocator-embed-block\/acff8fd9-34cc-4a4d-98ed-d7fdb5d3605f",
+        "disabled": false,
+        "settings": {}
+      },
+      "1486654112309516955": {
+        "type": "shopify:\/\/apps\/bogo\/blocks\/feeniks-offers\/9416ce92-aaaf-4a81-8fdf-b9a4e639d6dc",
+        "disabled": true,
+        "settings": {}
+      },
+      "7079518687644006178": {
+        "type": "shopify:\/\/apps\/checkout-blocks\/blocks\/app-embed\/b0024ca5-9de8-4bf0-a92f-cd0783877ae2",
+        "disabled": false,
+        "settings": {
+          "utm_id": true,
+          "utm_source": true,
+          "utm_medium": true,
+          "utm_campaign": true,
+          "utm_term": true,
+          "ref": true
+        }
+      },
+      "13650390699542216616": {
+        "type": "shopify:\/\/apps\/accessibility-spark-ada-wcag\/blocks\/widget\/36895fac-ec38-47a0-807c-7397daa6ec4e",
+        "disabled": true,
+        "settings": {}
+      }
+    }
+  },
+  "presets": {
+    "Allure": {
+      "heading_color": "#1c1b1b",
+      "text_color": "#1c1b1b",
+      "text_light_color": "#6a6a6a",
+      "link_color": "#6a6a6a",
+      "background": "#efefef",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#1c1b1b",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#1c1b1b",
+      "header_light_color": "#6a6a6a",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#1c1b1b",
+      "footer_text_color": "#6a6a6a",
+      "newsletter_popup_background": "#1c1b1b",
+      "newsletter_popup_text_color": "#ffffff",
+      "secondary_elements_background": "#1c1b1b",
+      "secondary_elements_text_color": "#ffffff",
+      "navigation_background": "#1c1b1b",
+      "navigation_text_color": "#ffffff",
+      "heading_font": "montserrat_n5",
+      "heading_size": "small",
+      "uppercase_heading": true,
+      "text_font": "nunito_sans_n4",
+      "base_text_font_size": 14,
+      "show_page_transition": false,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": false,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "center",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "medium",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "page",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#efefef",
+      "checkout_accent_color": "#1c1b1b",
+      "checkout_button_color": "#1c1b1b",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#000000",
+            "text_color": "#ffffff",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "inline",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        }
+      }
+    },
+    "Couture": {
+      "heading_color": "#5c5c5c",
+      "text_color": "#5c5c5c",
+      "text_light_color": "#939393",
+      "link_color": "#323232",
+      "background": "#ffffff",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#5c5c5c",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#5c5c5c",
+      "header_light_color": "#939393",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#5c5c5c",
+      "footer_text_color": "#939393",
+      "newsletter_popup_background": "#ffffff",
+      "newsletter_popup_text_color": "#1c1b1b",
+      "secondary_elements_background": "#5c5c5c",
+      "secondary_elements_text_color": "#ffffff",
+      "navigation_background": "#ffffff",
+      "navigation_text_color": "#5c5c5c",
+      "heading_font": "futura_n4",
+      "heading_size": "large",
+      "uppercase_heading": false,
+      "text_font": "century_gothic_n4",
+      "base_text_font_size": 15,
+      "show_page_transition": false,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": true,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "left",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "small",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "page",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#323232",
+      "checkout_button_color": "#5c5c5c",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#f3f3f3",
+            "text_color": "#5c5c5c",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "center",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        }
+      }
+    },
+    "Vogue": {
+      "heading_color": "#303030",
+      "text_color": "#303030",
+      "text_light_color": "#595959",
+      "link_color": "#000000",
+      "background": "#ffffff",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#f5db8b",
+      "button_text_color": "#303030",
+      "header_background": "#ffffff",
+      "header_heading_color": "#303030",
+      "header_light_color": "#595959",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#303030",
+      "footer_text_color": "#595959",
+      "navigation_background": "#ffffff",
+      "navigation_text_color": "#303030",
+      "newsletter_popup_background": "#ffffff",
+      "newsletter_popup_text_color": "#303030",
+      "secondary_elements_background": "#fce7a8",
+      "secondary_elements_text_color": "#303030",
+      "heading_font": "din_neuzeit_grotesk_n3",
+      "heading_size": "small",
+      "uppercase_heading": true,
+      "text_font": "futura_n4",
+      "base_text_font_size": 14,
+      "show_page_transition": false,
+      "show_element_staggering": false,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": true,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "center",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "medium",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "page",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#a17c5e",
+      "checkout_button_color": "#454545",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#f1e4d8",
+            "text_color": "#343434",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "inline",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        }
+      }
+    }
+  }
+}

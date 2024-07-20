@@ -1,0 +1,96 @@
+{
+  "sections": {
+    "main": {
+      "type": "product-retinoic-serum",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
+          }
+        },
+        "b8e17f7b-d572-4740-bd91-3ece17eecb0d": {
+          "type": "button_link",
+          "settings": {
+            "btn_link_url": "https:\/\/vipeel.com\/pages\/sca-store-locator",
+            "btn_text": "Find Practitioner"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "b8e17f7b-d572-4740-bd91-3ece17eecb0d",
+        "description"
+      ],
+      "settings": {
+        "image_size": "large",
+        "stack_images": false,
+        "show_thumbnails": true,
+        "enable_image_zoom": true,
+        "enable_video_looping": false
+      }
+    },
+    "products-features-and-benefits": {
+      "type": "products-features-and-benefits",
+      "blocks": {
+        "eb6e30c3-5b98-4486-b9f9-816fa38e22d2": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Tretinoin 0.1%",
+            "features_desc": "Proven in clinical trials to transform the look of skin by speeding up cell turnover. Helps minimize the look of sun damage and wrinkles while keeping pores clear."
+          }
+        },
+        "ac17c0fb-c00e-4115-bdd3-be6357636f31": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Ascorbic Acid (Vitamin C)",
+            "features_desc": "Antioxidant; shields against free radical damage, stimulates collagen production, and brightens."
+          }
+        },
+        "03440315-ebd5-46c4-ad43-c5e5def818cc": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Vitamin E",
+            "features_desc": "Potent antioxidant that has the ability to protect, repair, and add hydration to skin."
+          }
+        }
+      },
+      "block_order": [
+        "eb6e30c3-5b98-4486-b9f9-816fa38e22d2",
+        "ac17c0fb-c00e-4115-bdd3-be6357636f31",
+        "03440315-ebd5-46c4-ad43-c5e5def818cc"
+      ],
+      "settings": {
+        "title": "Features\/Benefits",
+        "ingredients": "Active Ingredients: Tretinoin 0.1%\n<br>\nInactive Ingredients: Ascorbic Acid, Butylated Hydroxytoluene (BHT) Ceteareth 20, Cetearyl Alcohol, Dimethicone, Glyceryl Stearate, Glycol Stearate, Petrolatum,\nPhenoxyethanol, Propylene Glycol, Sorbitol, Tocopheryl Acetate (Vitamin E), Water"
+      }
+    },
+    "16372939849c0c93f6": {
+      "type": "product-howto-video",
+      "settings": {
+        "title": "How To Use",
+        "description": "<p>Say something about the video...<\/p>",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
+    },
+    "prod-ryviu": {
+      "type": "prod-ryviu",
+      "settings": {
+        "title": "Feature's Title"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "products-features-and-benefits",
+    "16372939849c0c93f6",
+    "prod-ryviu"
+  ]
+}

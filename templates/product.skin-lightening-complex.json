@@ -1,0 +1,105 @@
+{
+  "sections": {
+    "main": {
+      "type": "product-skin-lightening-complex",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
+          }
+        },
+        "60d292b9-9651-43ce-893b-83c837e2dce1": {
+          "type": "button_link",
+          "settings": {
+            "btn_link_url": "https:\/\/vi-aesthetics.myshopify.com\/pages\/sca-store-locator",
+            "btn_text": "Find Practitioner"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "60d292b9-9651-43ce-893b-83c837e2dce1",
+        "description"
+      ],
+      "settings": {
+        "image_size": "large",
+        "stack_images": false,
+        "show_thumbnails": true,
+        "enable_image_zoom": true,
+        "enable_video_looping": false
+      }
+    },
+    "products-features-and-benefits": {
+      "type": "products-features-and-benefits",
+      "blocks": {
+        "f64f3130-661d-4953-ad24-e5cf3c702128": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Hydroquinone",
+            "features_desc": "Effective skin lightening ingredient for a decrease in hyperpigmentation, reducing brown spots and age spots, and melasma."
+          }
+        },
+        "ff54858e-d851-4c36-be5b-ce5529d7ade5": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Vitamin A",
+            "features_desc": "Stimulates cell turnover to renew;\nhelps minimize signs of wrinkles\nfor healthier-looking skin."
+          }
+        },
+        "5a0ea978-d6df-45e7-a323-07e7e7e26e90": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Arnica Montana",
+            "features_desc": "An anti-inflammatory that improves skin health and helps stimulate circulation."
+          }
+        },
+        "c7fce774-4f80-4037-8cac-4a3704fa4fef": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Kojic Acid, Alpha Arbutin & Licorice Root",
+            "features_desc": "Botanical skin brighteners that boost Hydroquinone's power."
+          }
+        }
+      },
+      "block_order": [
+        "f64f3130-661d-4953-ad24-e5cf3c702128",
+        "ff54858e-d851-4c36-be5b-ce5529d7ade5",
+        "5a0ea978-d6df-45e7-a323-07e7e7e26e90",
+        "c7fce774-4f80-4037-8cac-4a3704fa4fef"
+      ],
+      "settings": {
+        "title": "Features\/Benefits",
+        "ingredients": "Allantoin, Alpha Arbutin, Arnica Montana Flower Extract, Ascorbic Acid, Azaleic Acid, BHT, Camellia Sinensis (Green Tea) Leaf Extract, Caprylic\/Capric Triglyceride,\nCetearyl Alcohol, Ceteth-10 Phosphate, Cetyl Alcohol, Dicetyl Phosphate, Dimethicone, Glycerin, Glyceryl Stearate, Glycyrrhiza Glabra (Licorice) Root Extract, Isopropyl Palmitate, Kojic Acid Dipalmitate, Malic Acid, Malva Sylvestris (Mallow) Flower\/Leaf\/Stem Extract, Ordenone, PEG-100 Stearate, Phenoxyethanol, Propylene Glycol, Retinyl Palmitate, Sodium Metabisulfite, Tetrasodium EDTA, Tocopheryl Acetate, Triethanolamine, Water\/Aqua."
+      }
+    },
+    "product-howto-video": {
+      "type": "product-howto-video",
+      "settings": {
+        "title": "How To Use",
+        "description": "<p>Cleanse the skin thoroughly before use. Cover the affected area<br\/>with a thin layer morning and night or as directed by your<br\/>healthcare practitioner. Use sunscreen daily. We recommend<br\/>VI SPF 50 Daily UV Defense Broad Spectrum Sunscreen.<\/p>",
+        "image": "shopify:\/\/shop_images\/img-bg-video-how-to-use.png",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
+    },
+    "prod-ryviu": {
+      "type": "prod-ryviu",
+      "settings": {
+        "title": "Feature's Title"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "products-features-and-benefits",
+    "product-howto-video",
+    "prod-ryviu"
+  ]
+}

@@ -1,0 +1,647 @@
+.Footer .vi-footer .footer-formnl .Form__Input::placeholder {color:black !important; opacity: 1 !important;}
+.Footer__Localization button {color:black;}
+
+.ProductMeta .short-description {padding: 20px 0px;}
+.ProductMeta h1.ProductMeta__Title {padding-bottom:15px;}
+.ProductMeta .ProductForm__Variants {margin-top: 0px;}
+.ProductMeta__Description p {font-size:15px;}
+
+
+.old-design {display:none;}
+
+body .Section-How-To-Use {display:block !important;}
+body .Section-Features-Benefits {display:block !important;}
+.Section-Features-Benefits .gridfab-wrapper .Grid_fab .fab-container h3 {font-size:16px !important;}
+
+body .Article__Footer {display: block; margin-top: 40px; text-align: center;}
+body .Article__Footer img {    
+  max-width: 100%;
+    height: auto;
+    border-style: none;
+    vertical-align: top;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+@media only screen and (max-width:640px){
+  #shopify-section-announcement {top:72px;}
+}
+
+body .Button--primary {font-family: 'gotham-bold' !important; letter-spacing:0;}
+.first-menu li:first-of-type .DropdownMenu {display:none!important;}
+
+.vi-mega-menu {
+  display:none;
+  position: absolute; top:30px; left:0;
+  width:100%; 
+  padding:40px;
+  background-color:white;
+}
+
+.vi-mega-menu-cont {width:90%; margin: 0 auto; display:flex; justify-content: space-between;}
+.mega-box {width:20%;}
+
+
+.mega-box h3 {font-size:1.2vw; font-weight:400; margin-bottom:1vw; font-family: 'Gotham-Bold'; }
+.mega-box a {
+	display: block;
+    font-size: 1.1vw!important;
+    margin-bottom: 1vw;
+    line-height: 1.55vw;
+    font-weight: 400 !important;
+    font-family: 'gotham-medium' !important;
+}
+
+.mega-image {
+  width:100%; 
+  height: 17vw; 
+  background-image: url('https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Vitamin-C-Featured.jpg?v=1692736515'); 
+  background-size:cover;
+  margin-bottom:1vw;
+}
+
+.mega-image2 {
+  width:100%; 
+  height: 17vw; 
+  background-image: url('https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Retinol-Age-Featured.jpg?v=1692736514'); 
+  background-size:cover;
+  margin-bottom:1vw;
+}
+
+.mega-box h4 {font-size:1vw; font-weight:400; margin-bottom:0vw; font-family: 'Gotham-Bold'; }
+.feat-prod-link {text-align:center;}
+
+.first-menu li:first-of-type:hover .vi-mega-menu {display:block; border-bottom: 1px solid lightgrey;}
+
+
+.mega-image-link {transition: .2s;}
+.mega-image-link:hover {transform: scale(.98);}
+
+
+@media only screen and (min-width:1480px){
+  .vi-mega-menu-cont {max-width:1400px;}
+  .mega-box h3 {font-size:18px; margin-bottom:10px;}
+  .mega-box a {font-size: 15px!important; line-height: 20px; margin-bottom: 15px;}
+  .mega-box h4 {font-size:14px;}
+}
+
+
+.sub-link {color:white !important; transition:.2s; font-size:15px !important; margin-bottom:5px !important;}
+.sub-link:hover {font-weight:800;}
+
+
+/* Hero Slider */
+/* Slideshow.liquid CSS changed */
+  #Slideslide-0 .vip-slide-container {max-width: 742px;}
+  #Slideslide-1 .vip-slide-container {max-width: 742px;}
+
+
+  /* Pride Slide */
+  #Slide30f9de3e-f7fb-4209-af9f-98ef496ded82 .Slideshow__Content {top:55%;}
+  #Slide30f9de3e-f7fb-4209-af9f-98ef496ded82 .slide_text_bottom {color:#1C4249 !important; font-size:1.1vw !important;}
+  body #Slide30f9de3e-f7fb-4209-af9f-98ef496ded82 .Slideshow__Content .Button {width:27vw; border: 3px solid white; border-radius: 3vw; margin-top:23vw; cursor:pointer !important; font-size:1.2vw !important;}
+  body #Slide30f9de3e-f7fb-4209-af9f-98ef496ded82 .Slideshow__Content .Button::before {background: transparent;}
+  
+  body #Slide30f9de3e-f7fb-4209-af9f-98ef496ded82 .Slideshow__Content .Button:hover {background-color:white; color:#1C4249 !important;}
+
+
+body #Slideimage_PtbNex .slide_text_bottom {color:white !important; font-size:1.1vw !important;}
+body #Slideimage_PtbNex .Slideshow__Content .Button {border: 3px solid white !important; border-radius: 3vw; cursor:pointer !important; font-size:1.2vw !important; padding: 1vw 0;
+    margin-top: -18vw;}
+body #Slideimage_PtbNex .Slideshow__Content .Button::before {background: transparent;}
+
+
+
+  /* Dark Spot Slide */
+  body #Slide9b00453c-a106-4acc-8056-d6d41d113b68 .Slideshow__Content {
+    top:60% !important;
+}
+
+  body #Slide9b00453c-a106-4acc-8056-d6d41d113b68 .SectionHeader__Heading.SectionHeader__Heading {
+    font-size: 3vw !important;
+    margin-bottom: 0vw !important;
+  }
+  body #Slide9b00453c-a106-4acc-8056-d6d41d113b68 .Slideshow__Content .Button {width:27vw; border: 3px solid #F48C8C; border-radius:3vw; margin-top:2vw; cursor:pointer !important; font-size:1.2vw !important; color:#F48C8C;}
+  body #Slide9b00453c-a106-4acc-8056-d6d41d113b68 .Slideshow__Content .Button::before {background: transparent;}
+  body #Slide9b00453c-a106-4acc-8056-d6d41d113b68 .Slideshow__Content .Button:hover {background-color:#F48C8C; color:white !important;}
+
+/* Mineral Slide */
+body #Slidebe7cc53b-344a-4681-b345-9ddc4cad0b0a .Slideshow__Content .ButtonGroup--spacingSmall {margin: -45px;}
+body #Slidebe7cc53b-344a-4681-b345-9ddc4cad0b0a .Slideshow__Content .Button {width:17vw; border: none; border-radius:3vw; margin-top:2vw; cursor:pointer !important; font-size:1.6vw !important; color:white;}
+body #Slidebe7cc53b-344a-4681-b345-9ddc4cad0b0a .Slideshow__Content .Button::before {background: transparent;}
+
+/* June Chairty Slide */
+body #Slide6dac06d6-7851-4a44-964e-754038f70b44 .Slideshow__Content .Button {
+    width: 36vw;
+    border: 2px solid #f48c8c;
+    border-radius: 3vw;
+    cursor: pointer!important;
+    font-size: 1.6vw!important;
+    font-weight: 100;
+    font-family: 'Gotham-Light';
+    color: #fff;
+    padding: 0.5vw 0;
+    margin-bottom: -1vw;}
+
+body #Slide6dac06d6-7851-4a44-964e-754038f70b44 .Slideshow__Content .Button:hover {background-color:#f48c8c;}
+body #Slide6dac06d6-7851-4a44-964e-754038f70b44 .Slideshow__Content .Button::before {background: transparent;}
+
+/* Skin Brightening System Slide */
+#Slide03521135-1ffd-4526-b482-14b9963e3cb3 {}
+body #Slide03521135-1ffd-4526-b482-14b9963e3cb3 .Slideshow__Content .Button {width:27vw; border: 3px solid white; border-radius:3vw; margin-top:2vw; cursor:pointer !important; font-size:1.2vw !important; color:white; position:absolute; bottom:0vw; left:32vw;}
+body #Slide03521135-1ffd-4526-b482-14b9963e3cb3 .Slideshow__Content .Button::before {background: transparent;}
+body #Slide03521135-1ffd-4526-b482-14b9963e3cb3 .Slideshow__Content .Button:hover {background-color:white; color:#F48C8C !important;}
+
+body #Slide03521135-1ffd-4526-b482-14b9963e3cb3  .Slideshow__Content p {position: absolute; bottom: -4vw; left: 29vw; font-family: 'gotham-bold';}
+
+/* ToxBooster Banner */
+#Slideimage_TmWhcR {}
+
+body #Slideimage_TmWhcR .Slideshow__Content .Button {    
+    width: 22vw;
+    border: 3px solid #fb8a8c;
+    background-color: #f88787;
+    border-radius: 0;
+    margin-top: 2vw;
+    cursor: pointer !important;
+    font-size: 1.2vw !important;
+    color: white;
+    position: absolute;
+    bottom: 0vw;
+    left: -3vw;
+}
+
+body #Slideimage_TmWhcR .Slideshow__Content .Button::before {background: transparent;}
+body #Slideimage_TmWhcR .Slideshow__Content .Button:hover {}
+
+/* Mobile Slider Settings */
+@media only screen and (max-width:700px) {
+
+  /* June Charity Slide */
+  #Slide6dac06d6-7851-4a44-964e-754038f70b44 .Slideshow__Content {top:80%;}
+  body #Slide6dac06d6-7851-4a44-964e-754038f70b44 .Slideshow__Content .Button {
+    width: 95vw;
+    border: solid 2px #f48c8c;
+    border-radius: 999px;
+    margin: 2vw auto 0 auto;
+    padding: 2vw 0;
+    cursor: pointer!important;
+    font-size: 4vw!important;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+  }
+
+/* Mineral Slide */
+  #Slidebe7cc53b-344a-4681-b345-9ddc4cad0b0a .Slideshow__Content {top:32%;}
+  body #Slidebe7cc53b-344a-4681-b345-9ddc4cad0b0a .Slideshow__Content .Button {
+      width: 43vw;
+    border: none;
+    border-radius: 0;
+    margin: 9vw 8vw 0 auto;
+    cursor: pointer!important;
+    font-size: 4vw!important;
+    text-align: center;
+    color: white;
+    background-color: #F58C8D;
+  }
+  
+  
+  /* Pride Slide */
+    #Slide30f9de3e-f7fb-4209-af9f-98ef496ded82 .Slideshow__Content {top:32%;}
+  	#Slide30f9de3e-f7fb-4209-af9f-98ef496ded82 .slide_text_bottom {    
+      color: #ffffff !important;  
+      font-size: 4vw !important;
+      background-color: #1c4249;
+      padding: 3vw 2vw;
+      border-radius: 3vw;}
+    
+      body #Slide30f9de3e-f7fb-4209-af9f-98ef496ded82 .Slideshow__Content .Button {
+      width: 90vw;
+      border: 3px solid white;
+      border-radius: 15vw;
+      margin-top: 20vw;
+      cursor: pointer !important;
+      font-size: 4vw !important;}
+
+
+  body #Slideimage_PtbNex .slide_text_bottom {color:white !important; font-size:inherit !important;}
+body #Slideimage_PtbNex .Slideshow__Content .Button {border: 1px solid white !important; border-radius: 3vw; cursor:pointer !important; font-size:inherit !important; padding: 5px 0;
+    margin-top: 0vw;}
+body #Slideimage_PtbNex .Slideshow__Content .Button::before {background: transparent;}
+  
+  /* Dark Spot Slide */
+  body #Slide9b00453c-a106-4acc-8056-d6d41d113b68 .Slideshow__Content {top:30% !important;}
+  body #Slide9b00453c-a106-4acc-8056-d6d41d113b68 .SectionHeader__Heading.SectionHeader__Heading {color:white !important; font-size: 5.8vw !important;}
+  	#Slide9b00453c-a106-4acc-8056-d6d41d113b68 .slide_text_bottom {    
+      color: #ffffff !important;  
+      font-size: 4vw !important;
+      padding: 0;
+      border-radius: 3vw;}
+    
+      body #Slide9b00453c-a106-4acc-8056-d6d41d113b68 .Slideshow__Content .Button {width: 60vw; border: 3px solid #F48C8C; border-radius: 15vw; margin-top: 0vw; cursor: pointer !important; font-size: 4vw !important;}
+
+
+    /* Skin Brightening System Slide */
+    body #Slide03521135-1ffd-4526-b482-14b9963e3cb3 .Slideshow__Content {bottom:23% !important;}
+
+  	#Slide03521135-1ffd-4526-b482-14b9963e3cb3 .slide_text_bottom {    
+      color: #ffffff !important;  
+      font-size: 4vw !important;
+      padding: 0;
+      border-radius: 3vw;}
+    
+      body #Slide03521135-1ffd-4526-b482-14b9963e3cb3 .Slideshow__Content .Button {width: 60vw; border-radius: 15vw; margin-top: 0vw; cursor: pointer !important; font-size: 4vw !important;}
+  body #Slide03521135-1ffd-4526-b482-14b9963e3cb3  .Slideshow__Content p {position: absolute; bottom: -20vw; left: 0vw; font-family: 'gotham-bold';}
+
+  body #Slide03521135-1ffd-4526-b482-14b9963e3cb3 .Slideshow__Content .Button {border: 3px solid white; color:white; position:absolute; bottom:0vw; left:13vw;}
+
+
+/* ToxBooster Banner */
+    #Slideimage_TmWhcR {}
+    
+    body #Slideimage_TmWhcR .Slideshow__Content .Button {
+      width: 58vw;
+      border: 3px solid #f88787;
+      border-radius: 0;
+      cursor: pointer!important;
+      font-size: 3.5vw!important;
+      position: static;
+    }
+    
+    body #Slideimage_TmWhcR .Slideshow__Content .Button::before {background: transparent;}
+    body #Slideimage_TmWhcR .Slideshow__Content .Button:hover {}
+  
+  
+}
+
+
+
+body #Slideslide-0 .Slideshow__Content {
+  	width: 40%;
+    padding: 0;
+    left: 4%;
+    transform: none;
+    top: 38%;
+
+}
+
+body #Slideslide-1 .Slideshow__Content {
+  	width: 37%;
+    padding: 0;
+    left: auto;
+    right: 3%;
+    transform: none;
+    top: 25%;
+}
+
+body #Slideslide-1 .Slideshow__Content h2 {color:#115e67 !important}
+body #Slideslide-1 .Slideshow__Content p {color:#115e67 !important}
+
+
+body .Slideshow__Content h2 {
+    font-family: lust, serif !important;
+    font-weight:  700;
+    font-style: normal;
+    font-size: 4.2vw !important;
+    letter-spacing: normal;
+    text-transform: lowercase;
+    line-height: 4.5vw;
+    text-align: center;
+    margin-top: 0px !important;
+    margin-bottom: 1vw;
+  }
+
+body .Slideshow__Content h3 {
+    text-align: center;
+    font-family: 'Fort-Collins-Script';
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    font-size: 5vw!important;
+    line-height: 100%;
+    margin-bottom: -0.5vw;
+    letter-spacing: normal;
+  }
+
+  body .Slideshow__Content p {
+    font-size: 1.1vw;
+    font-weight: 600;
+    font-family: 'Gotham-Book';
+    text-align: center;
+  }
+
+  body .Slideshow__Content .Button {
+    font-family: Gotham-Bold;
+    letter-spacing: normal;
+    color: #fff;
+    margin: 0vw auto;
+    border: 0;
+    font-size: 1.1vw;
+    width: 14vw;
+    padding: 1.5vw 0;
+}
+
+
+
+/* Featured Collection */
+.collection-carousel-container .col-carousel-panel .Carousel__Cell .ProductItem {transition:.2s;}
+
+.collection-carousel-container .col-carousel-panel .Carousel__Cell .ProductItem:hover {
+	background-color: white;
+	border: 0px;
+  	transform: scale(1.05);
+}
+
+.collection-carousel-container .ryviu-collection {margin:8px auto;}
+
+.collection-carousel-container .ProductList .flickity-viewport {height:41vw !important;  max-height:525px;}
+
+ .ProductItem__Title {min-height:60px !important;}
+
+
+.Footer__Block--image {flex-basis:250px;}
+.Footer__Block .Footer__Block--text .Rte {margin-top:30px;}
+
+
+
+.ProductMeta__Description ul {margin-left:15px;}
+
+
+body .bh-sl-container {float:inherit; padding: 0 15px; margin: 30px auto; width: 80%;}
+
+
+/* Testimonials Page */
+.testimonial-wrap {width: 80%; margin: 40px auto 30px auto; max-width:1200px;}
+.vid-box {margin-bottom:40px;}
+.testimonial-wrap h2 {    
+    display: block;
+    padding: 10px 20px;
+    border-top: 1px solid #115e67;
+    border-bottom: 1px solid #115e67;
+    font-family: Gotham-Bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #115e67;
+    text-align: center;
+}
+
+
+.test-image-cont {display:flex; justify-content: space-between; flex-wrap:wrap;}
+.test-image-cont img {width:48%; margin: 30px 0 30px 0}
+
+.quiz-wrap {margin: 30px 0;}
+.quiz-title {font-size: 40px; text-align:center; margin-bottom:0px;}
+.quiz-p {text-align: center; font-size: 16px; max-width: 630px; margin: 0 auto 0px auto;}
+
+
+
+body .ProductMeta h3.collection_top {display:none;}
+body .ProductMeta__PriceList {margin-top:0;}
+body .ProductMeta .psize_top_border_title {margin-top:5px;}
+body .ProductMeta .psize_top_border {padding: 8px 18px;}
+body .ProductMeta {padding-bottom:10px;}
+body #rc_radio_options label {font-size:14px;}
+body label.rc_label__deliver_every {padding: 0 0 0 23px;}
+body div.rc_block__type {padding:4px 8px;}
+body div.rc_popup__hover {height:25px;}
+body div#rc_container {margin-bottom:0;}
+body .ProductForm__QuantitySelector {margin-top:8px; margin-bottom:0;}
+body .ProductForm__AddToCart {letter-spacing:0;}
+body .ProductMeta__Description h2.desc_title {margin: 30px 0 5px 0;}
+body .Rte p:not(:last-child) {margin-bottom:15px;}
+body .Rte li {padding: 2px 0;}
+body .Product__Wrapper {margin-bottom:-50px;}
+
+
+body .CartItem__Meta {font-family:'gotham';}
+
+.features--heading-large .Rte h2 {font-size: 24px;
+    font-family: 'Gotham-Bold';
+    letter-spacing: 0 !important;}
+
+.features--heading-large .Rte h3 {font-size: 24px;
+    font-family: 'Gotham-Bold';
+    letter-spacing: 0 !important;}
+
+.PageHeader {margin-bottom:0 !important;}
+
+.subscribe-page-faq {width:60%; margin: 0 auto;}
+
+.subscribe-page-faq .accordionButton {letter-spacing:0;}
+
+.collection-carousel-container {max-width:1200px; margin: 0 auto;}
+
+
+.Linklist__Item a {transition:.2s;}
+.Linklist__Item a:hover {margin-left:5px; font-weight:800;}
+
+
+.Cart__Total {font-family: 'gotham' !important;}
+
+/* Delivery Waiver */
+.mw-ncd-label__content {
+  color: #0f5e67;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* Small Laptop */
+
+@media only screen and (max-width:1427px) {
+  .HorizontalList--spacingExtraLoose .HorizontalList__Item {margin-right: 6px; margin-left: 6px;}  
+  .Grid_Split_Menu .HorizontalList li a {font-size:14px;}
+  .collection-carousel-container .ProductItem__Title {min-height:68px;}
+  .collection-carousel-container .ProductList .flickity-viewport {height:44vw !important;}
+
+}
+
+
+/* Tablet */
+
+@media only screen and (max-width:1140px) {
+
+  .Header__Wrapper .HorizontalList--spacingExtraLoose {margin-left:10px;}
+  ul.top_left_menu li a {font-size:14px;}
+  .for-professionals {display:none;}
+  
+  .Grid_BAF h2.baf-title {font-size:60px;}
+  .Grid_BAF h3.baf-subheading {font-size:30px;}
+  
+  .first-search {display:none !important;}
+
+}
+
+
+@media only screen and (max-width:700px){
+  a[title="practitioner-locator"] {display:none !important;}
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width:640px) {
+  
+  .Grid_Announcement .mobile-view-item a {font-family: 'gotham-bold';}
+
+  body #Slideslide-0 .Slideshow__Content {
+  	width: 80%;
+    left: 10%;
+    top: 8%;
+  }
+
+  body #Slideslide-1 .Slideshow__Content {
+    width: 80%;
+    left: 10%;
+    top: auto;
+    bottom: 8%
+  }
+
+  body .Slideshow__Content h2 {
+      line-height: 9vw;
+      margin-top: 0px !important;
+      margin-bottom: 3vw;
+      color: white !important;
+    }
+  
+  .features--heading-large .u-h1 {font-size:8vw !important;}
+
+  body .Slideshow__Content h3 {
+      text-align: center;
+      font-size: 12vw !important;
+      line-height: 100%;
+      margin-bottom: 1vw;
+      color: #f48c8c !important;
+    }
+
+    body .Slideshow__Content p {
+      font-size: 2.5vw;
+      text-align: center;
+      color: white !important;
+    }
+
+    body .Slideshow__Content .Button {
+      color: #fff;
+      margin: 0 auto;
+      border: 0;
+      font-size: 2.5vw;
+      width: 60vw;
+      padding: 3.4vw 0;
+  }
+  
+  .bc-text-elements {width:28vw !important;}
+  .Grid_Banners .bc-content .bc-text .bc-text-wrap h2.title_top {font-size: 5vw !important; line-height:4vw;}
+  .Grid_Banners .bc-content .bc-text .bc-text-wrap h3.sub_title_top {margin-bottom: 2vw; font-size: 3vw; font-weight: 800;}
+  .bc-text-wrap .text-body {font-size: 2.6vw; line-height: 3vw; margin-top: 2vw; margin-bottom: 3vw !important; font-weight: 800;}
+  
+  .Grid_BAF .baf-content .baf-content-text p {color:#1b1b1b;}
+  .Grid_Logo .Grid__Cell {margin-bottom: 45px;}
+  
+  #shopify-section-footer-testimonials h3 {text-align:left; line-height:10vw;}
+  
+  
+  body .ProductList--carousel .Carousel__Cell:first-child {margin-left:0;}
+  body .ProductList--carousel .Carousel__Cell {width:50%;}
+  body .ProductList--carousel .ProductItem__Title {line-height:20px; margin-top:10px;}
+  body .ProductItem__Info .ProductItem__PriceList a.add_to_cart_list span.cart_title {font-size:13px;}
+  body .ProductItem__Info h2 a {font-size:15px;}
+  
+  .mobile-dots {width:40%; margin: 15px auto; display:flex; justify-content: space-evenly;}
+  .vi-dot {width:12px; height: 12px; border: 1px solid #115e67; border-radius:999px;}
+  
+  .col-carousel-panel .Container .SectionFooter {margin: 20px auto 30px auto !important;}
+  
+  body .bh-sl-container {float:inherit; padding: 0 15px; margin: 10px auto; width: 100%;}
+  
+  .test-image-cont img {width:100%}
+  
+  .quiz-wrap {margin: 30px 0;}
+	.quiz-title {font-size: 38px; text-align:center; margin-bottom: 15px; line-height: 40px;}
+  .quiz-p {padding: 0 10px;}
+  
+  body .Product__Wrapper {margin-bottom:15px;}
+  body .Section-Features-Benefits {margin-top:0px;}
+  body .Section-Features-Benefits .gridfab-wrapper {padding-bottom:0; margin-bottom:0;}
+  body .Section-How-To-Use {padding-bottom: 0 !important;}
+  
+  
+  .features--heading-large .Rte h2 {font-size:24px;}
+  
+  .subscribe-page-faq {width:90%; margin: 0 auto;}
+  
+  .footer-links .Footer__Title {display: none;}
+
+
+}
+
+
+.pobox {
+    text-align: right;
+    margin: 40px 0;
+    font-family: 'Gotham-Medium';
+    color: #115e67;
+}
+
+
+.qr-block {display:flex; align-items: flex-start; flex-wrap:wrap;}
+.qr-block p {width:60%; margin-right:3%;}
+.qr-block img {width:30%;}
+
+@media only screen and (max-width:600px){
+  .qr-block {justify-content:space-around;}
+  .qr-block p {width:100%; margin-right:0%;}
+  .qr-block img {width:60%; margin-bottom:2rem;}
+  
+}
+
+.award-cont {display:flex; align-items: flex-start; flex-wrap:wrap;}
+.award-cont .award-text {width:100%; margin-right:0%;}
+.award-cont img {width:50%;}
+
+@media only screen and (max-width:1024px){
+  .award-cont {display:flex; align-items: center; flex-wrap:wrap;}
+  .award-cont .award-text {width:50%; margin-right:0%;}
+  .award-cont img {width:22%;}
+  
+}
+
+@media only screen and (max-width:600px){
+  .award-cont {justify-content:flex-start;}
+  .award-cont .award-text {width:100%; margin-right:0%;}
+  .award-cont img {width:50%; margin-top:2rem;}
+
+  .mobile_top_view .trustpilot-widget {width:180px !important;}
+  .sms-disclaimer {max-width: 90%; margin: 2rem auto;}
+  .footer-contact-mobile .Footer__Title a {font-size:18px;}
+  .Footer .vi-footer {display: block;}
+
+  .SidebarMenu .Text--subdued {color: black !important;}
+  
+}
+
+@media only screen and (max-width:1629px){
+  .Footer .vi-footer .vi-footer-items {max-width:24%; margin-right:1%;}
+  .Footer .vi-footer .vi-footer-items .footer-logo {width:100px}
+  .Footer .vi-footer .vi-footer-items .Footer__Title {font-size: 15px;}
+  body .vi-footer-items:last-of-type {margin-right:0 !important; margin-left:1% !important;}
+}
+
+.Footer .vi-footer {display: flex; justify-content: space-between; flex-wrap:wrap;}
+
+.sms-disclaimer {font-size:14px; font-weight:400; font-family:'gotham-book'; max-width:250px !important; color:#3b3a3a !important; margin-top:2rem;}
+.footer-address {margin-top:2rem;}
+body .vi-footer-items:last-of-type {margin-right:0; margin-left:2%;}
+
+#rc_container {margin: 15px 0 !important;}
+
+/* Accessibility */
+.vi-copy a {
+    text-decoration-color: transparent !important;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,92 @@
+<section class="Section Section-How-To-Use" id="section-{{ section.id }}">
+
+  <div class="Container">
+    <div class="Grid Grid--middle Grid-How-To">
+      <div class="Grid__Cell 1/2--tablet-and-up">
+        <div class="how-to-video-wrapper">
+            <div class="how-to-video">
+              <div class="FlexboxIeFix">
+                 <img class="how-pic" src="https://cdn.shopify.com/s/files/{{ product.metafields.details.howvid }}" alt="How To Use">
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="Grid__Cell 1/2--tablet-and-up">
+        <div class="how-to-text-wrapper">
+          {%- if section.settings.title != blank -%}
+            <h2 class="how-to-title">{{ section.settings.title }}</h2>
+          {%- endif -%}
+
+          <div class="how-to-text">
+            {{ product.metafields.details.howto }}
+          </div>  
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<div id="modal-{{ section.id }}" class="Modal Modal--fullScreen Modal--videoContent" aria-hidden="true" role="dialog" data-scrollable>
+  <div class="Modal__Content">
+    <div class="Container Container--narrow">
+      <div class="VideoWrapper">
+        
+        <img class="how-pic" src="https://cdn.shopify.com/s/files/{{ product.metafields.details.howpic }}">
+        
+      </div>
+    </div>
+  </div>
+
+  <button class="Modal__Close Modal__Close--outside" data-animate-bottom data-action="close-modal">{% render 'icon' with 'close' %}</button>
+</div>
+
+
+
+<style>
+  #section-{{ section.id }},
+  #section-{{ section.id }} .Heading {
+    color: {{ section.settings.text_color }};
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Product How To Use",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Your video"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Say something about the video...</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "555 x 555px .jpg recommended."
+    },
+    {
+      "type": "video_url",
+      "accept": ["vimeo", "youtube"],
+      "id": "video_url",
+      "label": "Video URL",
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Product",
+      "name": "Product How To Use",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

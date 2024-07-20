@@ -1,0 +1,161 @@
+<section class="Section Section--spacingNormal" id="baf-{{ section.id }}">
+ <div class="Container">
+  <div class="Grid Grid_BAF ">
+    <div class="Grid__Cell 1/3--tablet-and-up baf-col">
+      <div class="baf-container">
+        {%- if section.settings.image_before != blank and section.settings.image_after != blank -%}
+        <div class="twentytwenty-wrapper twentytwenty-horizontal">
+            <div class="twentytwenty-container">
+              <img src="{{ section.settings.image_before-one | img_url: '520x'}}" class="twentytwenty-before">
+              <img src="{{ section.settings.image_after-one | img_url: '520x'}}" class="twentytwenty-after">
+            </div>
+        </div>
+        {%- endif -%}
+        {%-if section.settings.bottom_text != blank -%}
+          <div class="baf-bottom-text">{{ section.settings.bottom_text }}</div>
+        {%- endif -%}
+      </div>
+    </div>
+
+    <div class="Grid__Cell 1/3--tablet-and-up baf-col">
+      <div class="baf-container">
+        {%- if section.settings.image_before != blank and section.settings.image_after != blank -%}
+        <div class="twentytwenty-wrapper twentytwenty-horizontal">
+            <div class="twentytwenty-container">
+              <img src="{{ section.settings.image_before-two | img_url: '520x'}}" class="twentytwenty-before">
+              <img src="{{ section.settings.image_after-two | img_url: '520x'}}" class="twentytwenty-after">
+            </div>
+        </div>
+        {%- endif -%}
+        {%-if section.settings.bottom_text != blank -%}
+          <div class="baf-bottom-text">{{ section.settings.bottom_text }}</div>
+        {%- endif -%}
+      </div>
+    </div>
+
+    <div class="Grid__Cell 1/3--tablet-and-up baf-col">
+      <div class="baf-container">
+        {%- if section.settings.image_before != blank and section.settings.image_after != blank -%}
+        <div class="twentytwenty-wrapper twentytwenty-horizontal">
+            <div class="twentytwenty-container">
+              <img src="{{ section.settings.image_before-three | img_url: '520x'}}" class="twentytwenty-before">
+              <img src="{{ section.settings.image_after-three | img_url: '520x'}}" class="twentytwenty-after">
+            </div>
+        </div>
+        {%- endif -%}
+        {%-if section.settings.bottom_text != blank -%}
+          <div class="baf-bottom-text">{{ section.settings.bottom_text }}</div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+ </div>
+</section>
+<style>
+#baf-{{ section.id }}{
+  background-color:  {{ section.settings.bg_color }};
+}
+</style>
+{% schema %}
+{
+  "name": "Before & After",
+  "class": "shopify-section--bordered",
+  "settings": [
+    {
+      "type":"color",
+      "id":"bg_color",
+      "label":"Background Color",
+      "default":"#F2F8F7"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub-heading",
+      "default": "Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Text",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    },
+    {
+      "type": "text",
+      "id": "title_name",
+      "label": "Title Name",
+      "default": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_before-one",
+      "label": "Image Before",
+      "info": "520 x 500px .png recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_after-one",
+      "label": "Image After",
+      "info": "520 x 500px .png recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_before-two",
+      "label": "Image Before",
+      "info": "520 x 500px .png recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_after-two",
+      "label": "Image After",
+      "info": "520 x 500px .png recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_before-three",
+      "label": "Image Before",
+      "info": "520 x 500px .png recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_after-three",
+      "label": "Image After",
+      "info": "520 x 500px .png recommended"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "text",
+      "id": "bottom_text",
+      "label": "Bottom Text",
+      "default": "Say something about the picture"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Text",
+      "name": "Before & After",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

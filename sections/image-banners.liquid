@@ -1,0 +1,159 @@
+<section class="Section Section--spacingNormal" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="image">
+  {%- if section.settings.title != blank -%}
+  <header class="SectionHeader SectionHeader--center features--heading-large">
+    <div class="Container">
+        <h3 class="SectionHeader__SubHeading Heading u-h1">{{section.settings.title}}</h3>
+    </div>
+  </header>
+  {%- endif -%}
+
+  <div class="Container banner-container">
+      {%- for block in section.blocks -%}
+
+        {%- if forloop.first == true -%}
+        <div class="Grid Grid--middle Grid_Banners">
+        {%- endif -%}
+          {% if block.settings.image != blank %}
+            <div class="Grid__Cell 1/2--tablet-and-up Grid__Col_{{block.id}}">
+              <div class="bc-content">
+                <div class="bc-content-image Text--alignCenter"><img src="{{ block.settings.image | img_url : '815x' }}" alt="{{ block.settings.image.alt }}"></div>
+                <div class="bc-text">
+                  <div class="bc-text-wrap">
+                    <div class="bc-text-elements Text--alignCenter {{ block.settings.text_alignment }}">
+                      {%- if block.settings.title != blank -%}<h2 class="title_top">{{ block.settings.title }}</h2>{%- endif -%}
+                      {%- if block.settings.subtitle != blank -%}<h3 class="sub_title_top">{{ block.settings.subtitle }}</h3>{%- endif -%}
+                      {%- if block.settings.text_content != blank -%}<div class="text-body">{{ block.settings.text_content }}</div>{%- endif -%}
+                      {%- if block.settings.button_link != blank -%}
+                      <div class="bc-button">
+                        <a href="{{ block.settings.button_link }}" title="{{ block.settings.button_text }}">{{ block.settings.button_text }}</a>
+                      </div>
+                      {%- endif -%}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {%- if forloop.last == true -%}  
+        </div>
+        {%- endif -%}
+
+        <style>
+          #section-{{ section.id }} .Grid_Banners .Grid__Col_{{block.id}} .bc-content .bc-text .bc-text-wrap .bc-text-elements h2,
+          #section-{{ section.id }} .Grid_Banners .Grid__Col_{{block.id}} .bc-content .bc-text .bc-text-wrap .bc-text-elements h3,
+          #section-{{ section.id }} .Grid_Banners .Grid__Col_{{block.id}} .bc-content .bc-text .bc-text-wrap .bc-text-elements .text-body{
+            color:  {{ block.settings.text_color }};
+          }
+
+          #section-{{ section.id }} .Grid_Banners .Grid__Col_{{block.id}} .bc-content .bc-text .bc-text-wrap .bc-button a{
+            background-color:  {{block.settings.button_bg_color}};
+            color: {{ block.settings.button_text_color }};
+          }
+
+          @media screen and (max-width: 640px) {}
+        </style>
+
+      {%- endfor -%}
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Image Banners",
+  "class": "shopify-section--banners",
+  "max_blocks": 2,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Banner's Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image Banner",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "815 X 475px Recommended"
+        },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "label": "Text Content Alignment",
+          "options":[
+            {
+              "value":"left",
+              "label": "Left"
+            },
+            {
+              "value":"right",
+              "label": "Right"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text Color",
+          "default": "#ffffff"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Sub Title"
+        },
+        {
+          "type": "text",
+          "id": "text_content",
+          "label": "Body Text"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "color",
+          "id": "button_bg_color",
+          "label": "Button Background"
+        },
+        {
+          "type": "color",
+          "id": "button_text_color",
+          "label": "Button Text Color"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Image",
+      "name": "Image Banners",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

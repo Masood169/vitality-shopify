@@ -1,0 +1,33 @@
+{% comment %} <section class="Section Section--spacingNormal Section-FBT">
+	<div class="Container gridt-wrapper">
+		<div class="lt-block-reviews"> 
+
+<!-- TrustBox widget - Product Reviews -->
+<div class="trustpilot-widget" data-locale="en-US" data-template-id="544a426205dc0a09088833c6" data-businessunit-id="PREVIEW_BUID" data-style-height="700px" data-style-width="100%" data-theme="light" data-sku="{{ product.selected_or_first_available_variant.sku }}" data-review-languages="en" data-no-reviews="hide" data-fullwidth="true">
+  <a href="https://www.trustpilot.com/review/" target="_blank" rel="noopener">Trustpilot</a>
+</div>
+<!-- End TrustBox widget -->
+
+{% endcomment %}
+
+<style>
+
+  .tp-container {margin: 60px auto; width:90%; max-width:1000px;}
+  
+  </style>
+
+<div class="tp-container">
+<!-- TrustBox widget - Product Reviews MultiSource SEO -->
+<div class="trustpilot-widget" data-locale="en-US" data-template-id="5763bccae0a06d08e809ecbb" data-businessunit-id="61b06cd29580764bc1d198dc" data-style-height="700px" data-style-width="100%" data-theme="light" data-sku="{{ product.handle}}ALL,{{ product.variants | map: 'sku' | join: "," }}" data-review-languages="en" data-no-reviews="hide" data-fullwidth="true">
+  <a href="https://www.trustpilot.com/review/vipeel.com" target="_blank" rel="noopener">Trustpilot</a>
+</div>
+<!-- End TrustBox widget -->
+
+</div>
+
+{% schema %}
+{
+  "name": "TrustPilotLarge",
+  "class": "trust-pilot-cont"
+}
+{% endschema %}

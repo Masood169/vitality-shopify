@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "settings": {
+        "show_article_image": true,
+        "show_date": true,
+        "show_category": false,
+        "show_author": true,
+        "show_share_buttons": false,
+        "show_prev_next": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

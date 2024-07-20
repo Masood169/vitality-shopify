@@ -1,0 +1,149 @@
+{
+  "sections": {
+    "main": {
+      "type": "product-post-treatment-repair-cream",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
+          }
+        },
+        "06657823-c600-4468-b279-0c35a1c07484": {
+          "type": "subscription_recharge",
+          "settings": {}
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_label": false
+          }
+        },
+        "cb145b10-0b08-49c3-b393-519cdea5d968": {
+          "type": "shopify:\/\/apps\/afterpay-on-site-messaging\/blocks\/payments-messaging\/f45a5524-d177-4475-bf59-281efd2215a8",
+          "settings": {
+            "text_align": "inherit",
+            "margin_top": 16,
+            "margin_bottom": 16,
+            "color": "",
+            "size": "md",
+            "intro_text": "or",
+            "show_interest_free": true,
+            "payment_amount_is_bold": true,
+            "show_with": true,
+            "logo_type": "badge",
+            "logo_theme": "black-on-mint",
+            "modal_link_style": "circled-info-icon",
+            "modal_theme": "mint",
+            "breakpoint": 749,
+            "text_align_mobile": "inherit",
+            "margin_top_mobile": 16,
+            "margin_bottom_mobile": 16,
+            "show_lower_limit": true,
+            "show_upper_limit": true,
+            "show_if_outside_limits": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "06657823-c600-4468-b279-0c35a1c07484",
+        "quantity_selector",
+        "cb145b10-0b08-49c3-b393-519cdea5d968",
+        "buy_buttons",
+        "description"
+      ],
+      "settings": {
+        "image_size": "medium",
+        "stack_images": false,
+        "show_thumbnails": false,
+        "enable_image_zoom": true,
+        "enable_video_looping": false
+      }
+    },
+    "frequently-bought-together": {
+      "type": "frequently-bought-together",
+      "settings": {
+        "title": "Feature's Title"
+      }
+    },
+    "products-features-and-benefits": {
+      "type": "products-features-and-benefits",
+      "blocks": {
+        "bc8151d3-89c6-41b7-931d-5acc22759caf": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Hydrocortisone 1%",
+            "features_desc": "An anti-inflammatory that reduces swelling, redness, and itching"
+          }
+        },
+        "9327daca-c633-42bb-9ce9-36d3997ebd5a": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Ginger Extract",
+            "features_desc": "Has been shown to have anti-inflammatory and therapeutic benefits"
+          }
+        },
+        "2936657b-44c6-4b43-8ee7-c1baa6a9363d": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Colloidal Silver",
+            "features_desc": "Helps relieve redness"
+          }
+        },
+        "7d91f288-ae31-4a2f-86cc-be1e560c2864": {
+          "type": "product_features",
+          "settings": {
+            "title_text": "Bisabolol",
+            "features_desc": "Calming and soothing properties"
+          }
+        }
+      },
+      "block_order": [
+        "bc8151d3-89c6-41b7-931d-5acc22759caf",
+        "9327daca-c633-42bb-9ce9-36d3997ebd5a",
+        "2936657b-44c6-4b43-8ee7-c1baa6a9363d",
+        "7d91f288-ae31-4a2f-86cc-be1e560c2864"
+      ],
+      "settings": {
+        "title": "Features\/Benefits",
+        "ingredients": "HYDROCORTISONE 1% Water, Caprylic\/Capric Triglyceride, Ethylhexyl Palmitate, Glycerin, Glyceryl Stearate, PEG-100 Stearate, Cetearyl Alcohol, Pentylene Glycol, Butyrospermum Parkii (Shea) Butter, Dimethicone, Lauryl Glucoside, Myristyl Myristate, 4-t-Butylcyclohexanol, Bisabolol, Maltodextrin, Phenoxyethanol, Allantoin, Coconut Alcohol, Colloidal Silver, Sclerocarya Birrea Seed Oil, Sodium Polyacrylate, Panthenol, Tocopheryl Acetate, Ethylhexylglycerin, Aloe Barbadensis Leaf Juice, Zingiber Officinale (Ginger) Root Extract, Glucose"
+      }
+    },
+    "product-howto-video": {
+      "type": "product-howto-video",
+      "settings": {
+        "title": "How to Use",
+        "description": "<p>Say something about the video...<\/p>",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
+    },
+    "prod-ryviu": {
+      "type": "prod-ryviu",
+      "settings": {
+        "title": "Feature's Title"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "frequently-bought-together",
+    "products-features-and-benefits",
+    "product-howto-video",
+    "prod-ryviu"
+  ]
+}

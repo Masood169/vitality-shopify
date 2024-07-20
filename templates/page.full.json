@@ -1,0 +1,13 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-full",
+      "settings": {
+        "show_large": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

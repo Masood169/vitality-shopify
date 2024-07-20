@@ -1,0 +1,241 @@
+{%- capture flickity_options -%}
+{
+  "prevNextButtons": true,
+  "pageDots": true,
+  "wrapAround": false,
+  "contain": true,
+  "cellAlign": "center",
+  "watchCSS": true,
+  "dragThreshold": 8,
+  "groupCells": true,
+  "arrowShape": {"x0": 20, "x1": 60, "y1": 40, "x2": 60, "y2": 35, "x3": 25}
+}
+{%- endcapture -%}
+{%- capture section_settings -%}
+{
+  "layout": {{ section.settings.layout_mode | json }}
+}
+{%- endcapture -%}
+<section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="featured-collections" data-settings='{{ section_settings }}'>
+  <div class="collection-carousel-container">
+    {%- if section.blocks.size >= 2 -%}
+    <div class="col-carousel-nav">
+       {%- for block in section.blocks -%}
+       <a class="{% if forloop.first %}active{% endif %}" href="#carcol-{{block.id}}" title="{{ block.settings.title_text | truncate: 20 | escape }}">{{ block.settings.title_text | truncate: 20 | escape }}</a>
+       {%- endfor -%}
+    </div>
+    {%- endif -%}
+
+    {%- for block in section.blocks -%}
+    {%- assign collection = collections[block.settings.collection] -%}
+
+    <div class="col-carousel-panel {% if forloop.first %}active{% endif %}" id="carcol-{{block.id}}">
+      <div class="" id="block-{{ block.id }}" aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}" {{ block.shopify_attributes }}>
+        <div class="ProductListWrapper">
+          {%- assign item_count = collection.products_count -%}
+
+          {%- if block.settings.collection == 'vi-peel' -%}
+            {%- assign hide_price = true -%}
+          {%- else -%}
+            {%- assign hide_price = false -%}
+          {%- endif -%}
+
+          {%- if item_count > 0 -%}
+            <div onscroll="scrollTrack({{ forloop.index0 }})" class="ProductList ProductList--carousel Collection_Carousel Carousel" data-flickity-config='{{ flickity_options }}'>
+              {%- for product in collection.products limit: block.settings.grid_items_count -%}
+                <div class="Carousel__Cell">
+                  {%- render 'product-item', product: product, show_product_info: true, show_vendor: false, show_color_swatch: false, show_labels: true, category_name:  collection.title, hide_price: hide_price -%}
+                </div>
+              {%- endfor -%}
+            </div>
+          {%- else -%}
+            <div class="product-empty-box">
+              <h2 class="Text--alignCenter .Header .Heading">Product Empty!</h2>
+            </div>  
+          {%- endif -%}
+        </div>
+      </div>
+      
+      
+
+     {%- if item_count > 0 -%} 
+     <div class="Container">
+        <div class="SectionFooter">
+          <a href="https://vipeel.com/collections/vi-derm-beauty" class="Button Button--primary">VIEW ALL PRODUCTS</a>
+        </div>
+      </div>
+      {%- endif -%}
+
+    </div>
+
+    
+    {%- endfor -%}
+    
+
+        <div class="mobile-dots">
+          <div class="vi-dot" style="background-color:#115e67"></div>
+          <div class="vi-dot"></div>
+          <div class="vi-dot"></div>
+          <div class="vi-dot"></div>
+          <div class="vi-dot"></div>
+          <div class="vi-dot"></div>
+          <div class="vi-dot"></div>
+        </div>
+
+  </div>
+</section>
+{%- comment -%}
+<section id="section-{{ section.id }}" class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="timeline" data-settings='{{ section_settings }}' >
+  <div class="Container">
+      
+    <div class="Timeline">
+
+    {%- if section.blocks.size >= 2 -%}
+    <div class="Timeline__Nav">
+      <div class="Timeline__NavWrapper {% if section.blocks.size <= 3 %}Timeline__NavWrapper--center{% endif %}">
+        {%- for block in section.blocks -%}
+          <button type="button" class="Timeline__NavItem {% if forloop.first %}is-selected{% endif %} Link Link--primary" data-index="{{ forloop.index0 }}">
+            <span class="Timeline__NavLabel">{{ block.settings.title_text | truncate: 20 | escape }}</span>
+          </button>
+        {%- endfor -%}
+      </div>
+    </div>
+    {%- endif -%}
+
+      <div class="Timeline__ListItem">
+        
+        {%- for block in section.blocks -%}
+        {%- assign collection = collections[block.settings.collection] -%}
+          <div {{ block.shopify_attributes }} class="Timeline__Item {% if forloop.first %}is-selected{% endif %}" data-index="{{ forloop.index0 }}">
+            <div class="Section Section--spacingNormal" data-section-id="car-{{ block.id }}" data-section-type="featured-collections" data-settings='{{ section_settings }}'>
+              <div class="ProductListWrapper">
+                {%- if collection != empty -%}
+                <div class="ProductList ProductList--carousel Carousel" data-flickity-config='{{ flickity_options }}'>
+                  {%- for product in collection.products limit: 5 -%}
+                    <div class="Carousel__Cell">
+                      {%- render 'product-item', product: product, show_product_info: true, show_vendor: false, show_color_swatch: false, show_labels: true -%}
+                    </div>
+                  {%- endfor -%}
+                </div>
+                {%- endif -%}
+              </div>
+            </div>  
+          </div>
+        {%- endfor -%}
+        
+      </div>
+
+    </div>
+  </div>
+</section>
+{%- endcomment -%}
+
+<style>
+  #section-{{ section.id }} .Timeline__ListItem {
+    color: {{ section.settings.text_color }};
+  }
+</style>
+
+
+<script>
+  
+      let viDots = document.querySelectorAll('.vi-dot');
+  
+      const clearDots = () => {
+       	for (let i = 0; i < viDots.length; i++) {
+          viDots[i].style.backgroundColor = 'white';
+        }
+      }
+  
+  let scrollWrap = document.querySelectorAll('.ProductList');
+  
+  const scrollTrack = (n) => {
+    
+    let j = n;
+    
+    clearDots();
+    
+	let currentScrollWrap = scrollWrap[j];
+    let scrollPercentage = 100 * currentScrollWrap.scrollLeft / (currentScrollWrap.scrollWidth - currentScrollWrap.clientWidth); 
+
+
+    if (scrollPercentage > 95) {
+      viDots[6].style.backgroundColor = "#115e67";
+    }
+    
+    else if (scrollPercentage > 90) {
+      viDots[5].style.backgroundColor = "#115e67";
+    }
+    
+    else if (scrollPercentage > 75) {
+      viDots[4].style.backgroundColor = "#115e67";
+    }
+             
+    else if (scrollPercentage > 60) {
+      viDots[3].style.backgroundColor = "#115e67";
+    }
+    
+    else if (scrollPercentage > 45) {
+      viDots[2].style.backgroundColor = "#115e67";
+    }
+    
+    else if (scrollPercentage > 30) {
+      viDots[1].style.backgroundColor = "#115e67";
+    }
+    
+    else {
+      viDots[0].style.backgroundColor = "#115e67";
+    }
+    
+    
+  }
+
+
+</script>
+
+
+{% schema %}
+{
+  "name": "Collection Carousel",
+  "class": "shopify-section--bordered shopify-section--collection-carousel",
+  "settings": [
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Mobile text color",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title_text",
+          "label": "Title",
+          "default": "Collection Name"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Collection",
+      "name": "Collection Carousel",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "collection"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

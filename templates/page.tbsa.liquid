@@ -1,0 +1,335 @@
+{{ 'doc_style.css' | asset_url | stylesheet_tag }}  
+{{ 'prettyPhoto.css' | asset_url | stylesheet_tag }}  
+{{ 'content_slider_style.css' | asset_url | stylesheet_tag }}
+{{ 'jquery.min.js'  | asset_url | script_tag     }} 
+{{ 'jquery.content_slider.min.js'  | asset_url | script_tag     }}
+{{ 'jquery.mousewheel.js'  | asset_url | script_tag     }}
+{{ 'jquery.prettyPhoto.js'  | asset_url | script_tag     }}  
+{{ 'jquery.animate-colors.js'  | asset_url | script_tag     }}  
+{{ 'additional_content.js'  | asset_url | script_tag     }}  
+
+<style>
+
+#shopify-section-footer-testimonials {display:none !important;}
+#shopify-section-footer-faq {display:none !important;}
+  
+.tbsa-wrap  {}
+.tbsa-wrap .t-box h1 {font-family: "Lust", sans-serif; color: #115e67;}
+.tbsa-wrap .t-box h2 {font-family: "gotham-bold", sans-serif;}
+.tbsa-wrap .t-box h3 {font-family: "gotham-bold", sans-serif;}
+.tbsa-wrap .t-box h4 {font-family: "gotham-bold", sans-serif;}
+.tbsa-wrap .t-box p {font-family: "gotham-book", sans-serif;}
+  
+.tbsa-hero {}
+.tbsa-top {width: 80%; margin: 4rem auto 2rem auto;}
+.tbsa-top-cont {width:100%; max-width:1000px; margin: 0 auto;}
+.tbsa-top .t-box {}
+.tbsa-top .t-box h1 {color: #115e67; font-size:3rem; margin: 0 0 1rem 0; line-height: 3.2rem;}
+.tbsa-top .t-box h2 {color: #717272; font-size:1.2rem; margin: 0 0 .5rem 0;}
+.tbsa-top .t-box p {color: #115e67; font-size:1.2rem; margin: 0 0 0rem 0; width:68%;}
+
+.tbsa-bottom {background-color: #115e67; padding: 3rem 0 2rem 0;}
+.tbsa-bottom-cont {width:100%; max-width:1000px; margin: 0 auto; display:flex; flex-wrap: wrap; position:relative; justify-content:space-between; align-items:flex-start;}
+.tbsa-quotes {color: white; font-size:5rem; margin: 0; position:absolute; font-family: "gotham-bold", sans-serif; width: 3rem; left: -4rem; top: -0.5rem;}
+.tbsa-bottom .t-box {width:60%;}
+.tbsa-bottom .t-box p {color:white !important; font-size: 1.2rem;}
+.tbsa-bottom .tbsa-badge {width:32%; margin-top:-7rem;}
+
+.tbsa-highlights {padding: 3rem 0;}
+.highlights-cont {width:100%; max-width:1000px; margin: 0 auto; display:flex; flex-wrap: wrap; justify-content:space-between; align-items:flex-start;}
+.highlight {width:20%; border-right: 2px solid #115e67; padding: 0 1rem 0 0;}
+.highlight-large {width:32%;}
+.tbsa-highlights h3 {color: #115e67; font-size:1.4rem; margin: 0 0 .5rem 0; min-height: 80px; font-weight: 700; line-height:1.6rem; font-family:"gotham-narrow", sans-serif;}
+.tbsa-highlights p {color: #115e67; font-size:1.2rem; margin: 0 0 1rem 0; min-height:160px; font-family: "gotham-book", sans-serif;}
+.tbsa-highlights img {width:100%;}
+
+
+.tbsa-final {}
+.pannel-header {background-color: #115e67; padding: 2rem 0;}
+.pannel-header-cont {width:100%; max-width:1000px; margin: 0 auto; display:flex; flex-wrap: wrap; justify-content:space-between; align-items:center;}
+.pannel-header-cont h3 {color:white; font-weight:700; width:49%; font-size:1.5rem; font-family: "gotham-narrow", sans-serif; margin:0;}
+.pannel-header-cont p {width:49%; font-size: .9rem; line-height:1.2rem; color:white; font-family: "gotham-book", sans-serif;}
+
+.doctors {padding: 4rem 0;}
+.doctors-cont {width:100%; max-width:1000px; margin: 0 auto; display:flex; flex-wrap: wrap; justify-content:space-between; align-items:flex-start;}
+.doctor {width:15%;}
+.doctor img {margin: 0 auto 1rem auto; width:80%; display:block;}
+.doctor p {color:#115e67; text-align:center; font-family: "gotham-book", sans-serif; font-weight:400 !important;}
+
+.tbsa-footer {background-color: #115e67; padding: 2rem 0;}
+.tbsa-footer-cont {width:100%; max-width:1000px; margin: 0 auto; display:flex; flex-wrap: wrap; justify-content:space-between; align-items:center;}
+.tbsa-footer-box {width: 32%;}
+.tbsa-footer-box img {display:block; width:60%; margin: 0 auto;}
+.tbsa-footer-box p { width:80%; margin: 0 auto; color:white; font-family: "gotham-book", sans-serif;}
+
+.footer-box-1 {border-right: 1px solid white;}
+  .footer-box-2 {border-right: 1px solid white;}
+
+
+@media only screen and (max-width:999px){
+
+  .tbsa-bottom .t-box {width:80%; margin: 0 auto;}
+  .tbsa-bottom .tbsa-badge {position: absolute; right: 0; top: -1rem; width:8rem;}
+
+  .highlight {width:80%; margin: 0 auto 3rem auto; border-right: 0; border-bottom:2px solid #115e67; padding: 0 0 2rem 0; }
+  .highlight-large {width:80%; margin: 0 auto 3rem auto; border: 0; padding:0;}
+  .tbsa-highlights h3 {color: #115e67; font-size:1.4rem; margin: 0 0 .5rem 0; min-height: 0; font-weight: 700; line-height:1.6rem; font-family:"gotham-narrow", sans-serif;}
+  .tbsa-highlights p {color: #115e67; font-size:1.2rem; margin: 0 0 2rem 0; min-height:0; font-family: "gotham-book", sans-serif;}
+
+  .pannel-header-cont {width:80%; margin: 0 auto;}
+  .pannel-header-cont h3 {width:100%; line-height: 1.7rem; margin-bottom:1rem;}
+  .pannel-header-cont p {width:100%; font-size:1rem;}
+
+  .doctors-cont {width:60%; margin: 0 auto; flex-wrap:wrap;}
+  .doctor {width:100%; margin: 0 0 3rem 0;}
+
+  .tbsa-footer-cont {width:80%; margin:0 auto;}
+  .tbsa-footer-box {width:100%; border:0 !important; margin: 0 0 2rem 0;}
+  .tbsa-footer-box img {display: block; width: 60%; margin: 0;}
+  .tbsa-footer-box p {width:100%; margin: 0;}
+  
+</style>
+
+
+<script type="text/javascript">
+	(function($){
+		$(document).ready(function() {
+			var image_array = new Array();
+			image_array = [
+				{image: 'https://cdn.shopify.com/s/files/1/0064/3003/1908/files/1.jpg?v=1626797377', link_url: 'content/our_team/1big.jpg', link_rel: 'prettyPhoto'},
+ 				{image: 'https://cdn.shopify.com/s/files/1/0064/3003/1908/files/8.jpg?v=1626797378', link_url: 'content/our_team/3big.jpg', link_rel: 'prettyPhoto'},
+				
+ 				{image: 'https://cdn.shopify.com/s/files/1/0064/3003/1908/files/6.jpg?v=1626797377', link_url: 'content/our_team/1big.jpg', link_rel: 'prettyPhoto'},
+ 				
+ 				{image: 'https://cdn.shopify.com/s/files/1/0064/3003/1908/files/5_5f4fa297-519a-41dc-bc5f-fc2060b9db8c.jpg?v=1626878776', link_url: 'content/our_team/5big.jpg', link_rel: 'prettyPhoto'},
+              {image: 'https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Dr.Nkem.jpg?v=1655382595', link_url: 'content/our_team/5big.jpg', link_rel: 'prettyPhoto'},
+              {image: 'https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Dr_Annie_Gonzales.png?v=1709826901', link_url: 'content/our_team/5big.jpg', link_rel: 'prettyPhoto'},
+ 			];
+			$('#slider1').content_slider({		 
+				map : image_array,				 
+				max_shown_items: 5,				 
+				hv_switch: 0,					 
+				active_item: 0,					 
+				wrapper_text_max_height: 450,	 
+				middle_click: 1,				 
+				under_600_max_height: 1200,		 
+				border_radius:	-1,				 
+				automatic_height_resize: 1,
+				border_on_off: 1,
+				allow_shadow: 0
+			});
+		});
+	})(jQuery);
+</script>
+<script>
+    $( window ).on( "load", function() {
+        initToggleContent();
+    });
+    function initToggleContent() {
+        $('.js-toggleBtn').on('click', function (e) {
+            $(this).next('.js-toggleContent').slideToggle();
+            $(this).toggleClass('is-open');
+        });
+        $('.search-toggle-btn').on('click', function (e) {
+            $('.utility-nav__container').toggleClass('is-open');
+        });
+        if (window.location.hash) {
+            var url = window.location.href;
+            var hash = url.substring(url.indexOf('#'));
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - 100
+            }, 500);
+            $(hash).next('.js-toggleContent').slideToggle();
+            $(hash).toggleClass('is-open');
+        }
+    }
+</script> 
+
+
+<div class="tbsa-wrap">
+  
+  <div class="tbsa-hero">
+    <div class="tbsa-top">
+      <div class="tbsa-top-cont">
+        <div class="t-box">
+          <h1>welcome to the brown skin agenda</h1>
+          <h2>PRESENTED BY THE VITALITY INSTITUTE</h2>
+          <p>The Brown Skin Agenda promotes the advancement of the treatment protocols and skin care solutions for skin of color patients.</p>
+        </div>    
+      </div>
+    </div>
+
+    <div class="tbsa-bottom">
+      <div class="tbsa-bottom-cont">
+        <img class="tbsa-quotes" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/VIPeel-TBSA-Quotes.png?v=1678810938" alt="quotes">
+        <div class="t-box">
+          <p>Our mission is to provide safe and effective guidance from an esteemed panel of physicians and other experts so that ALL skin care professionals can confidently treat skin of color and ALL patients can feel confident in their skincare regimes.</p>
+          <p><strong>Marya Khalil | Vitality Institute President & CEO</strong></p>
+        </div>
+        <img class="tbsa-badge" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/VIPeel-TBSA-SellSheet-V03.png?v=1678808454" alt="tbsa badge">
+      </div>
+    </div>
+    
+  </div>
+
+
+  <div class="tbsa-highlights">
+    <div class="highlights-cont">
+      <div class="highlight">
+        <h3>Expert Educational Articles</h3>
+        <p>Informative articles on skin care for women and men of color.</p>
+        <img class="highlight-image" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Articles.jpg?v=1678811693" alt="xpert Educational highlight">
+      </div>
+      <div class="highlight">
+        <h3>Interactive Q&As with Leaders in the Medical Field</h3>
+        <p>A live, interactive info session for women and men of color.</p>
+        <img class="highlight-image" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/InteractiveQ_A.jpg?v=1678811693" alt="Interactive Q&As with Leaders in the Medical Field highlight">
+      </div>
+      <div class="highlight">
+        <h3>Treatment Tips, Delivered</h3>
+        <p>Skincare education by our experts, delivered straight to patient inboxes.</p>
+        <img class="highlight-image" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Treatmenttips.jpg?v=1678811693" alt="Treatment Tips, Delivered highlight">
+      </div>
+      <div class="highlight-large">
+        <h3>Practice Enhancement Peer-to-Peer Webinars </h3>
+        <p>The gold standard in practitioner education from the country's leaders in the medical field on how to effectively treat skin of color patients.</p>
+        <img class="highlight-image" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Depositphotos_168223586_XL-TBSA-onlaptop.jpg?v=1678811693" alt="Practice Enhancement Peer to Peer Webinars">
+      </div>
+    </div>
+  </div>
+
+  <div class="tbsa-final">
+      <div class="pannel-header">
+        <div class="pannel-header-cont">
+          <h3>MEET THE BROWN SKIN AGENDA PANEL</h3></h1>
+          <p>The Brown Skin Agenda advisory panel of expert Dermatologists and Plastic Surgeons are dedicated to treating skin of color.</p>
+        </div>
+      </div>
+
+    <div class="doctors">
+<!--       <div class="doctors-cont">
+        <div class="doctor">
+          <img src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Dr-Nia.jpg?v=1678823416" alt="Dr. Nia">
+          <p>Nia Banks,<br>MD, FACS</p>
+        </div>
+        <div class="doctor">
+          <img src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Dr-Alia.jpg?v=1678823417" alt="Dr. Alia">
+          <p>Alia Brown,<br>MD, FAAD</p>
+        </div>
+        <div class="doctor">
+          <img src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Dr-Wendy.jpg?v=1678823416" alt="Dr. Wendy">
+          <p>Wendy Roberts,<br>MD, FAAD</p>
+        </div>
+        <div class="doctor">
+          <img src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Dr-Jeanine.jpg?v=1678823417" alt="Dr. Jeanine">
+          <p>Jeanine B. Downie,<br>MD, FAAD</p>
+        </div>
+        <div class="doctor">
+          <img src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Dr-Corey.jpg?v=1678823417" alr="Dr. Corey">
+          <p>Corey Hartman,<br>MD, FAAD</p>
+        </div>
+        <div class="doctor">
+          <img src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Dr-Nkem.jpg?v=1678823417" alt="Dr. Nkem">
+          <p>Nkem Ugonabo,<br>MD, MPH, FAAD</p>
+        </div>
+      </div> -->
+
+    
+        <div class="content_slider_wrapper" id="slider1">			    
+    	
+    	<div class="circle_slider_text_wrapper" id="sw0" style="display: none;">
+     			<h3 class="tbsa" style="text-align: center;">Alia Brown, MD, FAAD</h3><br /> 		
+     		<div class="content_slider_text_block_wrap">
+      
+    			<span> Dr. Alia Brown joined Georgia Dermatology Partners in 2010 after distinguishing herself at Meharry Medical College as an Honor&rsquo;s Graduate and inductee into the Alpha Omega Alpha Medical Honor Society. She has published in multiple medical and dermatology journals. She is a member of the American Academy of Dermatology, American Medical Association, Women’s Dermatology Society, Alpha Omega Alpha Honor Medical Society, and Delta Sigma Theta Sorority Inc.
+     			<br /> <br /> 
+    			Dr. Brown specializes in partnering with patients to deliver the healthiest, most beautiful skin possible. As a highly skilled skin laser and surgery specialist, she focuses on cosmetic dermatology, including laser medicine and injectables. She places a high priority on her patients’ well-being and enjoys designing the most appropriate and successful treatment path for each individual. In addition, Dr. Brown enjoys traveling, exercising, and volunteer work with several civic organizations in her free time. Dr. Brown is married and has three children.
+      			</span><br /> 
+    		</div>
+    		<div class="clear"></div>	
+    	</div>
+    
+    		<div class="circle_slider_text_wrapper" id="sw1" style="display: none;">
+     		<h3 class="tbsa" style="text-align: center;">Jeanine B. Downie, MD, FAAD</h3><br />		
+     		<div class="content_slider_text_block_wrap">
+     			<span>Dr. Downie is board certified by the American Board of Dermatology and holds medical licenses in the states of New Jersey, New York, and California. In addition, Dr. Downie is the director of her own practice, Image Dermatology P.C. in Montclair, N.J. She has extensive training and experience in all aspects of dermatology, cosmetic dermatology, laser, and dermatologic surgery. Dr. Downie provides both adult and pediatric patients with competent, compassionate care, and all patients are treated utilizing the most medically advanced techniques.
+      			<br />	<br />	
+    			Dr. Downie is a philanthropist and is very involved with the United Negro College Fund, National Public Radio, The Southern Poverty Law Center, Dress for Success, The Junior League, Public Broadcasting Services, March of Dimes, All-Stars, Cares Mentoring, The National Urban League, Foundation for Ethnic Understanding, Planned Parenthood, CASA (Court Appointed Special Advocates) and several other national and local charities.</span><br /> 
+    		</div>
+    		<div class="clear"></div>	
+    	</div>
+    
+    	<div class="circle_slider_text_wrapper" id="sw2" style="display: none;">
+     		<h3 class="tbsa" style="text-align: center;">Corey Hartman, MD, FAAD</h3><br />		
+     		<div class="content_slider_text_block_wrap">
+     			<span>Corey L. Hartman, MD, is the founder and medical director of Skin Wellness Dermatology in Birmingham, Alabama. In addition, he is Assistant Clinical Professor of Dermatology at the University of Alabama School of Medicine. A native of New Orleans, Dr. Hartman attended Emory University, graduating with a Bachelor of Arts in Psychology. After earning a doctorate of medicine from Meharry Medical College in Nashville, Tennessee, he completed an internship in Internal Medicine at Tulane University Medical Center and a residency in Dermatology at the University of Alabama School of Medicine. Dr. Hartman is certified by the American Board of Dermatology and is a fellow of the American Academy of Dermatology and the American Society for Dermatologic Surgery.
+     			<br /> <br /> 
+    			Dr. Hartman has a special interest in Dermatologic Surgery, Injectables, Hair Restoration, and Laser Dermatology. He frequently speaks on cosmetic procedures and social media marketing in dermatology at meetings around the country. Dr. Hartman was voted 2016 Best of Birmingham: Dermatologist by the readers of Birmingham Magazine and the 2018 Best Dermatologist by the readers of About Town Magazine. Most recently, in 2020, Dr. Hartman was named physician spokesman and brand ambassador for iconic Old Spice’s skin care lines for men. He also serves on the Advisory Boards for Men’s Health Magazine, Allergan Aesthetics, Galderma Aesthetics, and Revision Skin Care. Most recently, Dr. Hartman was named to the Board of Directors of the Skin of Color Society.
+    			</span><br /> 
+    		</div>
+    		<div class="clear"></div>	
+    	</div>	
+    	
+    	<div class="circle_slider_text_wrapper" id="sw3" style="display: none;">	
+    			<h3 class="tbsa" style="text-align: center;">Wendy Roberts, MD, FAAD</h3><br />		
+    			<div class="content_slider_text_block_wrap">
+     			<span>Dr. Wendy E. Roberts MD is a graduate of Stanford Medical School with three post graduate degrees, which include Surgery, Dermatology and Dermatopathology completing a fellowship at New York University Medical Center. She is Double Board Certified in Dermatology and Dermatopathology. She is Founding Director of Dermatopathology at Loma Linda University Medical Center. She pioneered and developed Generational Dermatology™ which is a detailed system of age management and a National CME meeting. Generational Dermatology Symposium held annually in Rancho Mirage, CA has become a meeting venue for Dermatologists, Plastic Surgeons, and other core specialists. She is founder of the Roberts Skin type Classification System® as seen on The Today Show™ Her skin type system is used by Doctors around the globe to keep their skin of color patients safe while undergoing cosmetic procedures. 
+     			<br /> <br /> 
+    			Dr. Roberts is a Past President of the Women’s Dermatologic Society and The California State Dermatologic Society, CALDERM. Known by the specialty for her innovation and energy, she has been in her private practice in Rancho Mirage, CA since 1994. Dr. Roberts has been voted as “Best Doctor” by her colleagues for the last 16 years by the Palm Springs Life Magazine. She specializes in Generational Dermatology, Cosmetic Dermatology, Hair Regrowth and Ethnic Skin of Color. Dr Roberts is a Physician Expert on the new acclaimed medical show Chasing the Cure and is frequently seen on TV shows including The Doctors, Steve Harvey Show and The Real. She is author of the textbook Chemical Peel: A Global Perspective and has numerous published academic articles.
+    			</span><br /> 
+    		</div>
+    		<div class="clear"></div>	
+    	</div>
+      
+      	<div class="circle_slider_text_wrapper" id="sw4" style="display: none;">	
+    			<h3 class="tbsa" style="text-align: center;">Nkem Ugonabo, MD, MPH, FAAD</h3><br />		
+    			<div class="content_slider_text_block_wrap">
+     			<span>Dr. Nkem Ugonabo, M.D., M.P.H. is a board-certified dermatologist with advanced training in cosmetic dermatology and lasers. She received her M.D. degree at the University of Michigan and was appointed Chief Resident at NYU Medical Center in her final year. At residency graduation, she was awarded the Dr. Irwin Freedberg award for the resident who best represents the field of dermatology. Following residency, Dr. Ugonabo was an American Society for Dermatologic Surgery (ASDS) Cosmetic Dermatologic Surgery Fellow at UnionDerm in New York City where she worked as a sub-investigator on clinical trials investigating the treatment of acne scars, photodamage, cellulite, muscle stimulation and melasma. Dr. Ugonabo currently practices both medical and cosmetic dermatology and has extensive experience using lasers, injectables like botox and fillers, fat loss treatments, skin tightening, chemical peels, sunscreens and other forms of photo-protection, acne, and hyperpigmentation. She strives to make her patients look and feel like the best version of themselves. She takes the time to listen, answer questions, address concerns, and uniquely tailor treatment plans to the individual needs of each patient. 
+     			<br /> <br /> 
+    			Dr. Ugonabo has published numerous articles in peer-reviewed journals including the Journal of American Medical Association Surgery, Journal of the American Academy of Dermatology, Dermatologic Surgery, Journal of Cosmetic Dermatology, British Journal of Dermatology and Journal of Drugs in Dermatology. She has presented at numerous meetings including the American Academy of Dermatology (AAD) Annual Meeting, American Society for Laser Medicine and Surgery (ASLMS) Annual Conference, American Society for Dermatologic Surgery (ASDS) Annual Meeting and Winter Clinical Dermatology Conference. She has also been featured in many media publications like Shape, Allure, Women’s Health, Bustle, Marie Claire, Elite Dailly, The Greatist, Huffington Post, and more. She is a member of the AAD, American Society of Dermatologic Surgery (ASDS), ASLMS, Skin of Color Society (SOCS), the Women’s Dermatologic Society (WDS) and International Peeling Society (IPS). She also serves on national leadership committees on the AAD, SOCS and WDS.
+    			</span><br /> 
+    		</div>
+    		<div class="clear"></div>	
+    	</div>
+
+      <div class="circle_slider_text_wrapper" id="sw5" style="display: none;">	
+    			<h3 class="tbsa" style="text-align: center;">Annie Gonzalez, MD</h3><br />		
+    			<div class="content_slider_text_block_wrap">
+     			<span>Dr. Annie Gonzalez is a highly skilled board-certified dermatologist specializing in both cosmetic and medical dermatology. With a deep passion for helping patients achieve healthy, radiant skin, Dr. Gonzalez has built a reputable career in the field of dermatology in Miami, Florida. Dr. Gonzalez completed her undergraduate studies at University of Miami, earning her Bachelor of Science degree in Biology with honors. She then pursued her medical education at Ponce Medical School, where she graduated with distinction as Summa cum laude and received her Doctor of Medicine degree.  
+     			<br /> <br /> 
+    			Dr. Gonzalez offers a comprehensive range of services in both cosmetic and medical dermatology. Her expertise includes advanced techniques in injectables, such as neurotoxins and dermal fillers, to achieve natural-looking facial rejuvenation and facial balancing. She also specializes in various laser treatments and other energy-based devices, chemical peels, and microneedling to improve skin texture, correct pigmentation irregularities, and reduce the signs of aging. Dr. Annie Gonzalez's commitment to excellence, meticulous attention to detail, and genuine care for her patients have earned her the trust and respect of the Miami community. With her extensive knowledge, exceptional skill set, and artistic approach to beauty, she continues to make a positive impact on the lives of her patients, helping them feel confident and comfortable in their own skin.
+    			</span><br /> 
+    		</div>
+    		<div class="clear"></div>	
+    	</div>
+    
+    </div>
+
+</div>
+
+
+    <div class="tbsa-footer">
+      <div class="tbsa-footer-cont">
+        <div class="tbsa-footer-box footer-box-1">
+          <img src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/VIPeel-TBSA-Logo.png?v=1678824946" alr="TBSA">
+        </div>
+
+        <div class="tbsa-footer-box footer-box-2">
+          <p>Vitality Institute<br>Los Angeles, CA 90038<br>1.855.VI.Peels | <a href="tel:18558473357">1.855.847.3357</a></p>
+        </div>
+
+        <div class="tbsa-footer-box footer-box-3">
+          <p>
+            <a href="https://www.instagram.com/vipeel/">@vipeel</a><br>
+            <a href="https://vipeel.com/">vipeel.com</a><br>
+            <a href="mailto:support@vipeel.com">support@vipeel.com</a>
+          </p>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+

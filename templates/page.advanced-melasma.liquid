@@ -1,0 +1,363 @@
+<style>
+  #shopify-section-footer-testimonials {display:none !important;}
+  #shopify-section-footer-faq {display:none !important;}
+  
+  .main-wrap {width:100%;}
+  .main-cont {}
+  .main-wrap h2 {font-family:'gotham-bold';}
+  .main-wrap h3 {font-family:'gotham-bold';}
+  .main-wrap h4 {font-family:'gotham-bold';}
+  .main-wrap p {font-family:'gotham-book';}
+  .main-wrap p .bold-para {font-family:'gotham-bold';}
+  
+  .tox-wrap {background-color:#c7ae90;}
+  .tox-hero {max-width: 1600px; margin: 0 auto; width: 100%; height: 40vw; max-height: 660px; background-image: url('https://cdn.shopify.com/s/files/1/0064/3003/1908/files/MelasmaReductionSystem-MainWebBanner-V02.jpg?v=1712687789'); background-size:cover;}
+  .tox-hero .t-box {width: 46%; padding: 4% 0 0% 5%;}
+  .tox-hero .t-box h3 {font-size: 1.4vw !important; line-height:4.5vw; color: white; margin-bottom:1vw;}
+  .tox-hero .t-box h1 {font-size: 4.5vw !important; line-height:4.5vw; color: white; font-family:'lust'; margin-bottom:2vw;}
+  .tox-hero .t-box p {font-size: 1.2vw !important; color: white; margin-bottom: 1vw; width:26vw;}
+  .tox-hero .t-box img {width:75%;}
+  
+  .info-wrap {background-color: #0F5E67;}
+  .info-cont {display:flex; align-items:center; justify-content: space-between; max-width: 1400px; margin: 0 auto; padding-bottom:4rem; padding-top: 2rem; flex-wrap:wrap;}
+
+  .info-top {margin-bottom:1vw;}
+  .info-top h2 {color: #F58D8D; font-size: 4rem !important; margin-bottom:0; font-weight:400; font-family: 'fort-collins-script'; line-height:5rem;}
+  .info-top h3 {font-family: "Lust"; color: white; font-size: 2.5rem !important; line-height:3rem; margin-bottom:1rem; font-weight:400;}
+  .info-top p {font-weight:100; margin-bottom: 1rem; color:white;}
+  
+  .info-left {width:48%; padding-top: 2rem; padding-left: 3rem;}
+  .info-left a:hover {background-color:#F58D8D; color:white;}
+
+  .info-left h4 {font-size: 1.1rem; color: white; font-weight:700; margin: 0 0 1rem 0; text-transform:uppercase;}
+  .info-left h3 {font-size: 1.1rem; color: white; font-weight:700; margin: 0 0 .5rem 0;}
+  .info-left h3 a {text-decoration: underline;}
+  .info-left ul {font-size: 1rem; color: white; font-weight: 400; margin-bottom: 2rem;}
+  .info-left p {font-weight:400; color:white; margin-bottom:3rem;}
+  
+  .info-right {width:48%; padding-top: 10rem; padding-right: 3rem;}
+  .info-right h4 {font-size: 1.2rem; color: white; font-weight:700; margin: 0 0 0 0;}
+  .info-right h4 a {text-decoration: underline;}
+  .info-right ul {font-size: 1rem; color: white; font-weight: 400; margin-bottom: 2rem;}
+  .info-right p {font-weight:400; color:white; margin-bottom:3rem;}
+  .info-right .info-btn {background-color:white; color: #0F5E67; border-radius: 999rem; text-align:center; width:18rem; padding: 1rem 0; font-weight:700; transition:.2s; display:block; margin: 0 auto;}
+  
+  
+  .results-wrap {padding: 0 0 4rem 0;}
+  .results-top {padding: 4rem 0 4rem 0; text-align:center;}
+  .results-top h2 {font-family: "Lust"; color: #0F5E67; font-size: 3.2rem !important; margin-bottom:0rem; font-weight:400;}
+  .results-top h3 {color: #A0A0A0; font-weight:700; text-transform:uppercase; font-size: 1.4rem !important; margin: 0;}
+  .results-top h3 .lighter-text {font-family:'gotham-light';}
+  .results-top p {color: #A0A0A0; font-weight:700;}
+  .results-images {width:100%; max-width:1400px; padding: 0 3rem; margin: 0 auto 2rem auto; display: flex; justify-content: space-around;}
+  .results-images img {width:42%;}
+  .results-wrap p {text-align:center;}
+  .results-wrap a {
+    padding: 0.5rem 0;
+    background-color: white;
+    border: solid 2px #0F5E67;
+    color: #0F5E67;
+    border-radius: 9999rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 18rem;
+    cursor:pointer;
+    transition:.2s;
+  }
+  .results-wrap a:hover {background-color:#0F5E67; color:white;}
+  
+  .salmon {color: #F58D8D !important; font-size:3.5rem !important; font-family:"fort-collins-script", sans-serif !important;}
+
+  .advantage-wrap {background-color: #0F5E67;}
+  .advantage-cont {display:flex; align-items:center; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding-bottom:6rem; padding-top: 6rem; flex-wrap:wrap;}
+  .adv-left {width:34%; padding-top: 2rem; padding-left: 3rem; padding-right:6rem; border-right: solid 2px #F58D8D;}
+  .adv-right {width:58%; padding-top: 2rem; padding-right: 3rem;}
+  .advantage-cont h4 {font-size: 1.2rem; color: white; font-weight:700; margin: 0 0 0 0; text-transform:uppercase;}
+  .advantage-cont p {font-weight:400; color:white; margin-bottom:3rem;}
+
+  .adv-left h4 {margin-bottom:2.5rem; width:80%;}
+  .adv-right h4 {margin-bottom:1rem;}
+  .adv-right ul li {color:white; font-weight:.9rem; margin-bottom:.5rem;}
+
+  .advantage-wrap img {width:100%;}
+
+  
+  .clinical-bottom {position:relative; max-width: 1400px; margin: 8rem auto 0 auto; text-align:center; padding-bottom: 8rem;}
+  .clinical-bottom h2 {font-family: "Lust"; color: #0F5E67; font-size: 2.2rem !important; margin-bottom:1rem; font-weight:400; }
+  .clinical-bottom a {
+    padding: 0.5rem 0;
+    background-color: transparent;
+    border: solid 2px #0F5E67;
+    color: #0F5E67;
+    border-radius: 9999rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 18rem;
+    cursor:pointer;
+    transition:.2s;
+    text-transform:uppercase;
+  }
+  
+  .clinical-bottom a:hover {background-color:#0F5E67; color:white;}
+
+  .clinical-girl {position:absolute; bottom:0; left: -10rem; width: 30rem;}
+  
+  
+  .mobile {display:none;}
+  .hideformobile {display:flex;}
+  .onlyformobile {display:none;}
+  
+  .pink {color:#F58D8D;}
+  .teal {color: #105e67}
+
+  
+
+  @media only screen and (min-width:1940px) {
+      .tox-hero .t-box {width: 34rem; padding: 4% 0 0% 5%;}
+      .tox-hero .t-box h3 {font-size: 1.4rem !important; line-height:1.4rem; color: white; margin-bottom:3rem;}
+      .tox-hero .t-box h1 {font-size: 4.4rem !important; line-height:5rem; color: white; font-family:'lust'; margin-bottom:2rem;}
+      .tox-hero .t-box p {font-size: 1.2rem !important; color: white; margin-bottom: 1vw; width:100%;}
+    }
+
+
+  
+  @media only screen and (max-width:1230px) {
+    .info-cont {flex-wrap:wrap; justify-content: space-around; padding: 2rem 0 4rem 0;}
+    .info-top {width:100%; margin-bottom:2rem; text-align:left;}
+    .info-left {width:80%; padding:0; margin-bottom:2rem;}
+    .info-left h2 {font-size: 5rem !important;}
+    .info-left h3 {font-size: 2.5rem !important;}
+    .info-left p {margin-bottom:3rem;}
+    .info-right {width:80%; padding:0;}
+    .info-right a {text-decoration: underline;}
+    .info-right a:hover {text-decoration: none;}
+    
+  }
+  
+  @media only screen and (max-width:1024px) {
+    .desk {display:none;}
+  	.mobile {display:block;}
+    
+    .tox-hero {background-image: url('https://cdn.shopify.com/s/files/1/0064/3003/1908/files/MelasmaReductionSystem-Mobile.jpg?v=1712688591'); background-size:cover; height:67vw;}
+    .tox-hero .t-box {padding: 9% 0 0% 6%; width: 90%;}
+    .tox-hero .t-box h3 {font-size: 2.5vw !important; line-height: 4.5vw; color: white; margin-bottom: 6vw;}
+    .tox-hero .t-box h1 {font-size: 6vw !important; line-height: 6.5vw; margin-bottom: 3vw; width: 36vw;}
+    .tox-hero .t-box p {font-size: 3vw !important; line-height: 4vw; color: white; margin-bottom: 1vw; width: 100%;}
+    .tox-hero .t-box img {width:90%;}
+
+    .info-left .info-top h3 {font-size:6vw !important; margin-top:1vw;}
+    
+    .info-cont {flex-wrap:wrap; justify-content: space-around; padding: 2rem 0 4rem 0;}
+    .info-left {width:80%; padding:0;}
+    .info-left h2 {font-size: 5rem !important;}
+    .info-left h3 {font-size: 1.6rem !important;}
+    .info-left h4 {font-size:1.6rem !important; margin-bottom:2rem;}
+    
+    .info-left p {margin-bottom:3rem;}
+    .info-right {width:80%; padding:0;}
+    .info-right h4 {font-size:1.6rem !important; margin-bottom:1rem;}
+    .info-right ul li {font-size:1.4rem !important;}
+    .info-right p {font-size:1.4rem !important;}
+    .info-right a {text-decoration: underline;}
+    .info-right a:hover {text-decoration: none;}
+    
+    .results-top h2 {font-size: 4rem !important; line-height: 5rem; margin-bottom: 2rem;}
+    .salmon {font-size:5rem !important;}
+    .results-top h3 {font-size: 2rem !important;}
+    .results-top p {font-size: 1.4rem !important;}
+    
+    .results-images {flex-wrap: wrap; padding:0; justify-content: space-around;}
+    .results-images img {width:90%; margin-bottom:2rem;}
+    .results-wrap a {width: 32rem; font-size: 1.6rem !important;}
+
+    .adv-left {width: 80%; margin: 0 auto; padding-top: 2rem; padding-left: 0rem; padding-right: 0rem; border-right: 0px; border-bottom: solid 2px #F58D8D;}
+    .adv-left h4 {font-size:2rem; width:60%;}
+    .adv-left p {font-size:1.6rem; width:68%; margin-bottom: 5rem;}
+
+    .adv-right {width: 80%; margin: 0 auto; padding-top: 5rem; padding-left: 0rem; padding-right: 0rem;}
+    .adv-right h4 {font-size:2rem;}
+    .adv-right p {font-size:1.6rem;}
+    
+    .clinical-cont .t-box h2 {font-size: 4rem !important;}
+    .clinical-cont .t-box {padding:2rem;}
+    .clinical-cont .t-box p {font-size: 2rem !important;}
+    
+    .clinical-number h3 {font-size: 8rem !important; line-height: 10rem;}
+    .clinical-number {width:75%;}
+    .clinical-cont .t-box .clinical-number p {font-size: 2rem !important; line-height: 3rem;}
+    .clinical-number .vs-text {font-size: 1.2rem !important;}
+    
+    
+    .last-clinicals {width:75%;}
+    .vs {font-size: 2rem !important; padding-top: 3rem;}
+    .clinical-cont .t-box .clinical-disclaimer {font-size:1.2rem !important; width: 100%; margin: 0 auto 2rem auto;}
+    .clinical-bottom {padding-bottom:0;}
+    .clinical-bottom h2 { font-family: "Lust"; color: #0F5E67; font-size: 3rem !important; width: 60%; font-weight: 400; margin: 0 auto 2rem auto; line-height: 4rem;}
+    
+    .clinical-bottom a {width: 22rem; font-size: 1.4rem !important; margin-bottom:2rem;}
+    .clinical-girl {position:static;}
+  }
+  
+  
+  
+  @media only screen and (max-width:700px) {
+  
+  	/* .tox-hero {background-image: url('https://cdn.shopify.com/s/files/1/0064/3003/1908/files/MelasmaReductionSystem-Mobile.jpg?v=1712688591'); background-size:cover; height:132vw;}
+  
+    .tox-hero .t-box {padding: 6% 0 0 0; width: 80%; text-align: left; margin: 0 auto;}
+    .tox-hero .t-box h1 {font-size: 9vw !important; line-height: 10vw;}
+    .tox-hero .t-box p {font-size: 3.5vw !important; line-height: 5vw; color: white; margin-bottom: 1vw; width: 100%;}
+  	
+    .info-left h2 {font-size: 18vw !important;}
+    .info-left h3 {font-size: 6vw !important; line-height: 10vw; margin-bottom: 1rem;}
+    .info-left h4 {font-size: 1.2rem !important;} */
+
+    .info-right h4 {font-size:1.2rem;}
+    .info-right ul li {font-size: 1.2rem !important;}
+    .info-right p {font-size: 1.2rem !important;}
+    .info-right ul {list-style-position: outside;}
+    
+    .results-top {padding: 2rem 2rem 4rem 2rem;}
+    .results-top h2 {font-size: 12vw !important; line-height: 16vw; margin-bottom: 2rem;}
+    .results-top h3 {font-size: 1.4rem !important; margin-bottom: 1rem;}
+    .results-top p {font-size:1.2rem !important}
+
+    .results-wrap a {width: 90%; font-size: 1.2rem !important;}
+
+    .adv-left h4 {font-size: 1.4rem; width: 100%;}
+    .adv-left p {font-size: 1.2rem; width: 100%;}
+    .adv-right h4 {font-size: 1.4rem; width: 100%;}
+    .adv-right p {font-size: 1.2rem; width: 100%;}
+
+    
+    .clinical-wrap {padding:0;}
+    .clinical-cont {width:90%; margin: 0 auto;}
+    .clinical-cont .t-box h2 {font-size: 12vw !important; line-height: 18vw;}
+    .clinical-cont .t-box p {font-size: 6vw !important;}
+    .clinical-number {width:100%; margin-bottom: 0rem;}
+    .clinical-number h3 {font-size: 7rem !important; line-height: 9rem;}
+    .clinical-cont .t-box .clinical-number p {font-size: 1.8rem !important;}
+
+    .clinical-bottom {padding-top: 4rem; margin-top: 0;}
+    .clinical-bottom h2 {width:80%;}
+    
+    .last-clinicals {width:100%; flex-wrap: wrap;}
+    .vs {padding: 1rem 0;}
+    .clinical-cont .t-box .clinical-disclaimer {font-size: 1rem !important;}
+    
+  
+    .hideformobile {display:none;}
+    .onlyformobile {display:flex;}
+  }
+
+</style>
+
+<div class="main-wrap">
+  <div class="main-cont">
+    
+    <div class="tox-wrap">
+      <div class="tox-hero">
+        <div class="t-box">
+          <h3>Ask Your Practitioner About</h3>
+          <h1>Melasma Reduction System</h1>
+          <p>Effectively treat Melasma when you pair your in-office <span class="bold-para">VI Peel Precision Plus Treatment</span> with prescription-only <span class="bold-para">VI Derm Pigment Correcting System</span> at home.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="info-wrap">
+      <div class="info-cont">
+        
+        <div class="info-left">
+          <div class="info-top">
+            <h2>Goodbye Melasma,</h2>
+            <h3>Hello Bright Skin!</h3>
+          </div>
+          <h4>VI Peel Precision Plus + VI Derm Pigment Correcting System </h4>
+
+          <img src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/202203-Normal-and-melasma-skin-V02.jpg?v=1713212187" alt="VI Peel Precision Plus + VI Derm Pigment Correcting System">
+          
+        </div>
+
+        <div class="info-right">
+
+          <h4>Step 1: Target Stubborn Melasma at the Source with <a href="https://vipeel.com/pages/patient-results">VI Peel Precision Plus:</a></h4>
+          <ul>
+            <li>Effectively corrects existing Melasma</li>
+            <li>Suppresses the production of melanin at the source</li>
+            <li>Evens and brightens skin tone</li>
+          </ul>
+
+          
+          <h4>Step 2: Continue to Fight Melasma At Home with <a href="https://vipeel.com/products/pigment-correcting-kit">VI Derm Pigment Correcting System:</a></h4>
+          <ul>
+            <li>Helps prevent future Melasma from forming</li>
+            <li>Helps prevent existing Melasma from worsening</li>
+            <li>Speeds Melasma correction when used in conjunction with VI Peel Precision Plus</li>
+          </ul>
+          <!-- <h4>WHY COMBINE BOTH TREATMENTS?</h4>
+          <p><span class="bold-para">Laser Treatments</span> are a great way to improve skin health from the inside-out by stimulating collagen and aiding in pigment reduction. <span class="bold-para">Adding VI Peel addresses dark spots and fine lines</span> from the outside-in, creating a visible, more youthful complexion. <span class="bold-para">Why be good when you can be GREAT?</span></p>
+          -->
+          <a href="https://vipeel.com/pages/sca-store-locator" class="info-btn">BOOK NOW</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="results-wrap">
+      <div class="results-top">
+        <h2>the <span class="salmon">results</span> speak for themselves!</h2>
+        <h3>VI Peel Precision Plus  <span class="lighter-text">+ VI Derm Pigment Correcting System</span></h3>
+        <p>Targets and Corrects Stubborn Melasma</p>
+      </div>
+      
+      <div class="results-images">
+        <img alt="result images" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/Picture1.jpg?v=1712692767">
+      </div>
+
+      <p>Results after 3 VI Peel Precision Plus + VI Derm Pigment Correcting System.</p>
+      
+      <a href="https://vipeel.com/pages/practicefinder">FIND A PRACTITIONER NEAR YOU</a>
+    </div>
+
+
+    <div class="advantage-wrap">
+      <div class="advantage-cont">
+        <div class="adv-left">
+          <h4>Setting Expectations</h4>
+          <p>The Complex, Stubborn Nature of Melasma</p>
+        </div>
+
+        <div class="adv-right">
+          <ul>
+            <li>Due to the complex and stubborn nature of Melasma, you may need more than one VI Peel Precision Plus treatment and a diligent and continuous use of the VI Derm Pigment Correcting System, along with proper sun protection to see results.</li>
+            <li>Your Melasma may seem to get darker before getting better, as the pigment that is trapped deep within your skin is lifted to the surface. The progression image below shows an instance where the patient’s Melasma looks worse before full results are achieved. Patience is key here!</li>
+            <li>As always, <a href="https://vipeel.com/pages/practicefinder">consult your practitioner</a> to determine the treatment regimen that is best suited for you.</li>
+          </ul>
+        </div>
+        
+      </div>
+
+    <img alt="results image per month" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/VI-BA-Strip-Images.jpg?v=1713212590">
+      
+    </div>
+
+    
+    
+    
+    <div class="clinical-wrap">
+      
+      <div class="clinical-bottom">
+        <h2><span class="salmon">safe</span> for all skin types & tones</h2>
+        <a href="https://vipeel.com/pages/sca-store-locator">BOOK NOW</a>
+        
+        <img class="clinical-girl" src="https://cdn.shopify.com/s/files/1/0064/3003/1908/files/VI-Microneedling-Girl.png?v=1690038539" alt="Clinical girl">
+      </div>
+      
+    </div>
+    
+  </div>
+</div>

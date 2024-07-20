@@ -1,0 +1,63 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-vipeel-treatment",
+      "blocks": {
+        "74b19320-fc03-414b-b082-ed4325b54d4a": {
+          "type": "text_heading",
+          "settings": {
+            "heading_text": "what to expect:"
+          }
+        },
+        "b106763e-53dc-4354-b78e-61b77adcce3e": {
+          "type": "column_text_image",
+          "settings": {
+            "column_image": "shopify:\/\/shop_images\/img-what-to-expect2.jpg",
+            "text_description": "<h3>BOOK IT, BABY!<\/h3>\n<p>Simply <a href=\"\/pages\/sca-store-locator\">click here<\/a> to select a provider near you. Be sure to ask for your VI Peel treatment when you reach out to book your appointment. The provider will ask a few simple questions and provide you with pre-appointment guidelines.<\/p>\n\n<h3>CONSULTATION<\/h3>\n<p>Once you arrive to your appointment, your practitioner will go over your skin care needs. If you’re an “A” student and want the edge, <a href=\"\/pages\/skincare-quiz\">click here<\/a> to take our skin care quiz in advance of your treatment and bring the results with you to your appointment!<\/p>\n\n<h3>PRESCRIPTION FOR THE<br> ULTIMATE SKIN<\/h3>\n<p>Once your practitioner assesses your goals, they will apply one of VI Peel’s six unique chemical peel formula options. This painless application involves sweeping strokes of a liquid formula via a gauze, with time in between each layer for the product to absorb and the technician to assess your skin’s reaction. To learn more about how chemical peels work on the skin, <a href=\"\/pages\/chemical-peel\">click here.<\/a><\/p>",
+            "text_align": "left"
+          }
+        },
+        "ca90aa58-ebfb-4781-ada6-d9430049e984": {
+          "type": "custom_text",
+          "settings": {
+            "custom_text": "<p>To see actual patient results <a href=\"\/pages\/patient-results\" title=\"Results\">click here<\/a> and learn about each VI Peel formula and the benefits from each unique treatment.<\/p>\n<p>Once the product is applied, you might look a little flush or even a little tan. Patients often say they looked like they were glowing!<\/p>",
+            "custom_text_color": "#005a63"
+          }
+        },
+        "f7518596-b7b7-4b5f-af75-f67bf70a2f8c": {
+          "type": "column_text_image",
+          "settings": {
+            "column_image": "shopify:\/\/shop_images\/img-post-treatment2.jpg",
+            "text_description": "<h3>NEXT LEVEL SKIN<\/h3>\n<p>Are you already a loyal Botox® or another neurotoxin patient? Then ask your provider about a <a href=\"#\">ToxBooster™ Treatment!<\/a> For just minutes more, add a VI Peel to your next neurotoxin appointment and reap the benefits of a total face transformation – all at the same time! Save time, and your skin with this incredible combination therapy.<\/p>\n<h3>KEEP GLOWING™<\/h3>\n<p>While your skin will look amazing post-peel, we want you to have glowing skin all day, every day! And to do that, you need the right skin care regime that targets your unique skin care concerns. <a href=\"\/pages\/skincare-quiz\">Click here<\/a> to take the quiz for the right regime for you for your most confident skin.<\/p>\n<p><a class=\"btn_link\" href=\"\/pages\/sca-store-locator\/\">Book Now<\/a><\/p>",
+            "text_align": "right"
+          }
+        }
+      },
+      "block_order": [
+        "74b19320-fc03-414b-b082-ed4325b54d4a",
+        "b106763e-53dc-4354-b78e-61b77adcce3e",
+        "ca90aa58-ebfb-4781-ada6-d9430049e984",
+        "f7518596-b7b7-4b5f-af75-f67bf70a2f8c"
+      ],
+      "settings": {
+        "header_image": "shopify:\/\/shop_images\/header-confidence.jpg",
+        "header_text": "<p>Get Glowing and Keep Glowing™ with a VI Peel! The #1 Chemical Peel for dermatologists, plastic surgeons, nurses, and estheticians worldwide is designed to target pigmentation, acne, and aging via a painless, effective treatment only available through authorized clinicians.<\/p>"
+      }
+    },
+    "46756b25-cf3e-42d8-b1dc-3f4db23edd7c": {
+      "type": "video-with-text",
+      "settings": {
+        "section_size": "large",
+        "text_color": "#ffffff",
+        "subheading": "",
+        "title": "Appointment Guide",
+        "image": "shopify:\/\/shop_images\/appoint-guide-video-cover-2_2c10cea4-7620-4298-982e-690e10ed38cc.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=xRJhsjjh9f0"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "46756b25-cf3e-42d8-b1dc-3f4db23edd7c"
+  ]
+}

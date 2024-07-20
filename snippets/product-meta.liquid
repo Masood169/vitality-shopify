@@ -1,0 +1,139 @@
+<div class="ProductMeta" {{ block.shopify_attributes }}>
+
+  {%- if block.settings.show_vendor and product.vendor != blank -%}
+    <h2 class="ProductMeta__Vendor Heading u-h6">
+      {%- assign vendor_handle = product.vendor | handle -%}
+      {%- assign collection_for_vendor = collections[vendor_handle] -%}
+
+      {%- unless collection_for_vendor.empty? -%}
+        <a href="{{ collection_for_vendor.url }}">{{ product.vendor }}</a>
+      {%- else -%}
+        {{- product.vendor -}}
+      {%- endunless -%}
+    </h2>
+  {%- endif -%}
+
+  {% assign productCollections = product.collections | map: "handle" %}
+  {% if productCollections contains 'vi-derm-beauty' %} 
+    <h3 class="collection_top">VI DERM</h3>
+  {% endif %}
+
+  <h1 class="ProductMeta__Title Heading u-h2">
+    {%- if template.name == 'product' -%}
+      {{- product.title -}}
+    {%- else -%}
+      <a href="{{ product.url }}">{{ product.title }}</a>
+    {%- endif -%}
+  </h1>
+
+  {%- assign psize = product.metafields.my_fields.product_size -%}
+  <div class="metafield_top hidden-phone">
+    {%- if psize != blank -%}
+    <div class="psize_top">{{ psize }}</div>
+    {%- endif -%}
+    <div class="mf_top_review">
+      
+      
+      <!-- RYVIU APP :: WIDGET-TOTAL -->
+<!--       <div class="review-widget">
+          <ryviu-widget-total reviews_data="{{product.metafields.ryviu.product_reviews_info  | escape  }}" product_id="{{product.id}}" handle="{{product.handle}}"></ryviu-widget-total>
+      </div> -->
+      <!-- / RYVIU APP --> 
+      
+
+      <!-- TrustBox widget - Product Mini MultiSource -->
+      <div class="trustpilot-widget" data-locale="en-US" data-template-id="577258fb31f02306e4e3aaf9" data-businessunit-id="61b06cd29580764bc1d198dc" data-style-height="24px" data-style-width="100%" data-theme="light"  data-sku="{{ product.handle}}ALL,{{ product.variants | map: 'sku' | join: "," }}" data-star-color="#00b67a" data-no-reviews="show" data-scroll-to-list="true" data-style-alignment="center">
+                <a href="https://www.trustpilot.com/review/vipeel.com" target="_blank" rel="noopener">Trustpilot</a>
+              </div>
+      <!-- End TrustBox widget -->
+
+
+      
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  {% comment %}
+  {%- if block.settings.show_product_rating -%}
+    <div class="ProductMeta__Rating Heading Text--subdued u-h7">
+      {%- render 'product-rating', product: product -%}
+    </div>
+  {%- endif -%}
+  {% endcomment %}
+
+  {%- if block.settings.show_sku and product.selected_or_first_available_variant.sku != blank -%}
+    <p class="ProductMeta__Sku Heading Text--subdued u-h6">{{ 'product.form.sku' | t }}: <span class="ProductMeta__SkuNumber">{{ product.selected_or_first_available_variant.sku }}</span></p>
+  {%- endif -%}
+
+  {% assign disp_price = true %}
+
+  {% if practitioner %}
+  {% assign disp_price = false %}
+  {% endif %}
+
+  <div class="short-description">
+    {%- for field in product.metafields.custom.short_description.value -%}
+      <p>{{ field | metafield_text }}</p>
+    {%- endfor -%}
+  </div>
+
+  {%- if product.template_suffix != 'coming-soon' and disp_price and product.price > 0 -%}
+    <div class="ProductMeta__PriceList Heading">
+      {%- if settings.currency_code_enabled -%}
+        {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+          <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_with_currency }}</span>
+          <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4">{{ product.selected_or_first_available_variant.compare_at_price | money_with_currency }}</span>
+        {%- else -%}
+          <span class="ProductMeta__Price Price Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_with_currency }}</span>
+        {%- endif -%}
+      {%- else -%}
+        {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+          <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money }}</span>
+          <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4">{{ product.selected_or_first_available_variant.compare_at_price | money }}</span>
+        {%- else -%}
+          <span class="ProductMeta__Price Price Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money }}</span>
+        {%- endif -%}
+      {%- endif -%}
+    </div>
+
+    <div class="ProductMeta__UnitPriceMeasurement" style="display: {%- if product.selected_or_first_available_variant.unit_price_measurement -%}block{% else %}none{% endif %}">
+      <div class="UnitPriceMeasurement Heading u-h6 Text--subdued">
+        <span class="UnitPriceMeasurement__Price">{{ product.selected_or_first_available_variant.unit_price | money }}</span>
+        <span class="UnitPriceMeasurement__Separator">/ </span>
+        <span class="UnitPriceMeasurement__ReferenceValue" style="display: {% if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 %}inline{% else %}none{% endif %}">{{ product.selected_or_first_available_variant.unit_price_measurement.reference_value }}</span>
+        <span class="UnitPriceMeasurement__ReferenceUnit">{{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit }}</span>
+      </div>
+    </div>
+  
+  {%- else -%}
+  <div class="ProductMeta__PriceList Heading">
+  <span class="ProductMeta__Price Price Text--subdued u-h4">Prescription Only</span>
+  </div>
+  
+  
+  {%- endif -%}
+
+
+  {%- if psize != blank -%}
+  <span class="psize_top_border_title">Size</span>
+  <div class="psize_top_border">{{ psize }}</div>
+  {%- endif -%}
+
+  {%- if block.settings.show_taxes_included -%}
+    {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+      <p class="ProductMeta__TaxNotice Rte">
+        {%- if shop.taxes_included -%}
+          {{ 'product.general.include_taxes' | t }}
+        {%- endif -%}
+
+        {%- if shop.shipping_policy.body != blank -%}
+          {{ 'product.general.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+        {%- endif -%}
+      </p>
+    {%- endif -%}
+  {%- endif -%}
+
+
+
+  {{- form | payment_terms -}}
+</div>

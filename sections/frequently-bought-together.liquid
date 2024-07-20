@@ -1,0 +1,26 @@
+<section class="Section Section-FBT Section--spacingNormal">
+	<div class="Container gridt-wrapper">
+		<div id="cbb-frequently-bought-box"></div>
+	</div>
+</section>
+{% schema %}
+{
+  "name": "Frequently BT",
+  "class": "shopify-section--grid-prod-fbt",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Feature's Title"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Product",
+      "name": "Frequently Bought Together",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

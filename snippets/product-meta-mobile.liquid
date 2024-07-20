@@ -1,0 +1,43 @@
+<style>
+ .Product__InfoWrapper .ProductForm__Variants {margin-top:0;}
+</style>
+
+<div class="ProductMeta ProductMetaMobile" {{ block.shopify_attributes }}>
+
+  {%- if block.settings.show_sku and product.selected_or_first_available_variant.sku != blank -%}
+    <p class="ProductMeta__Sku Heading Text--subdued u-h6">{{ 'product.form.sku' | t }}: <span class="ProductMeta__SkuNumber">{{ product.selected_or_first_available_variant.sku }}</span></p>
+  {%- endif -%}
+
+  {% assign disp_price = true %}
+
+  {% if practitioner %}
+  {% assign disp_price = false %}
+  {% endif %}
+
+  <!-- <div class="ProductMeta__Description" {{ block.shopify_attributes }}>
+    <div class="Rte">
+      <h2 class="desc_title">Description</h2>
+      {{- product.description | replace: 'data-section-type', 'data-section-type-placeholder' -}}
+    </div>
+  </div> -->
+
+  <div class="short-description">
+    {%- for field in product.metafields.custom.short_description.value -%}
+      <p style="text-align:center;">{{ field | metafield_text }}</p>
+    {%- endfor -%}
+  </div>
+
+  {% if practitioner %}
+  <div class="presciprtion_label">*Only Available By Prescription</div>
+  {% endif %}
+
+  {%- assign psize = product.metafields.my_fields.product_size -%}
+  
+  {%- if psize != blank -%}
+  <span class="psize_top_border_title">Size</span>
+  <div class="psize_top_border">{{ psize }}</div>
+  {%- endif -%}
+
+  
+  {{- form | payment_terms -}}
+</div>

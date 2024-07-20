@@ -1,0 +1,44 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-chemical-peel",
+      "blocks": {
+        "82ce4d52-dbff-46c8-b841-1d98b8e62f1c": {
+          "type": "text_with_title",
+          "settings": {
+            "title_text": "Not all chemical peels are created equal.",
+            "text_description": "<p>Chemical Peels are classified based on how deeply they penetrate the skin layers and include Superficial, Medium-Depth and Deep Peels. The deeper the penetration the greater the overall exfoliation and cellular regeneration. The depth of the peel is determined by several factors that include acid type(s), percent concentration of the acid(s), the pH of the solution, as well as the time on the skin.<\/p>\n<p>There are many superficial peels on the market that, as the name suggests, only address surface issues. Deep peels are available, but downtime exists and can be significant.  For true correction, VI Peel offers six medium-depth peel formulations that make the most impact, with the least amount (if any) of downtime.<\/p>"
+          }
+        },
+        "9eb3d51e-6ad2-4895-ac92-b1451df73f4f": {
+          "type": "column_text_image",
+          "settings": {
+            "column_image": "shopify:\/\/shop_images\/image-skin-model.png",
+            "text_heading": "How does a VI Peel work?",
+            "text_description": "<p>VI “Medium-Depth” Peels penetrate through the Dermal-Epidermal Junction to the papillary dermis as shown in this graphic.<\/p> \n<p>Melanin creates the pigment of our skin and lives within our skin cells.  When melanin is overproduced, the skin exhibits hyperpigmentation or spots.  VI Peels focus on lifting and exfoliating those skin cells to allow our body to produce new cells that are healthier and less pigmented.  The process of exfoliation also smooths the surface of our skin creating softer smoother texture.<\/p>",
+            "text_align": "left"
+          }
+        },
+        "3e948f1f-8f23-4278-86a6-01647b2381f4": {
+          "type": "text_heading",
+          "settings": {
+            "text_heading": "<a href=\"\/pages\/sca-store-locator\" title=\"Book\">Book<\/a> Your VI Peel treatment for the face or the body today!"
+          }
+        }
+      },
+      "block_order": [
+        "82ce4d52-dbff-46c8-b841-1d98b8e62f1c",
+        "9eb3d51e-6ad2-4895-ac92-b1451df73f4f",
+        "3e948f1f-8f23-4278-86a6-01647b2381f4"
+      ],
+      "settings": {
+        "header_image": "shopify:\/\/shop_images\/header-chemical-peel.jpg",
+        "header_text1": "<p>Let’s put on our lab coats and learn about how chemical peels work and incredible benefits of a VI Peel!<\/p>",
+        "header_text2": "<h3>What is a Chemical Peel?<\/h3>\n<p>Chemical peels are an effective solution to common skin issues including pigmentation, acne, scars, and fine lines. What is sometimes referred to as “chemexfoliation” has been used for hundreds of years for both clinical and aesthetic purposes. But what makes VI Peel the best choice for chemexfoliation?<\/p>\n<p>VI Peel’s version of a chemical peel offers you a safer alternative to mechanical or physical exfoliation. Our peels also can address multiple skin issues simultaneously, from texture, to pigment, to acne, all in one in-office visit.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
